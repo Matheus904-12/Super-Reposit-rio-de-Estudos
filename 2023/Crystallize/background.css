@@ -1,0 +1,23 @@
+/* CAIXA FUNDO */
+
+body {
+    background-color: #23A092;
+}
+/* FIM FUNDO */
+
+#enviar {
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: "inter";
+}
+
+#enviar2 {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: "inter";
+    right: 100px;
+}
