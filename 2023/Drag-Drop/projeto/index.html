@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.css">
+</head>
+
+<body>
+    
+    <div id="adicionarNovaListaDiv">
+        <input id="adicionarNovaListaInput" class="comentario">
+        <button id="adicionarNovaListaBotao" class="btn-salvar">Adicionar nova lista de tarefas</button>
+    </div>
+    
+    <div id="raiz" class="listas">
+        <!-- Adicionando uma coluna arrastável -->
+        <div class="coluna" draggable="true">
+            <div class="coluna-header">Tarefa em Progresso</div>
+            <!-- Adicionando cartões arrastáveis -->
+
+            <div class="cartao" draggable="true">Finalizando</div>
+            <div class="cartao" draggable="true">Começando</div>
+            <div class="cartao" draggable="true">A fazer</div>
+            <div class="cartao" draggable="true">Terminado</div>
+            <button id="adicionarCartao">Adicionar Cartão</button>
+
+        </div>
+        <!-- Adicione quantas colunas e cartões desejar -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="main.js"></script>
+
+</body>    
+</html>
