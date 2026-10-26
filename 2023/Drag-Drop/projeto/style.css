@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(43, 43, 83);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+#adicionarNovaListaDiv{
+    margin-left: 2em;
+    margin-top: 4em;
+}
+
+#adicionarNovaListaDiv button{
+    margin-left: 0.5em;
+}
+
+#raiz{
+    margin: 1em;
+    min-width: 1200px;
+}
+
+.listaDeTarefas{
+    border-radius: 4px;
+    min-height: 100px;
+    background: rgb(235, 235, 235);
+    padding: 0.7em;
+    margin: 1em 0 1em 1em;
+    float: left;
+}
+
+.listaDeTarefas h2{
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+#botao-tarefa{
+    margin-left: 0.5em;
+}
+
+.cartao {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+    margin-bottom: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.cartao button{
+    visibility: hidden;
+    height: max-content;
+    background: none;
+    border: none;
+    padding: 0.3em;
+}
+
+.cartao:hover button{
+    visibility: visible;
+}
+
+.cartao button:hover{
+    background-color: rgb(235, 235, 235);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menuContainer{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    top: 0;
+    left: 0;
+    background-color: rgb(235, 235, 235);
+    width: 500px;
+    min-height: 300px;
+    margin: auto;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+.menuTitulo{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.menuDescricao{
+    margin-bottom: 2em;
+    line-height: 1.5em;
+}
+
+.menuDescricao textarea{
+    width: 100%;
+    height: 5em;
+    padding: 0.5em;
+    font-size: 1.1em;
+}
+
+.comentario {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.entradaComentarios{
+    margin-right: 0.5em;
+}
+
+.btn-salvar {
+    background-color: #5aac44;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+#board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0;
+}
+
+.lista {
+    margin: 1em;
+    padding: 0.5em;
+    background: rgb(235, 235, 235);
+    border-radius: 4px;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.cartao {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5em;
+    font-size: 0.9em;
+    margin: 0.5em 0;
+}
+
+.novo-cartao {
+    width: calc(100% - 1em);
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-salvar:hover {
+    background-color: #4a9e3e;
+}
+
+input, button {
+    font-size: 14px;
+}
+
+.ghost {
+    opacity: 0.5;
+    background-color: #ffffff;
+}
+
+.listas {
+    display: flex;
+    overflow-x: auto;
+    padding: 8px;
+}
+
+.coluna {
+    background-color: #ebecf0;
+    border-radius: 4px;
+    margin: 0 8px;
+    min-width: 250px;
+    max-height: 80vh;
+    padding: 8px;
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+    overflow-y: auto;
+}
+
+.coluna-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
