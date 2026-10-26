@@ -1,0 +1,48 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    margin-top: -450px;
+    background-color: #FFF;
+  }
+  
+  .box h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .box p {
+    color: #000;
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: px;
+    text-align: center;
+  }
+  
+  .box img {
+    width: 50px;
+    height: 50px;
+    float:inline-start;
+    margin-right: 10px;
+    margin-top: 176px;
+  }
+  
+  .box img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .box {
+    display: inline-block;
+  }
+
+  .imagempi {
+    width: 40px;
+    height: 400px;
+    flex-shrink: 0;
+  }
