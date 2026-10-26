@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #D7C3AF;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Mont/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(/Mont/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Semibold";
+    src: url(Mont/Montserrat-SemiBold.ttf);
+}
+
+.header {
+
+    width: 1519px;
+    height: 150px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-image: url(fotos2/gradiente10.png);
+}
+
+a {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    gap: 30px;
+}
