@@ -24,6 +24,17 @@ Esta pasta guarda os projetos de 2024 **dentro deste repositório**. Os nomes ab
 | [Nubank-TabBar](Nubank-TabBar/README.md) | TabBar React Native | Parte dos componentes e configuração copiados; faltam arquivos bloqueados. |
 | [MMC](MMC/README.md) | Exercício de MMC | Código principal copiado. |
 | [MVC](MVC/README.md) | Exercício MVC | Parte do código copiada; controller/CSS pendentes. |
+| [PrePortf](PrePortf/README.md) | Portfólio web | HTML, CSS e JS copiados. |
+| [supermarket](supermarket/README.md) | App de lista de compras | Estrutura principal React Native/Expo copiada; faltam telas/assets. |
+| [Music-React](Music-React/README.md) | Projeto web de música | HTML, CSS e JS copiados. |
+| [Bloco-de-Notas](Bloco-de-Notas/README.md) | Bloco de notas web | HTML, CSS e JS copiados. |
+| [OO](OO/README-local.md) | Exercícios web | Arquivos HTML/CSS/JS principais copiados. |
+| [Chat](Chat/README.md) | Exercício de chat PHP | PHP principal copiado; CSS e assets incompletos. |
+| [viagem---php](viagem---php/README.md) | Exercício PHP | PHP, HTML e CSS copiados. |
+| [XAMPP](XAMPP/README.md) | Exercício de login PHP | Formulário e autenticação copiados; validar ambiente. |
+| [caluladora---php](caluladora---php/README.md) | Calculadora PHP | Arquivos principais copiados; um arquivo pendente. |
+| [PHP](PHP/README.md) | Exercício de autenticação PHP | Página e autenticação copiadas; conexão/SQL não migrados. |
+| [Login-Site](Login-Site/README.md) | Login PHP | Página e autenticação copiadas; conexão/SQL pendentes. |
 
 ## Projetos identificados para migrar
 
