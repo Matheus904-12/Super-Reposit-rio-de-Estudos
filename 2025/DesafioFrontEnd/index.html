@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="panel">
+            <h1>Registro de Notas e Alunos</h1>
+
+            <p>Registre seus Alunos junto as Notas no Sistema</p>
+
+            <div class="cadastroNota">
+                <h2>Cadastre os Alunos Aqui</h2>
+                <form action="">
+                    <div class="formula">
+
+                        <label class="labelInput">Nome:</label>
+                        <input class="inputRegistro" type="text" value="" placeholder="Digite Aqui">
+                        <br>
+                        <label class="labelInput">Nota:</label>
+                        <input class="inputRegistro" type="number" value="" placeholder="Digite Aqui">
+                        <br>
+                        <input class="botaoEnviar" type="button" value="Registrar">
+                    </div>
+                </form>
+            </div>
+
+            <div class="exibirNota">
+                <h2>Relatório Geral</h2>
+
+                <input class="butFiltrar" type="button" value="Mostrar Todos" id="btnMostrarTodos">
+                <input class="butFiltrar" type="button" value="Filtrar Aprovados" id="btnFiltrarTodos">
+
+                <table class="tabela">
+                    <tr>
+                        <th class="header-text">Aluno</th>
+                        <th class="header-text">Notas</th>
+                    </tr>
+
+                    <tr>
+                        <td class="registros"></td>
+                        <td class="registros"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
