@@ -1,0 +1,156 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    justify-content: center;
+    
+    background-color: rgb(3, 35, 56);
+}
+
+#idiomas {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.bandeira {
+    cursor: pointer;
+    margin-right: 10px;
+    width: 40px;
+    border-radius: 10%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bandeira:hover {
+    transform: scale(1.1);
+}
+
+.conteudo {
+    width: 110%; /* Reduzindo a largura do conteúdo */
+    max-width: 40px; /* Definindo uma largura máxima para o conteúdo */
+    margin: 20px;
+    padding: 20px;
+    opacity: 0;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease;
+}
+
+
+.conteudo h2 {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.conteudo p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Adicionando um estilo para links dentro do conteúdo */
+.conteudo a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.conteudo a:hover {
+    color: #2073b0;
+}
+
+/* Adicionando um estilo para listas dentro do conteúdo */
+.conteudo ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.conteudo ul li {
+    margin-bottom: 8px;
+}
+
+/* Efeito de surgir nos conteúdos */
+.conteudo.visible {
+    opacity: 1;
+}
+
+#paragrafo1 {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 2px solid #000;
+    padding: 10px; /* Reduzindo o padding do retângulo abaixo do parágrafo */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Reduzindo o espaçamento entre retângulos */
+}
+
+#paragrafo2 {
+    background-color: #e0e0e0;
+    color: #333;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#paragrafo3 {
+    background-color: #d0d0d0;
+    color: #333;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#paragrafo4 {
+    background-color: #c0c0c0;
+    color: #333;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#paragrafo5 {
+    background-color: #b0b0b0;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#paragrafo6 {
+    background-color: #a0a0a0;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#paragrafo7 {
+    background-color: #909090;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#paragrafo8 {
+    background-color: #808080;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+h1 {
+    color: white;
+}
