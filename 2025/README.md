@@ -22,6 +22,7 @@ Pasta: [estudos-github-copilot/AccelerateDevGHCopilot](estudos-github-copilot/Ac
 | [DesafioFrontEnd](DesafioFrontEnd/README.md) | Desafio de interface | HTML, CSS e JavaScript copiados. |
 | [Footer](Footer/README.md) | Exercício de rodapé | HTML e CSS copiados. |
 | [Background-Life](Background-Life/README.md) | Fundo animado | HTML, CSS e JavaScript copiados. |
+| [RenderCodeBar](RenderCodeBar/README.md) | Módulos JavaScript de códigos de barras/boletos | package.json e módulos principais copiados; testes pendentes. |
 
 ## Próximos candidatos
 
