@@ -1,64 +1,42 @@
 # Super Repositório de Estudos
 
-> Central de estudos, exercícios e histórico de evolução em desenvolvimento de software.
+> Monorepo de exercícios, experimentos pequenos e estudos técnicos a partir de 2025.
 
-Este repositório organiza materiais de estudo e funciona como um índice navegável dos projetos feitos ao longo da formação e da prática profissional. Os repositórios originais continuam sendo a fonte principal de cada projeto.
+Este repositório **guarda os arquivos dos projetos selecionados**, organizados por ano e tema. Não é apenas um índice de links. Projetos grandes, aplicações relevantes e projetos ativos continuam em repositórios separados; exercícios pequenos e experimentos de baixo valor independente podem ser incorporados aqui.
 
-## Navegação
+## Organização
 
-| Área | Conteúdo |
+| Pasta | Conteúdo |
 |---|---|
-| [2023–2024 — Curso técnico](2023-2024-curso-tecnico/README.md) | Projetos acadêmicos e exercícios preservados como histórico |
-| [2025 — Projetos e experimentos](2025-projetos-e-experimentos/README.md) | Projetos e experimentos posteriores |
+| [2025](2025/README.md) | Projetos e experimentos elegíveis, criados em 2025 ou depois — sem importar projetos de 2026 para a seleção atual |
 | [GitHub Copilot](github-copilot/README.md) | Guia de uso, prompts, exercícios e boas práticas |
 | [Microsoft Learn](microsoft-learn/README.md) | Trilhas oficiais e acompanhamento dos estudos |
-| [Catálogo de repositórios](catalogo/README.md) | Inventário público e classificação progressiva |
+| [Catálogo de migração](catalogo/README.md) | Controle do que foi copiado, está pendente ou deve continuar fora |
 | [Segurança](seguranca/checklist.md) | Checklist antes de publicar código |
 | [Auditoria inicial](seguranca/auditoria-inicial.md) | Pendências de segurança identificadas nos repositórios |
 | [Trilha Java e engenharia](trilha-java-backend/README.md) | Plano progressivo para Java, Spring Boot, SQL, testes, segurança e arquitetura |
 
-## Objetivos
+## Regras de inclusão
 
-- Preservar o histórico de aprendizado de 2023–2024.
-- Organizar projetos e experimentos de 2025.
-- Consolidar estudos de GitHub Copilot e Microsoft Learn em um guia com exercícios próprios.
-- Facilitar a revisão dos projetos e a evolução técnica.
-- Manter links para os repositórios originais, evitando cópias redundantes.
+1. **Data:** incluir somente repositórios criados a partir de 2025. Não importar conteúdo de 2026 nesta seleção.
+2. **Escopo:** importar projetos pequenos, exercícios e experimentos sem valor suficiente para manter um repositório independente.
+3. **Manter fora:** projetos grandes, aplicações relevantes, projetos ativos e produtos que mereçam histórico e ciclo de vida próprios.
+4. **Conteúdo real:** quando um projeto for selecionado, copiar seus arquivos para esta árvore; um link isolado não conta como migração.
+5. **Integridade:** preservar a estrutura de pastas e a atribuição de origem; nunca copiar segredos, arquivos privados, dependências geradas ou materiais sem direito de redistribuição.
+6. **Validação:** marcar como completo somente depois de conferir os arquivos, a configuração e os testes.
 
-## Plano de organização
+## Estado atual
 
-1. Catalogar antes de copiar: listar os repositórios e identificar tema, período e situação.
-2. Preservar os originais: este projeto aponta para eles e guarda sínteses, exercícios e documentação de estudo.
-3. Separar projetos completos de notas e exercícios.
-4. Revisar segurança antes de importar ou publicar arquivos.
-5. Documentar autoria e contexto sem atribuir a si trabalho que não foi feito por você.
-
-## Roteiro
-
-- [x] Inventário inicial dos repositórios públicos (140 itens); privados excluídos.
-- [x] Primeira seleção de trabalhos do curso técnico e projetos posteriores.
-- [x] Trilha Java e engenharia de software criada.
-- [x] Guia Copilot ligado a repositórios de prática e recursos oficiais.
-- [ ] Revisar individualmente o conteúdo e a execução dos projetos selecionados.
-- [ ] Concluir módulos oficiais e registrar aprendizados.
-- [ ] Revisar README, licença e segurança antes de divulgar amplamente.
-
-## Sobre os projetos antigos
-
-Os trabalhos de 2023–2024 fazem parte do histórico de formação. A intenção é organizá-los, não apagá-los ou desmerecê-los. Se algum projeto usar práticas antigas, a documentação poderá registrar o contexto e possíveis melhorias.
+- [x] Criar a estrutura principal do monorepo.
+- [x] Iniciar a importação dos arquivos do estudo `AccelerateDevGHCopilot` para [2025/estudos-github-copilot/AccelerateDevGHCopilot](2025/estudos-github-copilot/AccelerateDevGHCopilot/README.md).
+- [ ] Completar a importação do projeto de estudo e validar build/testes.
+- [ ] Triar os demais repositórios de 2025 por data, tamanho, utilidade e risco.
+- [ ] Copiar os projetos pequenos aprovados e verificar cada importação.
+- [ ] Manter fora os projetos grandes e ativos.
+- [ ] Remover os repositórios de origem somente depois de confirmar a cópia completa e segura.
 
 ## Segurança
 
-Leia o [checklist de segurança](seguranca/checklist.md). Se algum segredo já foi publicado, removê-lo do arquivo atual não o invalida nem o apaga do histórico Git: ele precisa ser revogado ou rotacionado.
+Leia o [checklist de segurança](seguranca/checklist.md). Remover um segredo do arquivo atual não o invalida nem o apaga do histórico Git: credenciais expostas precisam ser revogadas ou rotacionadas.
 
----
-
-*Status: inventário público inicial concluído. A revisão individual, a validação de execução e a triagem de segurança continuam em andamento.*
-
-## Próximas trilhas
-- [Trilha Java e engenharia de software](./trilha-java-backend/README.md)
-- [Critérios de classificação do catálogo](./catalogo/criterios-classificacao.md)
-- [Diário de exercícios do Copilot](./github-copilot/exercicios/diario.md)
-
-## Revisão de projetos
-- [Triagem e prioridades de revisão](./catalogo/projetos-prioritarios.md)
+**Importante:** a importação inicial de `AccelerateDevGHCopilot` está parcial e ainda não foi testada. O repositório de origem não foi apagado.
