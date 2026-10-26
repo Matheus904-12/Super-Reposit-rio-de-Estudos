@@ -1,0 +1,5 @@
+* { border: 0; padding: 0; margin: 0; box-sizing: border-box; }
+body { background: #FFFACD; display: flex; height: 100vh; align-content: center; justify-content: center; align-items: center; font: 400 25px 'Poppins', sans-serif; color: black; }
+th, td { font-family: Helvetica; margin: 0 auto; text-align: center; border: 3px solid black; width: 20%; }
+th { border: none; }
+#squarefree { border-radius: 0cm; }
