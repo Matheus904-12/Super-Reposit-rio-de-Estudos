@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEBIDAS</title>
+    <link rel="stylesheet" href="cardapio4.css">
+    <link rel="stylesheet" href="/carrinho/carrinho.css">
+    <link rel="stylesheet" href="padrões.css">
+    <link rel="shortcut icon" href="/fotos2/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+
+        <section id="header">
+
+            <img src="/fotos2/logo.png" alt="Logo Taste of Arabia">
+            <section class="header">
+                <nav>
+                    <a href="/paginicial.html">Início</a>
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="/cardapio/cardapio.html">Cardápio</a>
+                    <a href="">Cadastro</a>
+                    <a href="#faleconosco">Fale Conosco</a>
+                </nav>
+            </section>
+            <section class="login">
+                <div class="cart-container" onclick="toggleCartDropdown()">
+                    <img src="/fotos2/carrinho.png" alt="Carrinho" class="cart-icon">
+                    <span id="cart-counter">0</span> <!-- Contador de itens -->
+                </div>
+                <!-- Dropdown do carrinho -->
+                <div id="cart-dropdown" class="cart-dropdown">
+                    <h3>Itens no Carrinho:</h3>
+                    <ul id="cart-items"></ul>
+                    <button onclick="finalizarPedido()">Finalizar Pedido</button>
+                </div>
+            </section>
+
+        </section>
+        <h1>BEBIDAS
+        </h1>
+    </header>
+
+    <div class="linha"></div>
+
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Água.png" alt="">
+
+            <div class="juntos">
+                <h3>Água</h3>
+                <p>No nosso restaurante, oferecemos água pura e fresca para refrescar e harmonizar o seu paladar. Cada
+                    detalhe importa para nós, e a escolha da água é feita com o mesmo cuidado dos ingredientes dos
+                    nossos pratos. Quer seja natural ou com gás, ela está sempre à sua disposição, perfeita para trazer
+                    leveza ao seu momento.</p>
+            </div>
+            <div class="preco">
+                <h4> R$0,99</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Refri.png" alt="">
+
+            <div class="juntos">
+                <h3>Refrigerante</h3>
+                <p>Para quem gosta de uma bebida mais doce e refrescante, nossos refrigerantes são a escolha ideal.
+                    Servidos sempre gelados, são perfeitos para dar aquele toque de sabor e alegria a qualquer momento
+                    da sua refeição. Aproveite a variedade e delicie-se com o seu favorito enquanto desfruta de cada
+                    prato!</p>
+            </div>
+            <div class="preco">
+                <h4> R$5,87</h4>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Chá.png" alt="">
+
+            <div class="juntos">
+                <h3>Chá de Hortelã</h3>
+                <p>Nosso chá de hortelã é preparado com folhas frescas, trazendo todo o aroma e sabor revigorante dessa
+                    erva especial. Conhecido por suas propriedades digestivas e relaxantes, o chá de hortelã é uma
+                    escolha leve e equilibrada para acompanhar sua refeição ou para um momento de bem-estar. Servido
+                    quente ou gelado, ele oferece um toque natural e refrescante que encanta os sentidos.</p>
+            </div>
+            <div class="preco">
+                <h4> R$4,35</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Café.png" alt="">
+
+            <div class="juntos">
+                <h3>Café Árabe</h3>
+                <p>O café árabe, preparado com grãos finamente moídos e um toque de especiarias, é muito mais que uma
+                    bebida — é um convite para uma experiência cultural rica e envolvente. Com seu sabor marcante e
+                    aroma intenso, ele é servido tradicionalmente em pequenas porções, proporcionando momentos de
+                    conexão e hospitalidade.</p>
+            </div>
+            <div class="preco">
+                <h4> R$4,27</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Limonada.png" alt="">
+
+            <div class="juntos">
+                <h3>Limonada</h3>
+                <p>Nossa limonada é feita com limões frescos, cuidadosamente espremidos para oferecer um sabor
+                    equilibrado e revigorante. Levemente adoçada e servida gelada, essa bebida clássica é perfeita para
+                    refrescar em qualquer ocasião. Combinando o toque ácido do limão com a leveza da água, a limonada
+                    traz um frescor natural que complementa bem sua refeição e desperta os sentidos.</p>
+            </div>
+            <div class="preco">
+                <h4> R$4,99</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Ayran.png" alt="">
+            <div class="juntos">
+                <h3>Ayran</h3>
+                <p>O ayran é uma bebida tradicional e muito apreciada na culinária turca e do Oriente Médio. Feito com
+                    iogurte natural, água e uma pitada de sal, o ayran é conhecido por seu sabor levemente ácido e
+                    refrescante, perfeito para acompanhar pratos intensos e equilibrar o paladar. Cremoso e revigorante,
+                    é uma ótima opção para quem busca uma experiência autêntica e nutritiva.</p>
+            </div>
+            <div class="preco">
+                <h4> R$5,99</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Jus.png" alt="">
+
+            <div class="juntos">
+                <h3>Jus de Tamarindo</h3>
+                <p> jus de tamarindo é uma bebida exótica e levemente adocicada, feita com a polpa do tamarindo, uma
+                    fruta tropical conhecida por seu sabor único que equilibra o doce e o ácido. Refrescante e rico em
+                    nutrientes, o jus de tamarindo é ideal para quem busca uma alternativa diferente e vibrante para
+                    acompanhar a refeição. Seu sabor intenso e marcante traz um toque especial e proporciona uma
+                    experiência saborosa e envolvente.
+                </p>
+            </div>
+            <div class="preco">
+                <h4> R$5,87</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Romã.png" alt="">
+
+            <div class="juntos">
+                <h3>Suco de Romã</h3>
+                <p>Nosso suco de romã é feito com a fruta fresca, revelando um sabor único que combina notas doces e
+                    levemente ácidas. Além de delicioso, o suco de romã é conhecido por suas propriedades antioxidantes
+                    e benefícios à saúde. Com sua coloração vibrante e sabor elegante, é uma opção sofisticada para quem
+                    quer experimentar algo diferente e revigorante. Cada gole traz um toque especial que harmoniza
+                    perfeitamente com diversos pratos, elevando sua experiência.</p>
+            </div>
+            <div class="preco">
+                <h4> R$5,45</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Laranja.png" alt="">
+
+            <div class="juntos">
+                <h3>Suco de Laranja</h3>
+                <p>Preparado com laranjas frescas e selecionadas, nosso suco de laranja oferece um sabor naturalmente
+                    doce e cheio de frescor. Rico em vitamina C e perfeito para qualquer hora do dia, é uma opção leve e
+                    energizante, ideal para acompanhar a refeição ou trazer uma dose extra de vitalidade ao seu momento.
+                    Aproveite o sabor clássico e a qualidade de um suco feito com carinho e ingredientes frescos.</p>
+            </div>
+            <div class="preco">
+                <h4> R$5,45</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Rosas.png" alt="">
+
+            <div class="juntos">
+                <h3>Água de Rosas</h3>
+                <p>A água de rosas é uma bebida suave e aromática, feita a partir da infusão das pétalas dessa flor
+                    delicada. Seu sabor floral e refrescante traz um toque de elegância e serenidade, tornando-se uma
+                    excelente escolha para quem busca uma opção leve e sofisticada. Além de seu sabor único, a água de
+                    rosas é também conhecida por suas propriedades calmantes.</p>
+            </div>
+            <div class="preco">
+                <h4> R$2,50</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="linha">
+
+    </div>
+    <section id="faleconosco">
+        <footer class="footer">
+            <!-- Adicionando a imagem de fundo -->
+            <img src="/fotos2/footer.png" alt="Imagem de fundo" class="imagem-fundo">
+            
+            <div>
+                <div>
+                    <section id="faleconosco">
+                        <div class="duvidass">
+                            <p>DÚVIDAS OU SUGESTÕES ?</p>
+                        </div>
+                        <div class="duvidas">
+                            <p>Fale Conosco!</p>
+                        </div>
+                    </div>
+                    <div class="fale">
+                        <img src="/fotos2/location.png" alt="">
+                        <p>Av. Dr. Ricardo Jafet, 3332 | SP</p>
+                    </div>
+                    <div class="falee">
+                        <img src="/fotos2/message.png" alt="">
+                        <p>tasteofarabia.restaurante@gmail.com</p>
+                    </div>
+                    <div class="botao">
+                        <button onclick="enviarEmail()">Enviar</button>
+                    </div>
+                    <div class="redes">
+                        <button class="botao-rede">
+                            <img src="/fotos2/whats.png" alt="WhatsApp">
+                        </button>
+                        <button class="botao-rede">
+                            <img src="/fotos2/insta.png" alt="Instagram">
+                        </button>
+                        <button class="botao-rede">
+                            <img src="/fotos2/face.png" alt="Facebook">
+                        </button>
+                    </div>
+                </section>
+            </div>
+        
+            <!-- Botão no canto superior direito -->
+            <a href="/jogo/jogo.html" class="botao-direito">
+                <img src="/fotos2/mascote.png" alt="Botão para outra página">
+            </a>
+        </footer>
+    </section>
+    <script src="/carrinho/carrinho.js"></script>
+    <script src="/gmail/gmail.js"></script>
+</body>
+
+</html>
