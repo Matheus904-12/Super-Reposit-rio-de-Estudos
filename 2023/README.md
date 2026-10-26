@@ -40,14 +40,16 @@ Esta pasta reúne os projetos migrados para dentro do super-repositório. Os lin
 
 | Projeto | Próxima ação |
 |---|---|
-| Demais.com | Revisar conteúdo e possíveis dados pessoais; migrar arquivos e assets. |
-| carrossel | Migrar HTML, CSS, JS e imagens. |
-| MultLang | Avaliar o grande volume de assets e migrar os arquivos necessários. |
+| [Demais.com](Demais.com/README.md) | Site com várias páginas | HTML, CSS e JS copiados parcialmente; algumas páginas/assets ainda faltam e o conteúdo precisa de revisão. |
+
+| MultLang | Parte do código textual copiada; faltam alguns arquivos bloqueados e assets binários. |
 
 | Tema | Avaliar porte; há muitas fontes binárias. |
 
-| atualiza--o | Migrar HTML, CSS, JS e imagens. |
-| SetupPro, Warhammer-Pro, dowcode, Bot, python, Meu-Perfil e outros | Fazer triagem de arquivos, duplicidade, dependências e recursos binários antes de importar. |
+| atualiza--o | Código copiado; faltam imagens. |
+| Warhammer-Pro | Parte do código copiada; alguns HTML/CSS e o modelo 3D estão pendentes. |
+| dowcode | Repositório agregador grande (389 arquivos úteis); triagem por projeto antes de importar. |
+| Outros exercícios de 2023 | Conferir os arquivos restantes e recursos binários.
 
 
 ## Regras de organização
