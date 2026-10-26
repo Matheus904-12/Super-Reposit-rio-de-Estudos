@@ -1,32 +1,17 @@
-# Guia de estudos — GitHub Copilot
+# GitHub Copilot — guia de prática
 
-Este guia transforma o uso do GitHub Copilot em prática de engenharia: formular tarefas claras, fornecer contexto, revisar sugestões, testar o resultado e entender os limites da IA. Copilot é uma ferramenta de apoio; a responsabilidade pela entrega continua sendo do desenvolvedor.
+Esta seção registra exercícios, prompts e aprendizados do uso responsável do Copilot.
 
-## Fontes oficiais
-
-- [Documentação do GitHub Copilot](https://docs.github.com/en/copilot)
+- [Diário de exercícios](./exercicios/diario.md)
+- [Exercícios e práticas](./exercicios/README.md)
+- [Notas de estudo](./notas/README.md)
+- [Documentação oficial](https://docs.github.com/en/copilot)
 - [GitHub Skills](https://skills.github.com/)
-- [Microsoft Learn — Conceitos básicos do GitHub Copilot, parte 1](https://learn.microsoft.com/pt-br/training/paths/copilot/)
-- [Microsoft Learn — Introdução ao GitHub Copilot](https://learn.microsoft.com/pt-br/training/modules/introduction-to-github-copilot/)
-- [Guia de estudos para a certificação GH-300](https://learn.microsoft.com/pt-br/credentials/certifications/resources/study-guides/gh-300)
+- [Trilha de Java e engenharia](../trilha-java-backend/README.md)
 
-## Trilha prática
-
-1. **Fundamentos:** entender sugestões inline, chat e contexto do workspace.
-2. **Prompts:** indicar objetivo, contexto, restrições e critérios de aceite.
-3. **Leitura de código:** pedir explicações e validar cada afirmação no código.
-4. **Implementação:** dividir tarefas em mudanças pequenas e revisáveis.
-5. **Testes:** gerar casos de teste, executar os testes e conferir cenários.
-6. **Depuração:** reproduzir o problema e confirmar a causa antes da correção.
-7. **Documentação:** conferir o conteúdo gerado contra o comportamento real.
-8. **Segurança:** não compartilhar segredos; revisar dependências e dados enviados.
-9. **Reflexão:** registrar onde o Copilot ajudou, errou e o que foi aprendido.
-
-## Estrutura
-
-- [Exercícios práticos](exercicios/README.md)
-- [Notas de estudo](notas/README.md)
-
-## Regra de ouro
-
-Não aceite código só porque compila ou parece plausível. Leia o diff, entenda a solução, execute testes e verifique segurança, desempenho e manutenção.
+## Método de estudo
+1. Defina o comportamento esperado antes de solicitar código.
+2. Peça explicação e plano antes de implementação.
+3. Trabalhe em diffs pequenos.
+4. Rode testes, linters e build.
+5. Registre o que a ferramenta errou e o que você aprendeu.
