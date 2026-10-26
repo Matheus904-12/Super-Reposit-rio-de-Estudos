@@ -14,6 +14,7 @@ Este repositório organiza materiais de estudo e funciona como um índice naveg�
 | [Microsoft Learn](microsoft-learn/README.md) | Trilhas oficiais e acompanhamento dos estudos |
 | [Catálogo de repositórios](catalogo/README.md) | Inventário público e classificação progressiva |
 | [Segurança](seguranca/checklist.md) | Checklist antes de publicar código |
+| [Auditoria inicial](seguranca/auditoria-inicial.md) | Pendências de segurança identificadas nos repositórios |
 | [Trilha Java e engenharia](trilha-java-backend/README.md) | Plano progressivo para Java, Spring Boot, SQL, testes, segurança e arquitetura |
 
 ## Objetivos
