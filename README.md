@@ -8,7 +8,7 @@ Este repositório **guarda os arquivos dos projetos selecionados**, organizados 
 
 | Pasta | Conteúdo |
 |---|---|
-| [2025](2025/README.md) | Projetos e experimentos elegíveis, criados em 2025 ou depois — sem importar projetos de 2026 para a seleção atual |
+| [2025](2025/README.md) | Projetos e experimentos criados em 2025; projetos de 2026 ficam explicitamente fora desta seleção |
 | [GitHub Copilot](github-copilot/README.md) | Guia de uso, prompts, exercícios e boas práticas |
 | [Microsoft Learn](microsoft-learn/README.md) | Trilhas oficiais e acompanhamento dos estudos |
 | [Catálogo de migração](catalogo/README.md) | Controle do que foi copiado, está pendente ou deve continuar fora |
@@ -18,7 +18,7 @@ Este repositório **guarda os arquivos dos projetos selecionados**, organizados 
 
 ## Regras de inclusão
 
-1. **Data:** incluir somente repositórios criados a partir de 2025. Não importar conteúdo de 2026 nesta seleção.
+1. **Data:** nesta rodada, incluir repositórios criados em 2025. Não importar conteúdo de 2026 nesta seleção.
 2. **Escopo:** importar projetos pequenos, exercícios e experimentos sem valor suficiente para manter um repositório independente.
 3. **Manter fora:** projetos grandes, aplicações relevantes, projetos ativos e produtos que mereçam histórico e ciclo de vida próprios.
 4. **Conteúdo real:** quando um projeto for selecionado, copiar seus arquivos para esta árvore; um link isolado não conta como migração.
