@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background: #0074D9;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#particles {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 6px;
+    margin: 1rem auto;
+    background: #fff;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* Adicionando estilo para o efeito de vidro */
+#glass-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 90%;
+    padding: 40px;
+    border-radius: 15px;
+    background: #0a012b3d;
+    /* Fundo translúcido */
+    backdrop-filter: blur(4px);
+    /* Efeito de vidro fosco */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    /* Sombra leve */
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    /* Linha sutil */
+    text-align: center;
+    /* Centraliza o conteúdo */
+    color: #fff;
+}
+
+#glass-effect h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+#glass-effect p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#glass-effect .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0074D9;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#glass-effect .btn:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: #005544;
+}
