@@ -1,27 +1,17 @@
-# Projetos do curso técnico — 2023–2024
+# 2023–2024 — curso técnico e histórico de aprendizagem
 
-Esta seção preserva e organiza os trabalhos realizados durante o curso técnico. Eles fazem parte do histórico de aprendizado e não precisam ser escondidos por serem antigos ou acadêmicos.
+Esta seção preserva trabalhos realizados no período do curso técnico. Os repositórios originais continuam sendo a fonte de verdade; este super-repositório funciona como índice, sem copiar os projetos nem reescrever sua história.
 
-## Como organizar
+## Repositórios identificados até agora
+- [Projeto-Semestral](https://github.com/Matheus904-12/Projeto-Semestral) — README identifica o projeto como trabalho acadêmico do curso técnico em Desenvolvimento de Sistemas.
+- [OO](https://github.com/Matheus904-12/OO) — repositório criado em setembro de 2023; conteúdo ainda precisa ser revisado antes de descrever tecnologias ou objetivo.
+- [Redes](https://github.com/Matheus904-12/Redes) — criado em abril de 2024; descrição do GitHub informa exercícios de Cisco Packet Tracer.
+- [Porta-Laboris](https://github.com/Matheus904-12/Porta-Laboris) — criado em maio de 2024; descrição informa aplicativo de auxílio nas normas da CLT.
 
-- Agrupar por disciplina, tema ou tipo de projeto quando isso estiver claro.
-- Manter o link para o repositório original.
-- Registrar objetivo, tecnologias e aprendizados quando houver informação suficiente.
-- Marcar dúvidas ou itens que precisam de revisão sem inventar detalhes.
-- Evitar copiar projetos inteiros quando um link para o original for suficiente.
+## Como registrar cada trabalho
+- Confirmar o problema original e a disciplina/contexto.
+- Manter o código original intacto no repositório de origem.
+- Documentar stack, como executar e o que foi aprendido somente depois de conferir os arquivos.
+- Se quiser modernizar um projeto, fazer isso em branch ou repositório separado, deixando clara a diferença para a versão original.
 
-## Modelo de registro
-
-- **Projeto:** nome e link original.
-- **Período:** 2023 ou 2024, se confirmado.
-- **Contexto:** disciplina, trabalho individual ou em equipe, quando conhecido.
-- **Tecnologias:** apenas as verificadas no repositório.
-- **Aprendizados:** conceitos praticados.
-- **Próximos passos:** melhorias opcionais.
-
-## Status
-
-- [ ] Levantar os repositórios do período.
-- [ ] Confirmar quais pertencem ao curso técnico.
-- [ ] Agrupar por tema sem alterar os originais.
-- [ ] Adicionar links ao [catálogo geral](../catalogo/README.md).
+**Status:** inventário parcial. A lista será ampliada após a revisão individual dos repositórios públicos restantes.
