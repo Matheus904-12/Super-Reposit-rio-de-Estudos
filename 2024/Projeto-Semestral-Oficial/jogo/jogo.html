@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="jogo.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jogo da Velha</h1>
+        <div id="board" class="board">
+            <div class="cell" onclick="makeMove(0)"></div>
+            <div class="cell" onclick="makeMove(1)"></div>
+            <div class="cell" onclick="makeMove(2)"></div>
+            <div class="cell" onclick="makeMove(3)"></div>
+            <div class="cell" onclick="makeMove(4)"></div>
+            <div class="cell" onclick="makeMove(5)"></div>
+            <div class="cell" onclick="makeMove(6)"></div>
+            <div class="cell" onclick="makeMove(7)"></div>
+            <div class="cell" onclick="makeMove(8)"></div>
+        </div>
+        <div id="mascoteSpace" class="mascote-space"></div> <!-- Espaço para o mascote -->
+        <button onclick="restartGame()">Reiniciar Jogo</button>
+        <p id="status"></p>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+    <script>
+        function voltar() {
+            window.location.href = "../paginicial.html"; // troca "outraPagina.html" pelo caminho da página de destino
+        }
+    </script>
+    <script src="jogo.js"></script>
+</body>
+</html>
