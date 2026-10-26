@@ -1,0 +1,58 @@
+/* Estilos para o Quiz */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.quiz-container {
+    max-width: 600px; /* Aumentando a largura da caixa de pergunta */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.question {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #3498DB;
+    color: #fff;
+}
+
+.options-container {
+    display: flex; /* Display flex para alinhar os botões lado a lado */
+    flex-direction: row; /* Alterando para linha para ficarem na horizontal */
+    justify-content: center; /* Centralizando os botões horizontalmente */
+    flex-wrap: wrap; /* Para os botões quebrarem para a próxima linha quando não houver espaço suficiente */
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 20px); /* Dividindo o espaço em 2 para ficarem lado a lado */
+    height: 60px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 18px;
+    color: #fff;
+    background-color: #3498DB;
+    border: none;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando a sombra ao passar o mouse */
+}
