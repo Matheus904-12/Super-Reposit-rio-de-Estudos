@@ -1,0 +1,203 @@
+/* BASE */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --corFundo: #fff;
+    --corFundoDestaque: #4B0082;
+    --corTexto: #fff;
+    --corTexto-2: #000;
+    --corTextoLaranja: #EA4710;
+    --fundoImgLanding: #09ff00;
+    --corFundoTexto: #c1c1c1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Escritas */
+
+@font-face {
+    font-family: 'SofiaSans';
+    src: url(/font-SofiaSans/static/SofiaSans-Italic.ttf);
+}
+
+.titulo {
+    color: var(--corTexto);
+    font: 100 30px 'SofiaSans';
+    transition: 1000ms;
+}
+
+.titulo-2 {
+    color: var(--corTexto-2);
+    font: 100 30px 'SofiaSans';
+    transition: 1000ms;
+}
+
+.titulo-2-laranja {
+    color: var(--corTextoLaranja);
+    transition: 1000ms;
+}
+
+.tituloFino {
+    font-weight: 1;
+}
+
+#tituloDestaque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    font: 1000 60px "SofiaSans";
+}
+
+.tituloPrincipal {
+    font: 1000 50px "SofiaSans";
+}
+
+.logoCor2 {
+    color: var(--fundoImgLanding);
+    transition: 1000ms;
+}
+
+.POStitulo {
+    padding: 25px 75px;
+}
+
+/* Alto */
+
+.abas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.destaque {
+    background-color: var(--corFundoDestaque);
+    transition: 1000ms;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#trocar-tema {
+    display: flex;
+    width: 45px;
+    height: 50px;
+    background-image: url(/img/toggleOFF.png);
+    background-size: cover;
+}
+
+#landing-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+#imgHomem {
+    box-shadow: -60px -40px var(--fundoImgLanding);
+    border-radius: 50px;
+    transition: 1000ms
+}
+
+/* Serviços */
+
+#servicos {
+    background-color: var(--corFundo);
+    transition: 1000ms;
+}
+
+.secao-imagens {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 50px;
+}
+
+.servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.img-servico {
+    width: 300px;
+    height: 300px;
+}
+
+/* Blog */
+
+#centralizarCamera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 100px 0;
+}
+
+/* Contato */
+
+#contato {
+    background-color: var(--corFundo);
+}
+
+#secaoContato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#imgBolsa {
+    width: auto;
+    height: 700px;
+}
+
+#informacoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.escrever {
+    display: flex;
+    width: 500px;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--corFundoTexto);
+    margin-bottom: 25px;
+    color: var(--corFundo);
+}
+
+#alinharBotao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botaoEnviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--fundoImgLanding);
+}
