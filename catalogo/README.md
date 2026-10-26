@@ -1,28 +1,24 @@
-# Catálogo de repositórios
+# Controle de migração do monorepo
 
-O catálogo aponta para os projetos originais do GitHub e ajuda a organizar o histórico sem duplicar o código.
+Este catálogo **não substitui os arquivos dos projetos**. Ele registra quais projetos de 2025+ foram selecionados para migração, quais precisam de avaliação e quais devem continuar como repositórios independentes.
 
-## Arquivo de dados
-O arquivo [repositorios.csv](repositorios.csv) contém o inventário inicial de **140 repositórios públicos** encontrados na conta. Repositórios privados foram excluídos para não expor nomes ou links privados. O inventário não significa que todos os projetos já foram revisados.
+O arquivo [repositorios.csv](repositorios.csv) foi reduzido à seleção inicial de 2025+ e não inclui projetos de 2026.
 
-Campos:
-- **nome:** nome do repositório original.
-- **url:** link para o repositório original.
-- **branch:** branch padrão identificada no inventário.
-- **status:** classificação inicial ou estado de arquivamento.
-- **observacao:** contexto breve; itens não revisados permanecem explicitamente a classificar.
-- **periodo:** período confirmado ou em branco até a revisão.
-- **categoria:** categoria confirmada ou em branco até a revisão.
+## Significado dos estados
 
-## Próximas etapas
-1. Revisar README, arquivos e commits de cada repositório.
-2. Confirmar período, contexto, stack e categoria antes de preencher campos vazios.
-3. Testar instruções de execução dos projetos selecionados.
-4. Verificar segredos, tokens, dados pessoais e arquivos de configuração.
-5. Escolher os projetos que merecem documentação mais completa.
+- **IMPORTAR / Importação parcial:** arquivos já estão sendo copiados para dentro do monorepo, mas a migração ainda precisa ser concluída e validada.
+- **AVALIAR / Pendente:** verificar se é realmente um projeto pequeno e de baixo valor independente e se todos os arquivos podem ser copiados com segurança.
+- **MANTER FORA / Projeto independente:** projeto grande, relevante ou ativo que deve conservar seu próprio histórico e ciclo de vida.
 
-## Regras de classificação
-- Não deduza o período apenas pelo nome do projeto.
-- Não exponha repositórios privados no catálogo público.
-- Repositórios de terceiros devem ser identificados como referências, não como trabalhos autorais.
-- Mantenha os originais como fonte de verdade; este catálogo serve de navegação.
+## Critérios
+
+1. Confirmar o ano de criação pelos metadados do GitHub.
+2. Não incluir nenhum repositório criado em 2026 nesta seleção.
+3. Copiar o conteúdo dos projetos selecionados para pastas reais dentro do monorepo; links de origem servem somente para atribuição e conferência.
+4. Não importar segredos, arquivos privados, dependências geradas, dados sensíveis ou material sem autorização de redistribuição.
+5. Confirmar que os arquivos foram copiados e testar build/testes antes de declarar a migração completa.
+6. Só remover uma origem após validação integral. A integração conectada não oferece uma ação para excluir repositórios inteiros; portanto, as origens não foram apagadas.
+
+## Estado atual
+
+A importação de `AccelerateDevGHCopilot` está parcial. `DHCP-LAN` depende da possibilidade de preservar os arquivos binários Packet Tracer. Os demais candidatos ainda precisam ser avaliados.
