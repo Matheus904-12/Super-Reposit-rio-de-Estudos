@@ -38,6 +38,10 @@ Esta pasta guarda os projetos de 2024 **dentro deste repositório**. Os nomes ab
 | [Login-React](Login-React/README.md) | Tela de login/cadastro React Native | App e páginas principais copiados. |
 | [routes](routes/README.md) | Exercício de navegação React Native | Configuração copiada; algumas telas pendentes. |
 | [smash-emoji](smash-emoji/emoji/README.md) | App de seleção de emojis | App, package e componentes principais copiados; um componente bloqueado. |
+| [geradorToken](geradorToken/README.md) | Gerador de tokens | App e componentes principais copiados; modal pendente. |
+| [Clima](Clima/README-local.md) | App de clima TypeScript | App e configuração principal copiados; demais assets pendentes. |
+| [Porta-Laboris](Porta-Laboris/README.md) | Aplicativo de utilidades de trabalho | App e configuração principal copiados; telas restantes pendentes. |
+| [Nesting](Nesting/README.md) | Navegação aninhada React Native | App/configuração copiados; telas restantes pendentes. |
 
 ## Projetos identificados para migrar
 
