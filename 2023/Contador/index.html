@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador com Barra de Progresso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #contador {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #barraProgresso {
+            width: 400px;
+            height: 20px;
+            background-color: #000000;
+            margin: auto;
+            margin-bottom: 20px;
+            border-radius: 0px;
+        }
+
+        #progresso {
+            height: 100%;
+            width: 0;
+            background-color: rgb(204, 205, 204);
+            transition: 1s linear;
+            border-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador Simples</h1>
+    <div id="contador">0</div>
+    <div id="barraProgresso">
+        <div id="progresso"></div>
+    </div>
+    <button id="btnIniciar">Iniciar Contador</button>
+    <button id="btnPausar">Parar Contador</button>
+    <button id="btnReiniciar">Reiniciar</button>
+    <script>
+        let contador = 0;
+        let posicao;
+        let progresso = 0;
+
+        function atualizarContador() {
+            ++contador
+            document.getElementById('contador').textContent = contador;
+
+            progresso = (contador / 10) * 100
+            document.getElementById("progresso").style.width = progresso + '%';
+
+            if (contador === 10) {
+                reiniciarContador();
+                pausarContador();
+            }
+        }
+
+        function iniciarContador() {
+            if (contador === 10) {
+                reiniciarContador();
+                pausarContador();
+            } else {
+                posicao = setInterval(atualizarContador, 100);
+            }
+        }
+
+        function pausarContador() {
+            clearInterval(posicao);
+        }
+
+        function reiniciarContador() {
+            pausarContador();
+            contador = 0;
+            document.getElementById('contador').textContent = contador;
+        }
+
+        iniciarContador();
+
+        document.getElementById('btnIniciar').addEventListener('click', iniciarContador);
+        document.getElementById('btnPausar').addEventListener('click', pausarContador);
+        document.getElementById('btnReiniciar').addEventListener('click', reiniciarContador);
+    </script>
+</body>
+</html>
