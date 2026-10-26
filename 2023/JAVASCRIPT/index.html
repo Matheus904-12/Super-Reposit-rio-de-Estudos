@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perímetro e Área</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <center><h1>Perímetro e Área</h1></center>
+  </header>
+  <main>
+    <div class="catalog">
+      <div class="box" onclick="showQuestions('quadrado')">
+        <h2 class="title">Quadrado</h2>
+        <img class="image" src="Quadrado-removebg-preview.png" alt="Imagem 3">
+        <p>Perímetro: 4 * lado</p>
+      </div>
+      <div class="box" onclick="showQuestions('triangulo')">
+        <h2 class="title">Triângulo</h2>
+        <img class="image" src="Triângulo-removebg-preview.png" alt="Imagem 3">
+        <p>Perímetro: a + b + c</p>
+      </div>
+      <div class="box" onclick="showQuestions('circulo')">
+        <h2 class="title">Círculo</h2>
+        <img class="image" src="Círculo-removebg-preview.png" alt="Imagem 3">
+        <p>Perímetro: 2 * π * raio</p>
+      </div>
+      <div class="box" onclick="showQuestions('losango')">
+        <h2 class="title">Losango</h2>
+        <img class="image" src="Losango-removebg-preview.png" alt="Imagem 3">
+        <p>Perímetro: 4 * diagonal</p>
+      </div>
+    </div>
+  </main>
+</footer>
+<div id="questions" style="display: none;">
+  <div class="question-box">
+    <input type="text" id="question1" placeholder="Pergunta 1">
+    <input type="text" id="question2" placeholder="Pergunta 2">
+    <input type="button" value="Calcular" onclick="calculatePerimeter()">
+  </div>
+</div>
+<div id="results" style="display: none;">
+  <h2>Resultados:</h2>
+  <p id="result1"></p>
+  <p id="result2"></p>
+</div>
+<script>
+    var shape = '';
+
+    function showQuestions(selectedShape) {
+      shape = selectedShape;
+      var questionsDiv = document.getElementById('questions');
+      questionsDiv.style.display = 'block';
+
+      var resultsDiv = document.getElementById('results');
+      resultsDiv.style.display = 'none';
+    }
+
+    function calculatePerimeter() {
+      var question1Value = document.getElementById('question1').value;
+      var question2Value = document.getElementById('question2').value;
+
+      if (shape === 'quadrado') {
+        var sideLength = parseFloat(question1Value);
+        var perimeter = 4 * sideLength;
+        document.getElementById('result1').innerHTML = 'Perímetro: ' + perimeter + ' unidades';
+        document.getElementById('result2').innerHTML = '';
+      } else if (shape === 'triangulo') {
+        // Lógica para triângulo
+      } else if (shape === 'circulo') {
+        // Lógica para círculo
+      } else if (shape === 'losango') {
+        // Lógica para losango
+      }
+
+      var questionsDiv = document.getElementById('questions');
+      questionsDiv.style.display = 'none';
+
+      var resultsDiv = document.getElementById('results');
+      resultsDiv.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
