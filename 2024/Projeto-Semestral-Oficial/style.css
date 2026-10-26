@@ -1,0 +1,773 @@
+.matrus a {
+    padding-left: 40px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+button {
+    margin-left: 20px;
+    border-radius: 7px;
+    margin-right: 20PX;
+    height: 40PX;
+    width: 150PX;
+    font-size: 16PX;
+    color: white;
+    background-color: #DA8C38;
+    transition: 0.5s ease-in-out;
+    font-family: "Montserrat";
+    cursor: pointer; /*muda o cursor pra um ponteiro*/
+}
+
+button:hover {
+    background-color: #BD7C36;
+    scale: 1.1;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    height: 750px;
+    margin-top: 150px;
+
+}
+
+header {
+    background-size: cover;
+    background-image: url(/fotos2/restodaimg.png);
+}
+
+.header :hover {
+    color: #e0a848;
+}
+
+.texts {
+    margin-bottom: 20px;
+    /* espaçamento entre o texto e os botões */
+    padding: 20px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    /* espaçamento entre os botões */
+}
+
+
+h1 {
+    font-family: "bold";
+    color: white;
+    font-size: 40px;
+    width: 598px;
+}
+
+h4 {
+
+    font-weight: 100;
+    color: white;
+    font-size: 20px;
+    width: 650px;
+}
+
+.conteudo1 {
+    background-color: #D7C3AF;
+    padding: 30px;
+    grid-row: auto;
+}
+
+.class {
+    font-family: "bold";
+    padding: 20px;
+}
+
+.sobrenos {
+    font-family: "Semibold";
+    width: 400px;
+    margin: 20px 50px;
+    line-height: 180%;
+    text-align: justify;
+}
+
+.sobre {
+    grid-row: auto; /*uma imagem ficar do lado da outra*/
+}
+
+.conteudo1 {
+    gap: 5px;
+    /*espaço*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.direita img {
+    height: 200px;
+}
+
+.sobrenos2 {
+    width: 200px;
+    font-family: "bold";
+    padding: 30px;
+    margin-right: 610px;
+    text-align: justify;
+}
+
+.imagens {
+    display: flex;
+
+}
+
+.texto {
+    display: flex;
+    align-items: center;
+}
+
+.prato1:hover,
+.prato2:hover,
+.prato3:hover,
+.conteudo:hover,
+.conteudo3:hover {
+    transition: transform 0.5s;
+    transform: scale(1.1);
+}
+
+
+.prato2 {
+    align-items: right;
+    padding-left: 60px;
+}
+
+h2 {
+    font-family: "bold";
+    color: black;
+    font-size: 30px;
+}
+
+h2.diferentes {
+    font-family: "bold";
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 70px 0 0 0;
+}
+
+.sabores {
+    background-image: url(fotos2/let.png);
+    background-size: cover;
+    /*cobrir completamente o elemento em que está aplicada, sem distorcer a imagem, mantendo a proporção original.*/
+    padding-bottom: 200px;
+}
+
+.difsabores {
+    font-family: "bold";
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    right: 100px;
+}
+
+.difsabores2 {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 20px;
+    position: relative;
+    right: 100px;
+    width: 700px;
+
+}
+
+.difsabores3 {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 20px;
+    position: relative;
+    right: 120px;
+    width: 700px;
+    text-align: justify;
+
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    /*texto e a imagem estarão centralizados na altura do container*/
+    justify-content: flex-start;
+    /*posiciona no centro horizontal do container*/
+    background-size: cover;
+    padding: 20px 0 20px 0;
+    /*espaço*/
+    border-radius: 20px;
+    /*arredonda as bordas do container*/
+    width: 1000px;
+    /*define uma largura máxima para o container. Isso evita que o container fique muito largo em telas grandes.*/
+    margin: 0 auto;
+    /*centraliza o container horizontalmente na página*/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    /*sombra e efeito de profundidade*/
+    background-color: #c28b54;
+    margin-bottom: 40px;
+    /*espaçamento entre as seções*/
+    gap: 20px;
+    /*espaço entre a imagem e o texto*/
+    height: 200px;
+    position: relative;
+    right: 100px;
+}
+
+
+.conteudo3 {
+    display: flex;
+    align-items: center;
+    /*texto e a imagem estarão centralizados na altura do container*/
+    justify-content: flex-start;
+    /*posiciona no centro horizontal do container*/
+    background-size: cover;
+    padding: 20px 0 20px 0;
+    /*espaço*/
+    border-radius: 20px;
+    /*arredonda as bordas do container*/
+    width: 1000px;
+    /*define uma largura máxima para o container. Isso evita que o container fique muito largo em telas grandes.*/
+    margin: 0 auto;
+    /*centraliza o container horizontalmente na página*/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    /*sombra e efeito de profundidade*/
+    background-color: #c28b54;
+    margin-bottom: 100px;
+    /*espaçamento entre as seções*/
+    margin-top: 100px;
+    gap: 20px;
+    /*espaço entre a imagem e o texto*/
+    height: 220px;
+    position: relative;
+    left: 150px;
+}
+
+.conteudo3 img {
+    height: 300px;
+    padding-top: 40px;
+}
+
+.oi {
+    position: relative;
+    right: 108px;
+}
+
+.difsaborestree {
+    font-family: "bold";
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    right: 120px;
+}
+
+
+
+.conteudo img {
+    position: relative;
+    right: 115px;
+}
+
+
+.conteudo p {
+    text-align: justify;
+}
+
+.textbox {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.image-box {
+    width: 600px;
+    height: auto;
+    border-radius: 50%;
+    /* faz a imagem ser circular */
+    margin-left: 10px;
+    position: relative;
+
+}
+
+.titleline {
+    border: 0;
+    height: 2px;
+    /* espessura da linha */
+    background-color: #ffffff;
+    width: 50%;
+    /*ajusta a largura conforme necessário */
+    margin: 10px auto 50px;
+    /* centraliza e adiciona espaçamento */
+
+
+}
+
+
+
+.video {
+    background-color: #D7C3AF;
+}
+
+
+
+.lugar,
+.lugar2 {
+    gap: 5px;
+    /*espaço*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.lugar3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.explore {
+    margin-left: 50px;
+}
+
+.oi2 {
+    font-size: 30px;
+    font-family: "Bold";
+}
+
+.oi3 {
+    font-size: 30px;
+    font-family: "Bold";
+    color: white;
+
+}
+
+
+.entregamos {
+    background-color: #B68A5A;
+    padding: 70px;
+    display: flex;
+    font-family: "Bold";
+}
+
+.missao {
+    font-size: 20px;
+    color: white;
+    font-family: "Semibold";
+    width: 600px;
+    margin: 3px 3px;
+    line-height: 180%;
+    text-align: justify;
+    display: flex;
+
+}
+
+.imagens2 {
+    gap: 5px;
+    /*espaço*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+
+.video {
+    background-color: #c28b54;
+}
+
+.botaos {
+    display: flex;
+    gap: 10px;
+
+}
+
+hr.titleline2 {
+    border: 0;
+    height: 2px;
+    /* espessura da linha */
+    background-color: black;
+    width: 50%;
+    /*ajusta a largura conforme necessário */
+    margin: 10px auto 50px;
+    /* centraliza e adiciona espaçamento */
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 1479px;
+    padding: 20px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #D7C3AF;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.left h2 span {
+    color: #B68A5A;
+}
+
+.left hr {
+    border: none;
+    height: 2px;
+    background-color: black;
+    width: 50px;
+    margin: 15px 0;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.box {
+    background-color: #b88d66;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    object-fit: contain;
+
+}
+
+.box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.ama {
+    width: 500px;
+}
+
+h2.ama {
+    font-size: 60px;
+}
+
+.especial {
+    background-color: #B68A5A;
+    padding: 70px;
+    display: flex;
+    font-family: "Bold";
+}
+
+.especial2 {
+    font-size: 30px;
+    font-family: "Bold";
+}
+
+.fattah {
+    font-family: "bold";
+    color: black;
+    font-size: 30px;
+    align-items: right;
+    text-align: center;
+}
+
+.fattah2 {
+    font-family: "bold";
+    color: black;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/*carrossel*/
+
+.especial1 {
+    width: 750px;
+
+}
+
+.containerr {
+    position: relative;
+    width: 600px;
+    overflow: hidden;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    transition: opacity 0.5s;
+}
+
+.slide img {
+    width: 600px;
+    height: 100%;
+}
+
+.controle {
+    position: absolute;
+    top: 50%;
+    background-color: gray;
+    color: black;
+    padding: 10px;
+    font-size: 24px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/**/
+
+/*carrinho*/
+
+#contador {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* Ajuste a posição horizontal para mover mais à direita */
+    background-color: #9E6730;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.notificacao {
+    /* Estilo da notificação */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9E6730;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.notificacao.show {
+    display: block;
+    opacity: 1;
+}
+
+.heart {
+    /* Coração */
+    position: absolute;
+    /* Posiciona no canto superior direito do contêiner */
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    /* Tamanho inicial */
+    height: 40px;
+    /* Tamanho inicial */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Suaviza mudanças no tamanho e na posição */
+}
+
+.heart:active {
+    transform: scale(1.1);
+    /* Efeito de clique */
+}
+
+.notificacaoFavorito {
+    /* Estilo da notificação de favorito */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9E6730;
+    /* Usando sua cor personalizada */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+    /* Tamanho da fonte ajustado */
+    font-weight: bold;
+    /* Em negrito para destaque */
+}
+
+.notificacaoFavorito.show {
+    display: block;
+    opacity: 1;
+}
+
+/**/
+
+
+
+.perguntas {
+    background-color: #D7C3AF;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    height: 550px;
+}
+
+.tudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: relative;
+
+}
+
+.carroplush1 {
+    background-color: #B68A5A;
+    height: 480px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+    right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.inputts {
+    display: flex;
+    flex-direction: column;
+}
+
+.ring {
+    display: flex;
+}
+
+/* Seção de Reserva */
+
+hr.titleline3 {
+    border: 0;
+    height: 2px;
+    /* espessura da linha */
+    background-color: black;
+    width: 50%;
+    /*ajusta a largura conforme necessário */
+    margin: 10px auto 50px;
+    /* centraliza e adiciona espaçamento */
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin-left: 465px;
+}
+
+h1.form-container {
+    font-size: 28px;
+    font-weight: 700;
+    color: #8e715c;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #000;
+}
+
+.reservation-form {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input::placeholder {
+    color: #aaa;
+    font-weight: bold;
+}
+
+/* Botão ENVIAR */
+.submit-button {
+    width: 560px;
+    padding: 12px;
+    margin-left: -0%;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ca7718;
+    color: #fff;
+    cursor: pointer;
+    transition:  0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+    background-color: #8a6a4a;
+    transform: translateY(1px);
+    scale: 1.03;
+}
