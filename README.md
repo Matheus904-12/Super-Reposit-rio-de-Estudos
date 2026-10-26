@@ -1,8 +1,8 @@
 # Super Repositório de Estudos
 
-> Monorepo de exercícios, experimentos pequenos e estudos técnicos de 2023 a 2025.
+> Repositório único dos projetos e estudos de 2023 a 2025, com código e arquivos organizados por ano.
 
-Este repositório **guarda os arquivos dos projetos selecionados**, organizados por ano e tema. Não é apenas um índice de links. Projetos grandes, aplicações relevantes e projetos ativos continuam em repositórios separados; exercícios pequenos e experimentos de baixo valor independente podem ser incorporados aqui.
+Este repositório é o destino central dos projetos migrados: os arquivos devem ficar nas pastas locais, organizados por ano e tema. **Não deve funcionar como um catálogo de links para outros repositórios GitHub.** Quando um projeto tiver uma demonstração publicada, o README da pasta poderá conter o link do Netlify, Vercel ou serviço equivalente.
 
 ## Organização
 
@@ -21,8 +21,8 @@ Este repositório **guarda os arquivos dos projetos selecionados**, organizados 
 ## Regras de inclusão
 
 1. **Período:** organizar projetos criados em 2023, 2024 e 2025 nas pastas correspondentes. Projetos criados em 2026 não entram nesta migração histórica.
-2. **Escopo:** importar projetos pequenos, exercícios e experimentos sem valor suficiente para manter um repositório independente.
-3. **Manter fora:** projetos grandes, aplicações relevantes, projetos ativos e produtos que mereçam histórico e ciclo de vida próprios.
+2. **Escopo:** migrar os projetos de 2023, 2024 e 2025 que fazem parte desta organização, inclusive aplicações maiores, preservando a estrutura e os arquivos necessários.
+3. **Organização:** cada projeto deve ter sua própria pasta dentro do ano correspondente; evitar links para repositórios GitHub antigos. Links externos só devem ser usados para demonstrações publicadas, documentação ou dependências.
 4. **Conteúdo real:** quando um projeto for selecionado, copiar seus arquivos para esta árvore; um link isolado não conta como migração.
 5. **Integridade:** preservar a estrutura de pastas e a atribuição de origem; nunca copiar segredos, arquivos privados, dependências geradas ou materiais sem direito de redistribuição.
 6. **Validação:** marcar como completo somente depois de conferir os arquivos, a configuração e os testes.
@@ -34,8 +34,8 @@ Este repositório **guarda os arquivos dos projetos selecionados**, organizados 
 - [ ] Triar os repositórios de 2023 e 2024 por tamanho, utilidade, risco e possibilidade de preservação.
 - [ ] Triar os demais repositórios de 2025 por data, tamanho, utilidade e risco.
 - [ ] Copiar os projetos pequenos aprovados e verificar cada importação.
-- [ ] Manter fora os projetos grandes e ativos.
-- [ ] Remover os repositórios de origem somente depois de confirmar a cópia completa e segura.
+- [ ] Conferir se cada projeto foi migrado integralmente, inclusive configurações e assets binários.
+- [ ] Excluir os repositórios de origem somente depois de confirmar a cópia completa, validar os arquivos e registrar os links de demonstração.
 
 ## Segurança
 
