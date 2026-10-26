@@ -45,3 +45,8 @@ Próximas ações:
 3. Confirmar que os deploys continuam funcionando.
 4. Fazer varredura de segredos no histórico e nos demais repositórios públicos.
 5. Retomar a classificação de portfólio depois da revisão de segurança.
+
+
+### PositiveSenseWeb — atualização
+
+As configurações atuais foram ajustadas para carregar credenciais por variáveis de ambiente, e foram adicionados `.env.example` e `SECURITY-SETUP.md`. A rotação de credenciais e os testes de deploy/login ainda são obrigatórios, pois o histórico pode conservar os valores anteriores.
