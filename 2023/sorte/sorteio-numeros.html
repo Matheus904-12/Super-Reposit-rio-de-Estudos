@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sorteio de números</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .range {
+      margin-top: 20px;
+    }
+
+    input {
+      width: 50px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #ffd700;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #ffbb2f;
+    }
+
+    #resultado {
+      font-size: 2em;
+      margin-top: 20px;
+    }
+
+    #lista-sorteados {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #lista-sorteados li {
+      display: inline-block;
+      font-size: 1.2em;
+      margin: 5px;
+      padding: 5px 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sorteio de números</h1>
+    <div class="range">
+      <label for="min">Número mínimo:</label>
+      <input type="number" id="min" value="1" class="form-control">
+      <label for="max">Número máximo:</label>
+      <input type="number" id="max" value="100" class="form-control">
+    </div>
+    <button id="sortear">Sortear</button>
+    <div id="resultado"></div>
+
+    <div id="sorteados">
+      <h3>Números sorteados</h3>
+      <ul id="lista-sorteados"></ul>
+    </div>
+
+    <a href="#" id="voltar" class="btn btn-secondary float-right">Voltar</a>
+  </div>
+
+  <script>
+    function sortear(min, max) {
+      var numero = Math.floor(Math.random() * (max - min + 1)) + min;
+      document.querySelector("#resultado").textContent = numero;
+
+      var sorteados = document.querySelector("#lista-sorteados");
+      var li = document.createElement("li");
+      li.textContent = numero;
+      sorteados.appendChild(li);
+    }
+
+    document.querySelector("#sortear").addEventListener("click", function() {
+      var min = parseInt(document.querySelector("#min").value);
+      var max = parseInt(document.querySelector("#max").value);
+
+      if (min <= max) {
+        sortear(min, max);
+      } else {
+        alert("O número mínimo deve ser menor ou igual ao número máximo.");
+      }
+    });
+
+    document.querySelector("#voltar").addEventListener("click", function() {
+      window.history.back();
+    });
+  </script>
+</body>
+</html>
