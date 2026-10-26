@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>O quão forte sua senha é?</h1>
+        <input type="password"  id="entradaSenha" placeholder="Digite sua senha">
+        <span id="mostrarSenha">Mostrar Senha</span>
+
+        <div id="medidorPoder"></div>
+
+            <div id="requisitos">
+            <div id="requisitoComprimento" class="requisito">Comprimento</div>
+            <div id="requisitoMinuscula" class="requisito">Letra Minúscula</div>
+            <div id="requisitoMaiuscula" class="requisito">Letra Maiuscula</div>
+            <div id="requisitoNumero" class="requisito">Número</div>
+            <div id="requisitoSimbolo" class="requisito">Símbolo</div>
+        </div>
+    
+            <div id="textoPoder"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
