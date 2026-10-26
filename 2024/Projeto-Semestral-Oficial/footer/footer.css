@@ -1,0 +1,136 @@
+.imagem-fundo {
+    position: absolute; /* Fixa a imagem atrás do conteúdo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz a imagem ocupar toda a largura */
+    height: 100%; /* Faz a imagem ocupar toda a altura */
+    object-fit: cover; /* Garante que a imagem seja ajustada corretamente */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+.footer {
+    margin-top: 100px;
+    position: relative; /* Garante que o conteúdo do footer fique acima da imagem */
+    padding: 20px;
+    color: white; /* Ajusta a cor do texto para visibilidade */
+}
+
+.duvidas,
+.duvidass {
+    justify-content: center;
+    display: flex;
+}
+
+.duvidas p {
+    font-size: 60px;
+    font-family: "Montserrat";
+    color: #f9f9f9;
+}
+
+.fale {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 120px;
+    margin-right: 690px;
+}
+
+.falee {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 600px;
+}
+
+.fale p {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.falee p {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.fale img {
+    width: 50px;
+}
+
+.falee img {
+    width: 50px;
+}
+
+.botao button {
+    background-color: #D98A38;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+.botao button:hover {
+    background-color: #c87a2e;
+}
+
+.redes {
+    justify-content: center;
+    align-items: bottom;
+    display: flex;
+    margin-top: 70px;
+
+}
+
+.botao-rede {
+    border: none; /* Remove a borda padrão do botão */
+    background: none; /* Remove o fundo do botão */
+    cursor: pointer; /* Mostra o cursor de "clique" */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border-radius: 50%; /* Torna o botão circular */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Efeito suave */
+}
+
+.botao-rede img {
+    width: 40px; /* Define o tamanho da imagem */
+    height: 40px;
+}
+
+.botao-rede:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho no hover */
+    background-color: rgba(0, 0, 0, 0.1); /* Adiciona um fundo leve */
+}
+
+.botao-rede:active {
+    transform: scale(0.95); /* Reduz o tamanho no clique */
+}
+
+footer p {
+    color: #ffffff;
+}
+
+.botao-direito {
+    position: absolute;
+    top: 120px; /* Ajuste conforme necessário para deixar acima do footer */
+    right: 150px; /* Posiciona no canto direito */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botao-direito img {
+    width: 300px; /* Tamanho do botão */
+    height: 320px;
+    border-radius: 50%; /* Opcional: deixa a imagem circular */
+}
+
+.botao-direito:hover {
+    transform: scale(1.1); /* Efeito de aumento no hover */
+}
