@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="idiomas">
+        <img src="eua.png" alt="English" class="bandeira" onclick="Escolher('en')">
+        <img src="brasil.png" alt="Português" class="bandeira" onclick="Escolher('ptbr')">
+        <img src="espanha.png" alt="Español" class="bandeira" onclick="Escolher('es')">
+    </div>
+    <div>
+        <button onclick="changeLanguage('pt-br')">PT</button>
+        <button onclick="changeLanguage('en')">EN</button>
+        <button onclick="changeLanguage('es')">ES</button>
+    </div>
+<h1>Tradutor - Teste 2</h1>
+    <p id="paragrafo1">1</p>
+    <p id="paragrafo2">2</p>
+    <p id="paragrafo3">3</p>
+    <p id="paragrafo4">4</p>
+    <p id="paragrafo5">5</p>
+    <p id="paragrafo6">6</p>
+    <p id="paragrafo7">7</p>
+    <p id="paragrafo8">8</p>
+
+
+    <div class="conteudo" id="paragrafo1"></div>
+    <div class="conteudo" id="paragrafo2"></div>
+    <div class="conteudo" id="paragrafo3"></div>
+    <div class="conteudo" id="paragrafo4"></div>
+    <div class="conteudo" id="paragrafo5"></div>
+    <div class="conteudo" id="paragrafo6"></div>
+    <div class="conteudo" id="paragrafo7"></div>
+    <div class="conteudo" id="paragrafo8"></div>
+
+    
+
+    <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
