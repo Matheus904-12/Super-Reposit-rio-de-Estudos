@@ -7,6 +7,23 @@ Esta pasta guarda os projetos de 2024 **dentro deste repositório**. Os nomes ab
 | Pasta local | Projeto | Estado |
 |---|---|---|
 | [Calendar](Calendar/README.md) | Calendário de eventos em HTML, CSS e JavaScript | Arquivos copiados; falta validar no navegador. |
+| [API-da-CCB](API-da-CCB/README.md) | Aplicação web em HTML/CSS/JS | Código, estilos e SVG copiados. |
+| [Musica](Musica/README.md) | Projeto web de música | HTML, CSS e JS copiados. |
+| [Music-React](Music-React/README.md) | Projeto web de música | HTML, CSS e JS copiados. |
+| [Contact](Contact/README.md) | Gerenciador de contatos EJS | App, package.json e template copiados. |
+| [NoticiasNode](NoticiasNode/README.md) | Aplicação de notícias | Servidor, package.json e template copiados. |
+| [Body-Parser](Body-Parser/README.md) | Exercício Express/Body-Parser | App, package.json e template copiados. |
+| [Express.JS](Express.JS/README.md) | Exercício de chat | HTML e JS copiados; package.json pendente. |
+| [QUESTIONARIO](QUESTIONARIO/README.md) | Questionário Node/EJS | App, package.json e templates principais copiados. |
+| [GeradorPDF](GeradorPDF/README.md) | Geração de PDF | index.js copiado; dependências pendentes. |
+| [CreateAPI](CreateAPI/README.md) | Exercícios de API | Duas versões com HTML/JS e package.json copiadas; sem node_modules. |
+| [Upload.ejs](Upload.ejs/Upload%20de%20Arquivos/README.md) | Upload de arquivos | App e package.json copiados; template EJS pendente. |
+| [SQL-Node](SQL-Node/README.md) | SQL e Node.js | SQL, app, package.json e conexão copiados; serviço parcial. |
+| [SQLite](SQLite/README.md) | Aplicativo SQLite | Código principal do app copiado; conferir arquivos auxiliares. |
+| [Weather-APP](Weather-APP/README.md) | App de clima Expo | Código principal e package.json copiados. |
+| [Nubank-TabBar](Nubank-TabBar/README.md) | TabBar React Native | Parte dos componentes e configuração copiados; faltam arquivos bloqueados. |
+| [MMC](MMC/README.md) | Exercício de MMC | Código principal copiado. |
+| [MVC](MVC/README.md) | Exercício MVC | Parte do código copiada; controller/CSS pendentes. |
 
 ## Projetos identificados para migrar
 
