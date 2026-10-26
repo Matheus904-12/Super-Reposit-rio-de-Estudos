@@ -1,0 +1,166 @@
+/* Estilos para as escolhas do jogador e do computador */
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a {
+    opacity: 0.2;
+    transition: ease-in-out 0.3s;
+}
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado {
+    opacity: 1;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilo do container principal */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Estilo do título */
+#titulo {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Estilo do placar */
+.placar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 12px 8px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.jogador,
+.computador {
+    width: 50%;
+}
+
+.jogador p,
+.computador p {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.escolhas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.escolhas img {
+    max-width: 70px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 0 10px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.escolhas img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo do resultado/mensagem */
+.result-message {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #000;
+}
+
+.result-message.vitoria {
+    color: #4CAF50;
+}
+
+.result-message.derrota {
+    color: #FF5733;
+}
+
+.result-message.empate {
+    color: #FFC300;
+}
+
+/* Estilo do botão reiniciar */
+.reiniciar-jogo {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.reiniciar-jogo:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo do histórico */
+.historico {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.historico-toggle {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.historico-toggle:hover {
+    background-color: #222;
+}
+
+.historico-list {
+    list-style: none;
+    padding: 0;
+    display: none;
+    text-align: left;
+}
+
+.historico-list li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+}
