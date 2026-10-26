@@ -12,8 +12,9 @@ Este repositório organiza materiais de estudo e funciona como um índice naveg�
 | [2025 — Projetos e experimentos](2025-projetos-e-experimentos/README.md) | Projetos e experimentos posteriores |
 | [GitHub Copilot](github-copilot/README.md) | Guia de uso, prompts, exercícios e boas práticas |
 | [Microsoft Learn](microsoft-learn/README.md) | Trilhas oficiais e acompanhamento dos estudos |
-| [Catálogo de repositórios](catalogo/README.md) | Índice para localizar os repositórios originais |
+| [Catálogo de repositórios](catalogo/README.md) | Inventário público e classificação progressiva |
 | [Segurança](seguranca/checklist.md) | Checklist antes de publicar código |
+| [Trilha Java e engenharia](trilha-java-backend/README.md) | Plano progressivo para Java, Spring Boot, SQL, testes, segurança e arquitetura |
 
 ## Objetivos
 
@@ -33,10 +34,11 @@ Este repositório organiza materiais de estudo e funciona como um índice naveg�
 
 ## Roteiro
 
-- [ ] Inventariar os repositórios existentes e preencher o catálogo.
-- [ ] Agrupar os trabalhos do curso técnico por tema.
-- [ ] Selecionar projetos e experimentos de 2025.
-- [ ] Registrar referências de Copilot sem copiar código de terceiros.
+- [x] Inventário inicial dos repositórios públicos (140 itens); privados excluídos.
+- [x] Primeira seleção de trabalhos do curso técnico e projetos posteriores.
+- [x] Trilha Java e engenharia de software criada.
+- [x] Guia Copilot ligado a repositórios de prática e recursos oficiais.
+- [ ] Revisar individualmente o conteúdo e a execução dos projetos selecionados.
 - [ ] Concluir módulos oficiais e registrar aprendizados.
 - [ ] Revisar README, licença e segurança antes de divulgar amplamente.
 
