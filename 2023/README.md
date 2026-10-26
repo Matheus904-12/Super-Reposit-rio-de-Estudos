@@ -24,6 +24,15 @@ Esta pasta reúne os projetos migrados para dentro do super-repositório. Os lin
 | [sorteio](sorteio/README.md) | Exercício de sorteio | HTML, JS e CSS copiados; testar. |
 | [X-Men](X-Men/README.md) | Seletor de personagens X-Men | Código textual copiado; faltam imagens e logo. |
 | [Pedra-Papel](Pedra-Papel/README.md) | Jogo Pedra, Papel e Tesoura | Código textual copiado; faltam imagens. |
+| [Node.js](Node.js/README.md) | Exercícios introdutórios de Node.js | 14 arquivos JS copiados. |
+| [Projeto](Projeto/README.md) | Login/cadastro e lista de tarefas | 7 arquivos HTML, JS e CSS copiados. |
+| [JAVASCRIPT](JAVASCRIPT/README.md) | Exercício de geometria | Código copiado; faltam imagens das formas. |
+| [JS-BIN](JS-BIN/README.md) | Exercício web | HTML, JS, CSS e texto copiados. |
+| [Desenho](Desenho/README.md) | Aplicação de desenho | HTML, JS, CSS e ícones SVG copiados. |
+| [Horario](Horario/README.md) | Exercícios de horário/contador | 6 arquivos de código/texto copiados. |
+| [Word](Word/README.md) | Material em Markdown | Arquivo `txt.md` copiado. |
+| [Gerenciador-De-Contatos](Gerenciador-De-Contatos/README.md) | Gerenciador de contatos | HTML, JS e CSS copiados; falta vídeo de demonstração. |
+| [Jogo-Da-Cobrinha](Jogo-Da-Cobrinha/README.md) | Jogo da cobrinha | HTML, JS e CSS copiados; faltam áudio e imagem. |
 
 ## Projetos ainda não migrados
 
@@ -32,11 +41,12 @@ Esta pasta reúne os projetos migrados para dentro do super-repositório. Os lin
 | Demais.com | Revisar conteúdo e possíveis dados pessoais; migrar arquivos e assets. |
 | carrossel | Migrar HTML, CSS, JS e imagens. |
 | MultLang | Avaliar o grande volume de assets e migrar os arquivos necessários. |
-| X-Men | Migrar HTML, CSS, JS e imagens. |
+
 | Tema | Avaliar porte; há muitas fontes binárias. |
-| Pedra-Papel | Migrar código e imagens. |
+
 | atualiza--o | Migrar HTML, CSS, JS e imagens. |
-| SetupPro, Warhammer-Pro, Word, Horario, dowcode, Bot, Node.js, python, Projeto, Gerenciador-De-Contatos, Jogo-Da-Cobrinha, Meu-Perfil, Desenho, JAVASCRIPT, JS-BIN e outros | Fazer triagem de arquivos, duplicidade, dependências e recursos binários antes de importar. |
+| SetupPro, Warhammer-Pro, dowcode, Bot, python, Meu-Perfil, atualiza--o e outros | Fazer triagem de arquivos, duplicidade, dependências e recursos binários antes de importar. |
+| carrossel | O código HTML ainda precisa ser gravado; as imagens PNG precisam ser transferidas. |
 
 ## Regras de organização
 
