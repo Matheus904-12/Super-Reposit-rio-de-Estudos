@@ -13,6 +13,16 @@ Pasta: [estudos-github-copilot/AccelerateDevGHCopilot](estudos-github-copilot/Ac
 - **Ainda incompleto:** quatro arquivos não foram importados por bloqueios da integração.
 - Build e testes ainda não foram executados.
 
+## Projetos pequenos já copiados
+
+| Pasta local | Projeto | Estado |
+|---|---|---|
+| [PositiveSensePage](PositiveSensePage/README-local.md) | Página de apresentação | HTML copiado; conferir assets. |
+| [ViaCEPapi](ViaCEPapi/README.md) | Consulta de CEP | HTML, CSS e JavaScript copiados. |
+| [DesafioFrontEnd](DesafioFrontEnd/README.md) | Desafio de interface | HTML, CSS e JavaScript copiados. |
+| [Footer](Footer/README.md) | Exercício de rodapé | HTML e CSS copiados. |
+| [Background-Life](Background-Life/README.md) | Fundo animado | HTML, CSS e JavaScript copiados. |
+
 ## Próximos candidatos
 
 Os candidatos serão selecionados depois de verificar data, tamanho, conteúdo e utilidade. Projetos de maior porte ou com valor próprio ficam fora. Não serão copiados arquivos binários não suportados, segredos, dependências geradas nem materiais cuja licença não permita redistribuição.
