@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="/cardapio/padrões.css">
+    <link rel="stylesheet" href="/carrinho/carrinho.css">
+    <link rel="shortcut icon" href="/fotos2/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+
+        <section id="header">
+
+            <img src="/fotos2/logo.png" alt="Logo Taste of Arabia">
+            <section class="header">
+                <nav>
+                    <a href="/paginicial.html">Início</a>
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="/cardapio/cardapio.html">Cardápio</a>
+                    <a href="">Cadastro</a>
+                    <a href="#faleconosco">Fale Conosco</a>
+                </nav>
+            </section>
+            <section class="login">
+                <div class="cart-container" onclick="toggleCartDropdown()">
+                    <img src="/fotos2/carrinho.png" alt="Carrinho" class="cart-icon">
+                    <span id="cart-counter">0</span> <!-- Contador de itens -->
+                </div>
+                <!-- Dropdown do carrinho -->
+                <div id="cart-dropdown" class="cart-dropdown">
+                    <h3>Itens no Carrinho:</h3>
+                    <ul id="cart-items"></ul>
+                    <button onclick="finalizarPedido()">Finalizar Pedido</button>
+                </div>
+            </section>
+
+        </section>
+        <h1>MENU</h1>
+        </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="menu-cards">
+            <a href="../cardapio.html" class="card">
+                <img src="/fotos2/entradas.png" alt="Entradas">
+            </a>
+            <a href="../cardapio2.html" class="card">
+                <img src="/fotos2/pratos principais.png" alt="Pratos Principais">
+            </a>
+            <a href="../cardapio3.html" class="card">
+                <img src="/fotos2/doces.png" alt="Doces">
+            </a>
+            <a href="../cardapio4.html" class="card">
+                <img src="/fotos2/bebidas.png" alt="Bebidas">
+            </a>
+        </div>
+        <br><br><br>
+        <section id="faleconosco">
+            <footer class="footer">
+                <!-- Adicionando a imagem de fundo -->
+                <img src="/fotos2/footer.png" alt="Imagem de fundo" class="imagem-fundo">
+
+                <div>
+                    <div>
+                        <section id="faleconosco">
+                            <div class="duvidass">
+                                <p>DÚVIDAS OU SUGESTÕES ?</p>
+                            </div>
+                            <div class="duvidas">
+                                <p>Fale Conosco!</p>
+                            </div>
+                    </div>
+                    <div class="fale">
+                        <img src="/fotos2/location.png" alt="">
+                        <p>Av. Dr. Ricardo Jafet, 3332 | SP</p>
+                    </div>
+                    <div class="falee">
+                        <img src="/fotos2/message.png" alt="">
+                        <p>tasteofarabia.restaurante@gmail.com</p>
+                    </div>
+                    <div class="botao">
+                        <button onclick="enviarEmail()">Enviar</button>
+                    </div>
+                    <div class="redes">
+                        <button class="botao-rede">
+                            <img src="/fotos2/whats.png" alt="WhatsApp">
+                        </button>
+                        <button class="botao-rede">
+                            <img src="/fotos2/insta.png" alt="Instagram">
+                        </button>
+                        <button class="botao-rede">
+                            <img src="/fotos2/face.png" alt="Facebook">
+                        </button>
+                    </div>
+        </section>
+        </div>
+
+        <!-- Botão no canto superior direito -->
+        <a href="/jogo/jogo.html" class="botao-direito">
+            <img src="/fotos2/mascote.png" alt="Botão para outra página">
+        </a>
+        </footer>
+        </section>
+        <script src="/carrinho/carrinho.js"></script>
+</body>
+
+</html>
