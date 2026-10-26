@@ -29,8 +29,6 @@ Este repositório **guarda os arquivos dos projetos selecionados**, organizados 
 
 ## Estado atual
 
-- [x] Criar a estrutura principal do monorepo.
-- [x] Iniciar a importação dos arquivos do estudo `AccelerateDevGHCopilot` para [2025/estudos-github-copilot/AccelerateDevGHCopilot](2025/estudos-github-copilot/AccelerateDevGHCopilot/README.md).
 - [x] Criar as áreas de organização para 2023 e 2024.
 - [ ] Completar a importação do projeto de estudo e validar build/testes.
 - [ ] Triar os repositórios de 2023 e 2024 por tamanho, utilidade, risco e possibilidade de preservação.
