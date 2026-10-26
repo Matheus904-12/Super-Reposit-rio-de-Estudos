@@ -1,0 +1,22 @@
+<center>
+            <div class="box">
+                <img src="planner.svg" alt="Logotipo">
+                <h1></h1>
+                <p>Automatize contas a pagar e receber</p>
+            </div>
+            <div class="box">
+                <img src="check.svg" alt="Logotipo">
+                <h1></h1>
+                <p>Facilite sua rotina com conciliação bancária</p>
+            </div>
+            <div class="box">
+                <img src="caneta.svg" alt="Logotipo">
+                <h1></h1>
+                <p>Gerencie seu fluxo de caixa</p>
+            </div>
+            <div class="box">
+                <img src="calendario.svg" alt="Logotipo">
+                <h1></h1>
+                <p style="margin-top: 20px;">Conte com serviços recorrentes</p>
+            </div>
+        </center>
