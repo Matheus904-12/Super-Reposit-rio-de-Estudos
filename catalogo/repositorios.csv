@@ -85,7 +85,7 @@ nome,url,branch,status,observacao,periodo,categoria
 "Porta-Laboris","https://github.com/Matheus904-12/Porta-Laboris","main","A classificar","Inventário inicial; classificar após revisar conteúdo","2023-2024","Projeto técnico / aplicação web"
 "PortfolioReact","https://github.com/Matheus904-12/PortfolioReact","main","Revisar limpeza do repositório","Projeto React; árvore inclui node_modules, que normalmente deve ser excluído do Git e recriado com npm ci","2025+","Portfólio / React"
 "PositiveSensePage","https://github.com/Matheus904-12/PositiveSensePage","main","A classificar","Inventário inicial; classificar após revisar conteúdo","",""
-"PositiveSenseWeb","https://github.com/Matheus904-12/PositiveSenseWeb","main","Ação de segurança urgente","Credenciais hardcoded identificadas em configuração de banco e OAuth; rotacionar e migrar para variáveis de ambiente","2025+","Aplicação web / PHP"
+"PositiveSenseWeb","https://github.com/Matheus904-12/PositiveSenseWeb","main","Rotacionar credenciais e testar","Configuração atualizada para variáveis de ambiente; segredos antigos podem permanecer no histórico Git","2025+","Aplicação web / PHP"
 "PrePortf","https://github.com/Matheus904-12/PrePortf","main","A classificar","Inventário inicial; classificar após revisar conteúdo","",""
 "Projects-Part","https://github.com/Matheus904-12/Projects-Part","main","A classificar","Inventário inicial; classificar após revisar conteúdo","",""
 "Projeto","https://github.com/Matheus904-12/Projeto","main","A classificar","Inventário inicial; classificar após revisar conteúdo","",""
