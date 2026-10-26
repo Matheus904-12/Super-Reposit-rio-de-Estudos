@@ -12,7 +12,6 @@ Esta pasta reúne estudos e projetos do ano de 2024. Os projetos abaixo estão e
 
 | Projeto | Descrição | Decisão inicial |
 |---|---|---|
-| [Contador](https://github.com/Matheus904-12/Contador) | Exercício de contador | Avaliar data exata e pasta de destino |
 | [Nubank-TabBar](https://github.com/Matheus904-12/Nubank-TabBar) | TabBar inspirada no Nubank | React Native com dependências; avaliar porte antes de importar |
 | [Projeto-Semestral-Oficial](https://github.com/Matheus904-12/Projeto-Semestral-Oficial) | Restaurante semestral | Manter fora por enquanto; projeto acadêmico maior |
 | [Contact](https://github.com/Matheus904-12/Contact) | Gerenciador de contatos com EJS | Avaliar porte e configuração |
