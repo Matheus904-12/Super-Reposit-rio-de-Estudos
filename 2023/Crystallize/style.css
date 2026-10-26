@@ -1,0 +1,303 @@
+/* RESET */
+
+* {
+    margin: 0;
+}
+
+body { overflow-x: hidden;
+}
+
+/* FIM RESET */
+
+/* PADRAO */
+
+@font-face {
+    font-family: "inter";
+    src: url(atributos/fontInter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+h2 {
+    font-size: 35px;
+    font-family: "inter";
+}
+
+.textoBranco {
+    font-family: "inter";
+    color: #fff;
+    font-size: 30px;
+}
+
+.textoPadrao {
+    font-family: "inter";
+    font-size: 30px; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* FIM PADRAO */
+
+
+/* HEADER */
+
+#header {
+    background-color: #008374;
+    width: 100vw;
+    height: 90px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo {
+    font-size: 40px;
+    color: #fff;
+  }
+
+
+
+.paginas {
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+/* FIM HEADER */
+
+/* DESTAQUE */
+
+.destaque {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 560px;
+
+    background-color: #23A092;
+}
+
+#titulo {
+    font-family: "inter";
+    font-size: 35px;
+
+}
+
+/* FIM DESTAQUE*/
+
+
+
+
+
+
+
+
+
+
+/* PLANOS */
+
+#planosOpc { 
+    display: flex;
+    
+    font-size: 18px;
+    flex-wrap: wrap;
+    margin: 50px 50px 0px 50px;
+  }
+  
+  .planoTitulo {
+    font-size: 24px;
+    padding: 0px 90px 
+  }
+  
+  .planoTexto {
+   
+    font-size: 18px;
+    word-wrap: wrap;
+    padding: 0px 45px;
+  }
+/* FIM PLANOS */
+
+/* OPCOES */
+
+.opcoes {
+    padding: 100px 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.faixa {
+    width: 500px;
+    height: 50px;
+
+    background-color: #FF912D;
+}
+
+.faixaBasic {
+    width: 500px;
+    height: 50px;
+
+    background-color: #F6A256;
+}
+
+
+
+.basic {
+            background-color: #EDECEC;
+
+            width: 500px;
+            height: 650px;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+            filter: drop-shadow(1px 0px 5px #000000);
+            
+        }
+
+.desativado {
+    color: #959292;
+}
+
+.premium {
+            background-color: #EDECEC;
+
+            width: 500px;
+            height: 650px;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            filter: drop-shadow(1px 0px 5px #000000);
+        }
+/* FIM OPCOES */
+/* RODAPE */
+
+footer {
+    width: 100vw;
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #008374;
+} 
+
+ .coluna {
+    display: flex;
+    flex-direction: column;}
+
+
+.paginasVertical {
+    padding: 15px;
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#inscrever {
+    width: 440px;
+    height: 300px;
+
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+#inscricao {
+    position: absolute;
+}
+
+#email {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#enviar {
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: "inter";
+}
+
+.inscreverse {
+    display: flex;
+    align-items: center;
+}
+/*Caxinhas*/
+.box {
+    width: 200px;
+    height: 145px;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px;
+    margin-top: -50px;
+    background-color: #FFF;
+  }
+  
+  .box h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .box p {
+    color: #000;
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .box img {
+    width: 50px;
+    height: 50px;
+    float:inline-start;
+    margin-right: 10px;
+    margin-top: 80px;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 90px;
+    margin-top: -90px;
+  }
+  
+  .box img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .box {
+    display: inline-block;
+  }
+
+  /* INFORMACOES */
+
+.info {
+    display: flex;
+    flex-direction: column;
+
+    margin: 100px 500px
+
+}
+
+.comoContatar {
+    margin: 100px 210px
+}
+/* FIM INFORMACOES */
