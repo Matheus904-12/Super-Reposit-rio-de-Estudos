@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url(sebastian-svenson-d2w-_1LJioQ-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+button {
+    background-color: white;
+    color: #213243;
+    border: 2px solid #f78d29;
+    font: 400 16px 'Verdana', sans-serif;
+    padding: 4px 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px;
+
+}
+
+button:hover {
+    background-color: #213243;
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    background-color: transparent;
+    max-width: 450px;
+    margin: 148px auto 0;
+    padding: 20px;
+    border-radius: 25px;
+    color: #fff;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(30px) ;
+    text-shadow: 2px  #fff;
+}
+
+.container, .titulo {
+    text-align: center;
+    padding: 0 16px 16px;
+    border-bottom: 1px;
+}
+
+#form,
+#edit-form {
+    padding: 16px;
+    border-bottom: 1px ;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-controle, input {
+    margin-right: 5px;
+}
+
+#barra {
+    padding: 16px;
+    border-bottom: 1px ;
+    display: flex;
+}
