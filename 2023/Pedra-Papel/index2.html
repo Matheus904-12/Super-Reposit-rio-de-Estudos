@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(pink, purple);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            font: 300 40px 'Poppins', sans-serif;
+            padding: 15px 30px;
+            width: 200px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .tituloPrincipal {
+            font: 700 40px 'Poppins', sans-serif;
+        }
+
+        .titulo {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tiulo">
+        <h1 class="tituloPrincipal">
+            QUER NAMORAR COMIGO?
+        </h1>
+    </div>
+    <div class="botoes">
+        <div class="botaoS">
+        <button class="btn" onclick="sim()">SIM</button>
+
+        <div class="botaoN">
+            <button class="btn" onclick="esquivo()" onmouseover="esquivo()">NÃO</button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
