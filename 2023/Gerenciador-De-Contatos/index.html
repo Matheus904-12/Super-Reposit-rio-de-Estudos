@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Contatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gerenciador de Contatos</h1>
+        </header>
+
+        <main>
+            <form id="contato-form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" placeholder="Telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" placeholder="Mensagem" rows="4" cols="50"></textarea>
+                </div>
+                <button type="submit">Adicionar Contato</button>
+                <button id="mostrar-contatos">Mostrar Contatos</button>
+                <button id="ocultar-contatos">Ocultar Contatos</button>
+            </form>
+            <div class="botoes">
+            </div>
+            <ul id="contato-lista"></ul>
+        </main>
+
+        <footer>
+            <!-- Informações de contato ou links de redes sociais podem ser adicionados aqui -->
+        </footer>
+    </div>
+
+    <video id="background-video" autoplay muted loop>
+        <source src="form_-_5790 (540p).mp4" type="video/mp4">
+        <!-- Adicione outros formatos de vídeo se necessário -->
+    </video>
+    <div class="overlay"></div> <!-- Adicionado overlay -->
+    
+    <script src="main.js"></script>
+</body>
+</html>
