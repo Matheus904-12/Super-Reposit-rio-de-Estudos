@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Biblioteca</title>
+</head>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<body>
+    <h1>Todos os Livros</h1>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Autor</th>
+            <th>Páginas</th>
+            <th>Preço</th>
+            <th>Situação</th>
+            <th>Indisponível</th>
+            <th>Disponível</th>
+            <th>Remover</th>
+        </tr>
+        <% data.forEach(element=> { %>
+            <tr>
+                <td>
+                    <%= element.bookName %>
+                </td>
+                <td>
+                    <%= element.bookAuthor %>
+                </td>
+                <td>
+                    <%= element.bookPages %>
+                </td>
+                <td>
+                    <%= element.bookPrice %>
+                </td>
+                <td>
+                    <%= element.bookState %>
+                </td>
+
+                <td>
+                    <form action="/emprestar" method="post">
+                        <input type="text" style="display: none;" name="bookName" value="<%= element.bookName %>">
+                        <button type="submit">ok</button>
+                    </form>
+                </td>
+                <td>
+                    <form action="/devolver" method="post">
+                        <input type="text" style="display: none;" name="bookName" value="<%= element.bookName %>">
+                        <button type="submit">ok</button>
+                    </form>
+                </td>
+                <td>
+                    <form action="/deletar" method="post">
+                        <input type="text" style="display: none;" name="bookName" value="<%= element.bookName %>">
+                        <button type="submit">Remover</button>
+                    </form>
+                </td>
+            </tr>
+            <% }) %>
+    </table>
+
+    <h1>Adicionar Livro</h1>
+
+    <form action="/" method="post">
+        <input type="text" placeholder="Nome" name="bookName">
+        <input type="text" placeholder="Autor" name="bookAuthor">
+        <input type="text" placeholder="Páginas" name="bookPages">
+        <input type="text" placeholder="Preço" name="bookPrice">
+        <button type="submit">Adicionar</button>
+    </form>
+</body>
+
+</html>
