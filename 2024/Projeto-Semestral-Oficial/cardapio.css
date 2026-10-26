@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+
+
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Mont/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(/Mont/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Semibold";
+    src: url(/Mont/Montserrat-SemiBold.ttf);
+}
+
+body {
+    background-color: #D4C2AE;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.48) 24%, rgba(0, 0, 0, 0.7344187675070029) 49%, rgba(0, 0, 0, 0.9501050420168067) 93%);
+}
+
+#header img {
+    margin-left: 15px;
+    width: 110px;
+}
+
+.header nav a {
+    margin: 0 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header {
+    background-size: cover;
+    background-image: url(/Ana/menu.png);
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.433);
+    filter: grayscale(55%) brightness(90%); /* Filtro de escala de cinza e brilho */
+
+}
+
+h1 {
+    color: #fff;
+    font-size: 64px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 150px;
+    text-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+h3 {
+    font-family: "Semibold";
+    color: white;
+    font-size: 40px;
+    width: 598px;
+}
+
+
+.header nav a:hover {
+    color: #e0a848;
+}
+
+.order-button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #D98A38;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "SemiBold";
+}
+
+.order-button:hover {
+    background-color: #c88124;
+}
+
+.imagem img {
+    width: 100%;
+}
+
+.linha {
+    background-color: #4f382095;
+    height: 2px;
+    margin-top: 80px;
+    margin-left: 285px;
+    width: 940px;
+
+}
+
+
+.container {
+    background-color: #B68A5A;
+    width: 990px;
+    height: 230px;
+    border-color: #624423;
+    border-radius: 9.12px;
+    border: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 260px;
+    margin-top: 80px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+}
+
+.comida img {
+    width: 190px;
+    margin-top: 18px;
+    margin-left: 18px;
+    margin-bottom: 18px;
+}
+
+.comida h3 {
+    font-family: "SemiBold";
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+
+.juntos p {
+    font-family: "Montserrat";
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-align: justify;
+    top: 100px;
+
+}
+
+.preco h4 {
+    font-family: "SemiBold";
+    font-size: 18px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.comida {
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+
+
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Mont/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(/Mont/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Semibold";
+    src: url(Mont/Montserrat-SemiBold.ttf);
+}
+
+body {
+    background-color: #D4C2AE;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.48) 24%, rgba(0, 0, 0, 0.7344187675070029) 49%, rgba(0, 0, 0, 0.9501050420168067) 93%);
+}
+
+#header img {
+    margin-left: 15px;
+    width: 110px;
+}
+
+.header nav a {
+    margin: 0 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header {
+    background-size: cover;
+    background-image: url(/Ana/pp.png);
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.433);
+    filter: grayscale(55%) brightness(90%); /* Filtro de escala de cinza e brilho */
+
+}
+
+h1 {
+    color: #fff;
+    font-size: 64px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 150px;
+    text-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+.header nav a:hover {
+    color: #e0a848;
+}
+
+
+.order-button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #D98A38;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "SemiBold";
+}
+
+.order-button:hover {
+    background-color: #c88124;
+}
+
+.imagem img {
+    width: 100%;
+}
+
+.linha {
+    background-color: #4f382095;
+    height: 2px;
+    margin-top: 80px;
+    margin-left: 285px;
+    width: 940px;
+
+}
+
+
+.container {
+    background-color: #B68A5A;
+    width: 990px;
+    height: 230px;
+    border-color: #624423;
+    border-radius: 9.12px;
+    border: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 260px;
+    margin-top: 80px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+}
+
+.comida img {
+    width: 190px;
+    margin-top: 18px;
+    margin-left: 18px;
+    margin-bottom: 18px;
+}
+
+.comida h3 {
+    font-family: "bold";
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+
+.juntos p {
+    font-family: "Montserrat";
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-align: justify;
+    top: 100px;
+
+}
+
+.preco h4 {
+    font-family: "SemiBold";
+    font-size: 18px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.comida {
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+
+}
+
+.imagem-fundo {
+    position: absolute; /* Fixa a imagem atrás do conteúdo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz a imagem ocupar toda a largura */
+    height: 100%; /* Faz a imagem ocupar toda a altura */
+    object-fit: cover; /* Garante que a imagem seja ajustada corretamente */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+.footer {
+    margin-top: 100px;
+    position: relative; /* Garante que o conteúdo do footer fique acima da imagem */
+    padding: 20px;
+    color: white; /* Ajusta a cor do texto para visibilidade */
+}
+
+.duvidas,
+.duvidass {
+    justify-content: center;
+    display: flex;
+}
+
+.duvidas p {
+    font-size: 60px;
+    font-family: "Montserrat";
+    color: #f9f9f9;
+}
+
+.fale {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 120px;
+    margin-right: 690px;
+}
+
+.falee {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 600px;
+}
+
+.fale p {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.falee p {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.fale img {
+    width: 50px;
+}
+
+.falee img {
+    width: 50px;
+}
+
+.botao button {
+    background-color: #D98A38;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+.botao button:hover {
+    background-color: #c87a2e;
+}
+
+.redes {
+    justify-content: center;
+    align-items: bottom;
+    display: flex;
+    margin-top: 70px;
+
+}
+
+.botao-rede {
+    border: none; /* Remove a borda padrão do botão */
+    background: none; /* Remove o fundo do botão */
+    cursor: pointer; /* Mostra o cursor de "clique" */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border-radius: 50%; /* Torna o botão circular */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Efeito suave */
+}
+
+.botao-rede img {
+    width: 40px; /* Define o tamanho da imagem */
+    height: 40px;
+}
+
+.botao-rede:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho no hover */
+    background-color: rgba(0, 0, 0, 0.1); /* Adiciona um fundo leve */
+}
+
+.botao-rede:active {
+    transform: scale(0.95); /* Reduz o tamanho no clique */
+}
+
+footer p {
+    color: #ffffff;
+}
+
+.botao-direito {
+    position: absolute;
+    top: 3970px; /* Ajuste conforme necessário para deixar acima do footer */
+    right: 150px; /* Posiciona no canto direito */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botao-direito img {
+    width: 300px; /* Tamanho do botão */
+    height: 320px;
+    border-radius: 50%; /* Opcional: deixa a imagem circular */
+}
+
+.botao-direito:hover {
+    transform: scale(1.1); /* Efeito de aumento no hover */
+}
