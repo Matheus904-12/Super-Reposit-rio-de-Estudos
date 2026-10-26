@@ -35,6 +35,9 @@ Esta pasta guarda os projetos de 2024 **dentro deste repositório**. Os nomes ab
 | [caluladora---php](caluladora---php/README.md) | Calculadora PHP | Arquivos principais copiados; um arquivo pendente. |
 | [PHP](PHP/README.md) | Exercício de autenticação PHP | Página e autenticação copiadas; conexão/SQL não migrados. |
 | [Login-Site](Login-Site/README.md) | Login PHP | Página e autenticação copiadas; conexão/SQL pendentes. |
+| [Login-React](Login-React/README.md) | Tela de login/cadastro React Native | App e páginas principais copiados. |
+| [routes](routes/README.md) | Exercício de navegação React Native | Configuração copiada; algumas telas pendentes. |
+| [smash-emoji](smash-emoji/emoji/README.md) | App de seleção de emojis | App, package e componentes principais copiados; um componente bloqueado. |
 
 ## Projetos identificados para migrar
 
