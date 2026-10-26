@@ -1,0 +1,81 @@
+/* Estilos base que se aplicam a todos os tamanhos de tela */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: snow;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px;
+}
+
+main {
+  max-width: 1000px; /* Limita a largura máxima para telas maiores */
+  margin: 0 auto;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: space-around;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1.5px solid black;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  display: flex; /* Adicionado */
+  flex-direction: column; /* Adicionado */
+  justify-content: center; /* Adicionado */
+  align-items: center; /* Adicionado */
+}
+
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.image {
+  display: block;
+  margin: 5px auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+/* Estilos específicos para telas menores, como smartphones */
+@media (max-width: 768px) {
+  main {
+    width: 90%; /* Ajusta a largura para preencher a tela */
+  }
+
+  .catalog {
+    flex-direction: column; /* Alinha as caixas verticalmente */
+  }
+
+  .box {
+    width: 100%;
+    height: auto; /* Ajusta a altura automaticamente */
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+}
+
+/* Outras Media Queries para telas maiores ou outras personalizações */
