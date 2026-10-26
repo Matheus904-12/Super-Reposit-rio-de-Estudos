@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Controle de Acesso</title>
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 350px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 16px;
+      color: #666;
+      display: block;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #status {
+      font-size: 16px;
+      margin-top: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Controle de Acesso</h1>
+    <label for="cardNumber">Número do Cartão:</label>
+    <input type="number" id="cardNumber">
+    <button onclick="checkAccess()">Verificar Acesso</button>
+    <p id="status"></p>
+  </div>
+
+  <script>
+    function checkAccess() {
+      const cardNumberInput = document.getElementById('cardNumber');
+      const statusMessage = document.getElementById('status');
+      const cardNumber = parseInt(cardNumberInput.value);
+
+      if (isNaN(cardNumber)) {
+        statusMessage.textContent = "Por favor, insira um número de cartão válido.";
+        return;
+      }
+
+      const body = document.body;
+      if (cardNumber >= 1000 && cardNumber <= 1999) {
+        body.style.backgroundColor = 'green';
+        statusMessage.textContent = "Acesso permitido a todas as áreas restritas.";
+      } else if (cardNumber >= 2000 && cardNumber <= 2999) {
+        body.style.backgroundColor = 'yellow';
+        statusMessage.textContent = "Acesso permitido a algumas áreas restritas.";
+      } else if (cardNumber > 3000) {
+        body.style.backgroundColor = 'red';
+        statusMessage.textContent = "Acesso negado. Funcionários com número de cartão acima de 3000 não têm permissão para acessar áreas restritas.";
+      } else {
+        body.style.backgroundColor = '';
+        statusMessage.textContent = "Acesso negado.";
+      }
+    }
+  </script>
+</body>
+</html>
