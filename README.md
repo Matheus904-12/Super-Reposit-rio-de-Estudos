@@ -51,3 +51,8 @@ Leia o [checklist de segurança](seguranca/checklist.md). Se algum segredo já f
 ---
 
 *Projeto em construção. O catálogo será preenchido após a revisão dos repositórios de origem.*
+
+## Próximas trilhas
+- [Trilha Java e engenharia de software](./trilha-java-backend/README.md)
+- [Critérios de classificação do catálogo](./catalogo/criterios-classificacao.md)
+- [Diário de exercícios do Copilot](./github-copilot/exercicios/diario.md)
