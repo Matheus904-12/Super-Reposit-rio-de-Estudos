@@ -1,35 +1,35 @@
 # Projetos de 2023
 
-Esta pasta reúne a primeira fase de exercícios e pequenos projetos pessoais. Os projetos abaixo estão em estados diferentes: os marcados como importados têm arquivos reais nesta pasta; os demais continuam como candidatos à triagem.
+Esta pasta guarda os projetos de 2023 **dentro deste repositório**. Os nomes abaixo são apenas um controle de migração; não são links para repositórios externos.
 
-## Projetos importados
+## Projetos já dentro do super-repositório
 
-| Projeto | Conteúdo | Estado |
+| Pasta local | Projeto | Estado |
 |---|---|---|
-| [Meu-bingo](Meu-bingo/README.md) ([origem](https://github.com/Matheus904-12/Meu-bingo)) | Bingo do SENAI em HTML, CSS e JavaScript | Arquivos-fonte copiados; falta validar no navegador. O favicon binário não foi copiado. |
+| [Meu-bingo](Meu-bingo/README.md) | Bingo em HTML, CSS e JavaScript | Arquivos copiados; falta validar no navegador e conferir o favicon. |
+| [sorte](sorte/README.md) | Sorteador de nomes e números | Arquivos principais copiados; histórico de edição excluído. |
 
-## Candidatos identificados
+## Projetos identificados para migrar
 
-| Projeto | Descrição | Decisão inicial |
+| Projeto | Descrição | Próxima ação |
 |---|---|---|
-| [Retomada](https://github.com/Matheus904-12/Retomada) | Vitral Vidraria | Avaliar tamanho, assets e utilidade |
-| [Crystallize](https://github.com/Matheus904-12/Crystallize) | Site em CSS | Inspecionar e excluir histórico de editor desnecessário |
-| [Marvel](https://github.com/Matheus904-12/Marvel) | Seleção de personagens da Marvel | Avaliar tamanho e assets |
-| [Mario](https://github.com/Matheus904-12/Mario) | Divulgação do filme do Mario | Avaliar tamanho e assets |
-| [Figma](https://github.com/Matheus904-12/Figma) | Exercício de CSS | Avaliar para importação |
-| [Demais.com](https://github.com/Matheus904-12/Demais.com) | Exercício de CSS | Avaliar para importação |
-| [projetogit](https://github.com/Matheus904-12/projetogit) | Página inicial em HTML, CSS e JavaScript | Avaliar para importação |
-| [Quizz](https://github.com/Matheus904-12/Quizz) | Jogo de perguntas com temporizador | Avaliar assets e excluir arquivos desnecessários |
-| [carrossel](https://github.com/Matheus904-12/carrossel) | Carrossel de teste | Avaliar assets |
-| [MultLang](https://github.com/Matheus904-12/MultLang) | Projeto multilíngue | Porte e assets grandes; avaliar antes de importar |
-| [Drag-Drop](https://github.com/Matheus904-12/Drag-Drop) | Experimento de arrastar e soltar | Avaliar para importação |
-| [Contador](https://github.com/Matheus904-12/Contador) | Exercício de contador | Avaliar para importação |
-| [sorte](https://github.com/Matheus904-12/sorte) | Sorteador de nomes e números | Avaliar para importação |
-| [Meu-bingo](https://github.com/Matheus904-12/Meu-bingo) | Projeto de bingo | Já importado acima |
+| Retomada | Site da Vitral Vidraria | Importar arquivos e assets necessários; verificar tamanho. |
+| Crystallize | Site em CSS | Importar código útil; ignorar histórico de editor. |
+| Marvel | Seletor de personagens Marvel | Importar código e assets necessários. |
+| Mario | Página promocional do filme do Mario | Importar código e assets necessários. |
+| Figma | Exercício visual/CSS | Conferir se os arquivos são um projeto funcional antes de importar. |
+| Demais.com | Site com múltiplas páginas | Avaliar imagens e dados pessoais antes da migração. |
+| projetogit | Página em HTML/CSS/JS | Importar os arquivos do projeto. |
+| Quizz | Jogo de perguntas com temporizador | Importar código e assets necessários. |
+| carrossel | Exercício de carrossel | Importar arquivos principais. |
+| MultLang | Projeto multilíngue | Revisar porte e grande volume de assets antes de decidir. |
+| Drag-Drop | Experimento de arrastar e soltar | Importar arquivos principais. |
+| Contador | Exercício de contador | Importar HTML e JavaScript. |
+| Demais exercícios de 2023 | SENHAS, Termos, SetupPro, Warhammer-Pro, Word, Horario, dowcode, X-Men, Bot, Node.js, Tema, python, Projeto, Gerenciador-De-Contatos, Jogo-Da-Cobrinha, Meu-Perfil, Desenho, JAVASCRIPT, JS-BIN, Pedra-Papel, Namorar-, atualiza--o, Exercicio-de-controle-, sorteio e outros | Fazer triagem por tamanho, duplicidade, arquivos úteis e privacidade antes de copiar. |
 
-## Critérios
+## Regras de organização
 
-- Copiar somente exercícios e projetos pequenos que façam sentido manter juntos.
-- Preservar pastas, arquivos de configuração e créditos.
-- Não copiar segredos, dependências geradas ou arquivos binários não suportados.
-- Projetos maiores ou com histórico importante permanecem em repositórios independentes.
+- O código de cada projeto deve ficar em uma pasta local deste repositório.
+- Os READMEs dos projetos podem apontar para uma demonstração publicada (Netlify, Vercel etc.), mas não para o antigo repositório GitHub.
+- Não copiar histórico de editor, dependências geradas ou segredos.
+- Não excluir nenhum repositório antigo até que seus arquivos necessários estejam copiados e conferidos.
