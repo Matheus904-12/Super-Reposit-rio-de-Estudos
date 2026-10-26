@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATOS PRINCIPAIS</title>
+    <link rel="stylesheet" href="cardapio2.css">
+    <link rel="stylesheet" href="/carrinho/carrinho.css">
+    <link rel="stylesheet" href="padrões.css">
+    <link rel="shortcut icon" href="/fotos2/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+
+        <section id="header">
+
+            <img src="/fotos2/logo.png" alt="Logo Taste of Arabia">
+            <section class="header">
+                <nav>
+                    <a href="/paginicial.html">Início</a>
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="/cardapio/cardapio.html">Cardápio</a>
+                    <a href="">Cadastro</a>
+                    <a href="#faleconosco">Fale Conosco</a>
+                </nav>
+            </section>
+            <section class="login">
+                <div class="cart-container" onclick="toggleCartDropdown()">
+                    <img src="/fotos2/carrinho.png" alt="Carrinho" class="cart-icon">
+                    <span id="cart-counter">0</span> <!-- Contador de itens -->
+                </div>
+                <!-- Dropdown do carrinho -->
+                <div id="cart-dropdown" class="cart-dropdown">
+                    <h3>Itens no Carrinho:</h3>
+                    <ul id="cart-items"></ul>
+                    <button onclick="finalizarPedido()">Finalizar Pedido</button>
+                </div>
+            </section>
+
+        </section>
+        <h1>PRATOS PRINCIPAIS</h1>
+    </header>
+
+    <div class="linha"></div>
+
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Kebabs.png" alt="">
+
+            <div class="juntos">
+                <h3>Kebabs</h3>
+                <p>Espetinhos de carne grelhada, temperados com especiarias árabes que realçam o sabor da carne. Cada
+                    espetinho é suculento, grelhado na medida certa e servido com acompanhamentos frescos, criando uma
+                    combinação perfeita de sabores e texturas. Ideal para quem aprecia um prato tradicional e rústico.
+                </p>
+            </div>
+            <div class="preco">
+                <h4> R$15,39</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Shawarma.png" alt="">
+
+            <div class="juntos">
+                <h3>Shawarma</h3>
+                <p> Carne marinada e assada lentamente em espeto giratório, servida em pão sírio macio com uma mistura
+                    fresca de vegetais, molhos de iogurte e tahine, e temperos especiais. O shawarma é uma explosão de
+                    sabores em cada mordida, ideal para uma refeição prática e saborosa.</p>
+            </div>
+            <div class="preco">
+                <h4> R$19,89</h4>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Mansaf.png" alt="">
+
+            <div class="juntos">
+                <h3>Mansaf</h3>
+                <p>Um dos pratos mais icônicos da culinária árabe, o mansaf é feito com carne de cordeiro cozida
+                    lentamente, servida sobre uma cama de arroz temperado e regada com molho de iogurte fermentado,
+                    chamado jameed. Cada pedaço é rico em sabor, e o arroz absorve perfeitamente os temperos e o molho,
+                    criando uma combinação irresistível.</p>
+            </div>
+            <div class="preco">
+                <h4> R$9,23</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Kofta.png" alt="">
+
+            <div class="juntos">
+                <h3>Kofta</h3>
+                <p>Carne moída de cordeiro ou bovina, temperada com ervas e especiarias aromáticas, moldada em formato
+                    de salsicha e grelhada até ficar suculenta por dentro e crocante por fora. Servida com molhos e
+                    acompanhamentos, a kofta é um prato reconfortante e cheio de sabor.</p>
+            </div>
+            <div class="preco">
+                <h4> R$10,50</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Mahshi.png" alt="">
+
+            <div class="juntos">
+                <h3>Mahshi</h3>
+                <p>Deliciosos legumes como abobrinha, pimentões e berinjelas, recheados com uma mistura de arroz, carne
+                    moída, ervas e especiarias, cozidos em molho de tomate até ficarem macios e perfumados. Esse prato
+                    equilibra perfeitamente o frescor dos vegetais com a riqueza do recheio temperado.</p>
+            </div>
+            <div class="preco">
+                <h4> R$19,93</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Biryani.png" alt="">
+
+            <div class="juntos">
+                <h3>Biryani</h3>
+                <p>Um prato aromático de arroz temperado com uma mistura de especiarias como cardamomo, açafrão e
+                    canela, combinado com carne de frango, cordeiro ou vegetais. Cada grão de arroz é infundido com os
+                    sabores das especiarias, criando uma experiência complexa e deliciosa em cada garfada
+                <p>
+            </div>
+            <div class="preco">
+                <h4> R$24,19</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Fattah.png" alt="">
+
+            <div class="juntos">
+                <h3>Fattah</h3>
+                <p>Um prato robusto de arroz coberto com carne desfiada e torradas de pão sírio, finalizado com um molho
+                    cremoso de iogurte e alho. A combinação de texturas crocantes e cremosas, junto com o sabor
+                    suculento da carne, faz deste prato uma escolha perfeita para quem quer uma refeição rica e
+                    satisfatória.</p>
+                </p>
+            </div>
+            <div class="preco">
+                <h4> R$24,93</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Mulukyiah.png" alt="">
+
+            <div class="juntos">
+                <h3>Mulukhiyah</h3>
+                <p>Sopa tradicional feita com folhas de jute picadas, que são cozidas até formar uma consistência
+                    espessa. É geralmente servida com arroz e carne, e o sabor único das folhas de mulukhiyah é
+                    intensificado por temperos como alho e coentro.</p>
+            </div>
+            <div class="preco">
+                <h4> R$19,91</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Tajine.png" alt="">
+
+            <div class="juntos">
+                <h3>Tajine</h3>
+                <p>Ensopado árabe cozido lentamente em uma panela de barro tradicional. Pode ser preparado com frango,
+                    cordeiro ou peixe, juntamente com legumes e uma variedade de especiarias, como cominho e gengibre. O
+                    cozimento lento infunde o prato com sabores profundos e ricos.</p>
+            </div>
+            <div class="preco">
+                <h4> R$19,34</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Kabsa.png" alt="">
+
+            <div class="juntos">
+                <h3>Kabsa</h3>
+                <p>Arroz cozido com uma mistura de especiarias, como cravo e canela, junto com carne de frango ou
+                    cordeiro, passas e amêndoas. Cada ingrediente do kabsa é cuidadosamente temperado para oferecer uma
+                    explosão de sabores doces e salgados em harmonia perfeita.</p>
+            </div>
+            <div class="preco">
+                <h4> R$24,94</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="linha">
+
+    </div>
+    <section id="faleconosco">
+        <footer class="footer">
+            <!-- Adicionando a imagem de fundo -->
+            <img src="/fotos2/footer.png" alt="Imagem de fundo" class="imagem-fundo">
+
+            <div>
+                <div>
+                    <section id="faleconosco">
+                        <div class="duvidass">
+                            <p>DÚVIDAS OU SUGESTÕES ?</p>
+                        </div>
+                        <div class="duvidas">
+                            <p>Fale Conosco!</p>
+                        </div>
+                </div>
+                <div class="fale">
+                    <img src="/fotos2/location.png" alt="">
+                    <p>Av. Dr. Ricardo Jafet, 3332 | SP</p>
+                </div>
+                <div class="falee">
+                    <img src="/fotos2/message.png" alt="">
+                    <p>tasteofarabia.restaurante@gmail.com</p>
+                </div>
+                <div class="botao">
+                    <button onclick="enviarEmail()">Enviar</button>
+                </div>
+                <div class="redes">
+                    <button class="botao-rede">
+                        <img src="/fotos2/whats.png" alt="WhatsApp">
+                    </button>
+                    <button class="botao-rede">
+                        <img src="/fotos2/insta.png" alt="Instagram">
+                    </button>
+                    <button class="botao-rede">
+                        <img src="/fotos2/face.png" alt="Facebook">
+                    </button>
+                </div>
+    </section>
+    </div>
+
+    <!-- Botão no canto superior direito -->
+    <a href="/jogo/jogo.html" class="botao-direito">
+        <img src="/fotos2/mascote.png" alt="Botão para outra página">
+    </a>
+    </footer>
+    </section>
+    <script src="/carrinho/carrinho.js"></script>
+    <script src="/gmail/gmail.js"></script>
+</body>
+
+</html>
