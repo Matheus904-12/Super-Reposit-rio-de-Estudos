@@ -4,9 +4,9 @@ Este documento é uma triagem inicial baseada nos READMEs e nas árvores de arqu
 
 ## Prioridade 0 — segurança antes de divulgação
 ### [PositiveSenseWeb](https://github.com/Matheus904-12/PositiveSenseWeb)
-- **Situação:** identificadas credenciais hardcoded em configuração de banco e OAuth.
-- **Próximas ações:** rotacionar credenciais; mover valores para variáveis de ambiente; testar login e banco; revisar histórico Git.
-- **Decisão:** não promover publicamente como projeto de portfólio até concluir a correção.
+- **Situação:** configurações atuais foram ajustadas para ler credenciais do ambiente; foram adicionados `.env.example` e `SECURITY-SETUP.md`.
+- **Próximas ações obrigatórias:** rotacionar as credenciais que já foram publicadas, configurar o ambiente de hospedagem, testar login e banco e revisar o histórico Git.
+- **Decisão:** não promover publicamente como projeto de portfólio até concluir rotação e testes.
 
 ### [ConectaTEA](https://github.com/Matheus904-12/ConectaTEA)
 - **Situação:** removido do branch atual o arquivo `.env.production` com valores que não pareciam placeholders; o arquivo de documentação de senhas foi substituído por orientações seguras.
