@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>Quiz Game</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="header">
+            <h1>Quiz Game</h1>
+            <div class="timer">
+                <div class="timer-circle"></div>
+                <span id="time-left">60</span>
+            </div>
+        </div>
+        <div class="question-container">
+            <h2 class="question"></h2>
+        </div>
+        <div class="options-container"></div>
+        <div class="score-chances">
+            <p class="score">Pontuação: <span id="score">0</span></p>
+            <p class="chances">Chances: <span id="chances">2</span></p>
+        </div>
+        <div class="result-container">
+            <p class="result" id="result"></p>
+        </div>
+    </div>
+    <audio id="correctSound" src="depositphotos_426537900-track-correct-guess-bing.mp3"></audio>
+    <audio id="incorrectSound" src="som_de_resposta_errada_efeito_sonoro_toquesengracadosmp3.com.mp3"></audio>
+    <audio id="backgroundMusic" src="LAKEY INSPIRED - Me 2 (Feat. Julian Avila).mp3" loop autoplay></audio>
+</body>
+</html>
