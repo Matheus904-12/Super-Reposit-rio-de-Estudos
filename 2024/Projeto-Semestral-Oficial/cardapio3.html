@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOBREMESAS</title>
+    <link rel="stylesheet" href="cardapio3.css">
+    <link rel="stylesheet" href="/carrinho/carrinho.css">
+    <link rel="stylesheet" href="padrões.css">
+    <link rel="shortcut icon" href="/fotos2/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+
+        <section id="header">
+
+            <img src="/fotos2/logo.png" alt="Logo Taste of Arabia">
+            <section class="header">
+                <nav>
+                    <a href="/paginicial.html">Início</a>
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="/cardapio/cardapio.html">Cardápio</a>
+                    <a href="">Cadastro</a>
+                    <a href="#faleconosco">Fale Conosco</a>
+                </nav>
+            </section>
+            <section class="login">
+                <div class="cart-container" onclick="toggleCartDropdown()">
+                    <img src="/fotos2/carrinho.png" alt="Carrinho" class="cart-icon">
+                    <span id="cart-counter">0</span> <!-- Contador de itens -->
+                </div>
+                <!-- Dropdown do carrinho -->
+                <div id="cart-dropdown" class="cart-dropdown">
+                    <h3>Itens no Carrinho:</h3>
+                    <ul id="cart-items"></ul>
+                    <button onclick="finalizarPedido()">Finalizar Pedido</button>
+                </div>
+            </section>
+
+        </section>
+        <h1>SOBREMESAS</h1>
+    </header>
+
+    <div class="linha"></div>
+
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Baclava.png" alt="">
+
+            <div class="juntos">
+                <h3>Baclava</h3>
+                <p>Delicadas camadas de massa folhada, recheadas com nozes trituradas e cobertas com uma calda de mel ou
+                    xarope de açúcar. A combinação de crocância e doçura faz desta sobremesa um clássico.</p>
+            </div>
+            <div class="preco">
+                <h4> R$3,97</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Knafeh.png" alt="">
+
+            <div class="juntos">
+                <h3>Knafeh</h3>
+                <p>Sobremesa feita com uma base de massa fina chamada kataifi, recheada com queijo macio e embebida em
+                    calda de açúcar perfumada com água de rosas. Um equilíbrio perfeito entre crocante e cremoso.
+                </p>
+            </div>
+            <div class="preco">
+                <h4> R$4,19</h4>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Maamoul.png" alt="">
+
+            <div class="juntos">
+                <h3>Maamoul</h3>
+                <p>Biscoitos delicadamente moldados, recheados com tâmaras ou nozes, e polvilhados com açúcar de
+                    confeiteiro. Um doce tradicional e levemente doce, perfeito para acompanhar um café.
+                </p>
+            </div>
+            <div class="preco">
+                <h4> R$4,96</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Halwa.png" alt="">
+
+            <div class="juntos">
+                <h3>Halwa</h3>
+                <p>Doce árabe à base de semolina ou gergelim, que pode ser enriquecido com pistaches ou amêndoas. Sua
+                    textura macia e sabor delicado fazem dele uma sobremesa deliciosa e popular.
+                </p>
+            </div>
+            <div class="preco">
+                <h4> R$4,95</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Basbousa.png" alt="">
+
+            <div class="juntos">
+                <h3>Basbousa</h3>
+                <p>Bolo de semolina regado com uma calda doce de açúcar, frequentemente decorado com amêndoas. Um bolo
+                    úmido e saboroso, com uma textura levemente granulada.
+                </p>
+            </div>
+            <div class="preco">
+                <h4> R$5,94</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Ruzbil.png" alt="">
+
+            <div class="juntos">
+                <h3>Ruz Bil Halib</h3>
+                <p>Arroz doce cozido com leite, aromatizado com especiarias como canela e água de rosas. Uma sobremesa
+                    cremosa e reconfortante, perfeita para encerrar uma refeição.
+                <p>
+            </div>
+            <div class="preco">
+                <h4> R$7,39</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Qateyef.png" alt="">
+
+            <div class="juntos">
+                <h3>Qateyef</h3>
+                <p>Pequenas panquecas recheadas com nozes ou creme, frequentemente fritas e embebidas em calda de
+                    açúcar. Uma sobremesa leve e crocante.
+                </p>
+                </p>
+            </div>
+            <div class="preco">
+                <h4> R$7,29</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Mhalabiya.png" alt="">
+
+            <div class="juntos">
+                <h3>Mhalabiya</h3>
+                <p>Pudim de leite aromatizado com água de rosas ou flor de laranjeira, servido gelado e frequentemente
+                    decorado com pistaches moídos. Leve e refrescante.
+                </p>
+            </div>
+            <div class="preco">
+                <h4> R$8,19</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Balah.png" alt="">
+
+            <div class="juntos">
+                <h3>Balah</h3>
+                <p>Bolinhos fritos, semelhantes ao churro, embebidos em calda de açúcar. Crocantes por fora e macios por
+                    dentro.
+                </p>
+            </div>
+            <div class="preco">
+                <h4> R$8,99</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/Ghriba.png" alt="">
+
+            <div class="juntos">
+                <h3>Ghriba</h3>
+                <p>Biscoitos amanteigados feitos com amêndoas moídas ou semolina. Eles se desfazem na boca e têm um
+                    sabor suave e levemente doce.
+                </p>
+            </div>
+            <div class="preco">
+                <h4> R9,99</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="linha">
+
+    </div>
+    <section id="faleconosco">
+        <footer class="footer">
+            <!-- Adicionando a imagem de fundo -->
+            <img src="/fotos2/footer.png" alt="Imagem de fundo" class="imagem-fundo">
+
+            <div>
+                <div>
+                    <section id="faleconosco">
+                        <div class="duvidass">
+                            <p>DÚVIDAS OU SUGESTÕES ?</p>
+                        </div>
+                        <div class="duvidas">
+                            <p>Fale Conosco!</p>
+                        </div>
+                </div>
+                <div class="fale">
+                    <img src="/fotos2/location.png" alt="">
+                    <p>Av. Dr. Ricardo Jafet, 3332 | SP</p>
+                </div>
+                <div class="falee">
+                    <img src="/fotos2/message.png" alt="">
+                    <p>tasteofarabia.restaurante@gmail.com</p>
+                </div>
+                <div class="botao">
+                    <button onclick="enviarEmail()">Enviar</button>
+                </div>
+                <div class="redes">
+                    <button class="botao-rede">
+                        <img src="/fotos2/whats.png" alt="WhatsApp">
+                    </button>
+                    <button class="botao-rede">
+                        <img src="/fotos2/insta.png" alt="Instagram">
+                    </button>
+                    <button class="botao-rede">
+                        <img src="/fotos2/face.png" alt="Facebook">
+                    </button>
+                </div>
+    </section>
+    </div>
+
+    <!-- Botão no canto superior direito -->
+    <a href="/jogo/jogo.html" class="botao-direito">
+        <img src="/fotos2/mascote.png" alt="Botão para outra página">
+    </a>
+    </footer>
+    </section>
+    <script src="/carrinho/carrinho.js"></script>
+    <script src="/gmail/gmail.js"></script>
+</body>
+
+</html>
