@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eggman Empire - Login</title>
+  <meta name="title" content="Eggman Empire - Login">
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/font/font.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cursor.css">
+  <link rel="stylesheet" href="./css/cad.css">
+  <link rel="stylesheet" href="./css/tag.css">
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+  <link rel="icon" type="image/x-icon" href="./assets/images/iconX.png">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body id="top">
+
+  
+  <!-- Carregamento da página -->
+
+  <div class="preloader" data-preloader>
+    <span class="line"></span>
+  </div>
+
+  <!--Navegação-->
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/logo eggman.png"
+         width="84" height="26" alt="logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo eggman.png" 
+            width="84" height="26" alt="logo">
+          </a>
+
+          <button class="nav-close-btn" 
+          aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" 
+            aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          
+      <a href="index.html" class="btn btn:hover">
+        <span class="span">Voltar</span>
+      </a>
+    </ul>
+  </nav>
+
+  <button class="nav-open-btn btn:hover" 
+  aria-label="open menu" data-nav-toggler>
+    <span class="line line-3"></span>
+    <span class="line line-1"></span>
+    <span class="line line-2"></span>
+  </button>
+
+      <div class="overlay" 
+      data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+  <main>
+    <article>
+      <div class="cursor-dot" data-cursor></div>
+      <div class="cursor-outline" data-cursor></div>
+
+      <br>
+      <br>
+
+      <!-- Código do card com formulários de login e cadastro -->
+      <section class="card-section">
+        <div class="card-container">
+          <div class="card" id="card">
+            <div class="card-front">
+              <h4 class="mb-4 pb-3" id="loginTitle">Entrar</h4>
+              <div id="idiomas">
+    <img src="eua.png" alt="English" class="bandeira" onclick="changeLanguage('en')">
+    <img src="brasil.png" alt="Português" class="bandeira" onclick="changeLanguage('pt-br')">
+    <img src="espanha.png" alt="Español" class="bandeira" onclick="changeLanguage('es')">
+</div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-style" placeholder="Seu Email" id="email" autocomplete="off">
+              </div> 
+              <div class="form-group mt-2">
+                <input type="password" name="senha" class="form-style" placeholder="Sua Senha" id="senha" autocomplete="off">
+              </div>
+              <a href="index.html" class="btn mt-4 btn btn:hover" onclick="flipCard()" id="loginButton">Entrar</a>
+              
+              <p class="mb-0 mt-4 text-center"><a href="#0" class="link" id="forgotPassword">Esqueceu sua senha?</a></p>
+              
+              <a href="#" class="btn mt-4 btn btn:hover" onclick="flipCard()" id="notRegistered">Não é Cadastrado?</a>
+            </div>
+            
+    
+
+
+
+
+
+
+            <div class="card-back">
+              <h4 class="mb-4 pb-3" id="registerTitle">Cadastre-se</h4>
+              
+              <!-- Botões de idioma com ícones -->
+              <div id="idiomas">
+                  <img src="eua.png" alt="English" class="bandeira" onclick="changeLanguage('en')">
+                  <img src="brasil.png" alt="Português" class="bandeira" onclick="changeLanguage('pt-br')">
+                  <img src="espanha.png" alt="Español" class="bandeira" onclick="changeLanguage('es')">
+              </div>
+          
+              <div class="form-group1">
+                  <input type="text" name="nome" class="form-style1" placeholder="Seu Nome Completo" id="nome" autocomplete="off">
+              </div> 
+              
+              <div class="form-group1">
+                  <input type="email" name="email" class="form-style1" placeholder="Seu Email" id="email" autocomplete="off">
+              </div> 
+              
+              <div class="form-group1">
+                  <input type="password" name="senha" class="form-style1" placeholder="Sua Senha" id="senha" autocomplete="off">
+              </div>
+              
+              <div class="form-group mt-2">
+                  <div id="foto-preview-" class="entrar-mobile"></div>
+                  <button class="btn btn-left btn-take-photo" onclick="escolherArquivo()"></button>
+                  <input type="file" id="inputFile" style="display:none" onchange="selecionarArquivo()">
+              </div>
+          
+              <div class="btn-group">
+                  <a href="index.html" class="mt-4 btn btn:hover" onclick="flipCard()" id="cancelButton">Cancelar</a>                
+                  <a href="#" class="mt-4 btn btn:hover" onclick="flipCard()" id="backButton">Voltar</a>
+                  <a href="index.html" class="mt-4 btn btn:hover" onclick="flipCard()" id="registerButton">Cadastrar</a>
+              </div>
+          </div>
+          
+      </section>
+  
+      <div id="mensagem" style="display: none; color: red;"></div>
+      
+      <script src="./js/script.js"></script>
+      <script>
+        // Função para carregar as traduções do arquivo JSON
+        async function loadTranslations() {
+            const response = await fetch('tras.json');
+            const translations = await response.json();
+            return translations;
+        }
+
+        // Função para traduzir os elementos
+        function translate(id, lang, translations) {
+            const element = document.getElementById(id);
+            if (element && translations[lang] && translations[lang][id]) {
+                element.innerText = translations[lang][id];
+            }
+        }
+
+        // Função para alterar o idioma
+        async function changeLanguage(lang) {
+            document.documentElement.lang = lang;
+            const translations = await loadTranslations();
+    translate('loginTitle', lang, translations);
+    translate('emailPlaceholder', lang, translations);
+    translate('passwordPlaceholder', lang, translations);
+    translate('loginButton', lang, translations);
+    translate('forgotPassword', lang, translations);
+    translate('notRegistered', lang, translations);
+    translate('registerTitle', lang, translations);
+    translate('namePlaceholder', lang, translations);
+    translate('registerButton', lang, translations);
+    translate('cancelButton', lang, translations);
+    translate('backButton', lang, translations);
+}
+
+// Carregar traduções na inicialização
+document.addEventListener('DOMContentLoaded', async function () {
+            await changeLanguage('pt-br');
+        });
+
+</script>      
+
+   
+        <!--Icones-->
+      
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      </body>
+      </html>
