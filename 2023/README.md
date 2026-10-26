@@ -33,6 +33,8 @@ Esta pasta reúne os projetos migrados para dentro do super-repositório. Os lin
 | [Word](Word/README.md) | Material em Markdown | Arquivo `txt.md` copiado. |
 | [Gerenciador-De-Contatos](Gerenciador-De-Contatos/README.md) | Gerenciador de contatos | HTML, JS e CSS copiados; falta vídeo de demonstração. |
 | [Jogo-Da-Cobrinha](Jogo-Da-Cobrinha/README.md) | Jogo da cobrinha | HTML, JS e CSS copiados; faltam áudio e imagem. |
+| [carrossel](carrossel/README.md) | Carrossel de produtos | HTML, JS e CSS copiados; faltam imagens. |
+| [atualiza--o](atualiza--o/README.md) | Site responsivo | HTML, JS e CSS responsivo copiados; faltam imagens.
 
 ## Projetos ainda não migrados
 
@@ -45,8 +47,8 @@ Esta pasta reúne os projetos migrados para dentro do super-repositório. Os lin
 | Tema | Avaliar porte; há muitas fontes binárias. |
 
 | atualiza--o | Migrar HTML, CSS, JS e imagens. |
-| SetupPro, Warhammer-Pro, dowcode, Bot, python, Meu-Perfil, atualiza--o e outros | Fazer triagem de arquivos, duplicidade, dependências e recursos binários antes de importar. |
-| carrossel | O código HTML ainda precisa ser gravado; as imagens PNG precisam ser transferidas. |
+| SetupPro, Warhammer-Pro, dowcode, Bot, python, Meu-Perfil e outros | Fazer triagem de arquivos, duplicidade, dependências e recursos binários antes de importar. |
+
 
 ## Regras de organização
 
