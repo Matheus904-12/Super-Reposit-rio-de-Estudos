@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+
+
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Mont/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Semibold";
+    src: url(/Mont/Montserrat-SemiBold.ttf);
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-repeat: no-repeat;
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1536px;
+    height: 100px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.48) 24%, rgba(0, 0, 0, 0.7344187675070029) 49%, rgba(0, 0, 0, 0.9501050420168067) 93%);
+}
+
+#header img {
+    margin-left: 15px;
+    width: 110px;
+}
+
+.header nav a {
+    margin: 0 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header nav a:hover {
+    color: #e0a848;
+}
+
+.login a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.login button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #D98A38;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "SemiBold";
+}
+
+.login button:hover {
+    background-color: #c88124;
+}
+
+.container {
+    position: relative;
+    width: 850px;
+    height: 500px;
+    top: 50px;
+    left: 340px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forms-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.sign-in-form {
+    position: absolute;
+    width: 300px;
+    transition: transform 0.6s ease-in-out;
+    text-align: center;
+    top: -145px;
+    right: 485px;
+}
+
+.sign-up-form {
+    position: absolute;
+    width: 300px;
+    transition: transform 0.6s ease-in-out;
+    text-align: center;
+    top: -145px;
+    right: 60px;
+
+}
+
+.sign-in-form {
+    transform: translateX(0%);
+}
+
+.sign-up-form {
+    transform: translateX(250%);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0a848;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #D98A38;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #66a6ff;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #5b92e5;
+}
+
+.panels-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #e0a848, #ca8103);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    transition: transform 0.6s ease-in-out;
+}
+
+.panel {
+    padding: 0 30px;
+}
+
+.panel h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.panel p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.panel button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.panel button:hover {
+    background: white;
+    color: #66a6ff;
+}
+
+/* Animation for toggle */
+.container.sign-up-mode .sign-in-form {
+    transform: translateX(-400%);
+}
+
+.container.sign-up-mode .sign-up-form {
+    transform: translateX(0%);
+}
+
+.container.sign-up-mode .panels-container {
+    transform: translateX(-100%);
+}
+
+.imagem-fundo {
+    position: absolute; /* Fixa a imagem atrás do conteúdo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz a imagem ocupar toda a largura */
+    height: 100%; /* Faz a imagem ocupar toda a altura */
+    object-fit: cover; /* Garante que a imagem seja ajustada corretamente */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
