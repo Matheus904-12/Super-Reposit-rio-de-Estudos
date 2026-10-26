@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <center>
+    <div class="box">
+        <div class="container">
+            <h1 id="titulo">Pedra, Papel e Tesoura</h1>
+            <div class="placar" id="placar">
+                <div class="jogador">
+                    <h2 id="jogadorNome">Matheus</h2>
+                    <p id="jogadorPontos">0</p>
+                    <ul class="escolhas" id="jogadorEscolha">
+                        <li>
+                            <a id="jogadorEscolha1" class="escolha" onclick="jogar(1)">
+                                <img src="img/1-removebg-preview.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a id="jogadorEscolha2" class="escolha" onclick="jogar(2)">
+                                <img src="img/2-removebg-preview.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a id="jogadorEscolha3" class="escolha" onclick="jogar(3)">
+                                <img src="img/3-removebg-preview.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="versus">VS</div>
+                <div class="computador">
+                    <h2 id="computadorNome">Inteligência Artificial</h2>
+                    <p id="computadorPontos">0</p>
+                    <ul class="escolhas" id="computadorEscolha">
+                        <li>
+                            <a id="computadorEscolha1" class="escolha">
+                                <img src="img2/1.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a id="computadorEscolha2" class="escolha">
+                                <img src="img2/2.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a id="computadorEscolha3" class="escolha">
+                                <img src="img2/3.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mensagem"><p id="mensagem"class="result-message">&nbsp;</p>
+    </div>
+</center>
+</body>
+</html>
