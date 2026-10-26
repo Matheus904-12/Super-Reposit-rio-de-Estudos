@@ -22,6 +22,8 @@ Esta pasta reúne os projetos migrados para dentro do super-repositório. Os lin
 | [Namorar-](Namorar-/README.md) | Página HTML | HTML copiado; testar. |
 | [Exercicio-de-controle-](Exercicio-de-controle-/README.md) | Exercício de HTML | HTML copiado; testar. |
 | [sorteio](sorteio/README.md) | Exercício de sorteio | HTML, JS e CSS copiados; testar. |
+| [X-Men](X-Men/README.md) | Seletor de personagens X-Men | Código textual copiado; faltam imagens e logo. |
+| [Pedra-Papel](Pedra-Papel/README.md) | Jogo Pedra, Papel e Tesoura | Código textual copiado; faltam imagens. |
 
 ## Projetos ainda não migrados
 
