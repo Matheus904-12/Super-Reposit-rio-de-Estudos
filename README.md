@@ -1,6 +1,6 @@
 # Super Repositório de Estudos
 
-> Monorepo de exercícios, experimentos pequenos e estudos técnicos a partir de 2025.
+> Monorepo de exercícios, experimentos pequenos e estudos técnicos de 2023 a 2025.
 
 Este repositório **guarda os arquivos dos projetos selecionados**, organizados por ano e tema. Não é apenas um índice de links. Projetos grandes, aplicações relevantes e projetos ativos continuam em repositórios separados; exercícios pequenos e experimentos de baixo valor independente podem ser incorporados aqui.
 
@@ -8,7 +8,9 @@ Este repositório **guarda os arquivos dos projetos selecionados**, organizados 
 
 | Pasta | Conteúdo |
 |---|---|
-| [2025](2025/README.md) | Projetos e experimentos criados em 2025; projetos de 2026 ficam explicitamente fora desta seleção |
+| [2023](2023/README.md) | Primeiros exercícios e projetos pessoais |
+| [2024](2024/README.md) | Projetos técnicos e aplicações desenvolvidas em 2024 |
+| [2025](2025/README.md) | Estudos e projetos de 2025; projetos de 2026 ficam fora desta seleção |
 | [GitHub Copilot](github-copilot/README.md) | Guia de uso, prompts, exercícios e boas práticas |
 | [Microsoft Learn](microsoft-learn/README.md) | Trilhas oficiais e acompanhamento dos estudos |
 | [Catálogo de migração](catalogo/README.md) | Controle do que foi copiado, está pendente ou deve continuar fora |
@@ -18,7 +20,7 @@ Este repositório **guarda os arquivos dos projetos selecionados**, organizados 
 
 ## Regras de inclusão
 
-1. **Data:** nesta rodada, incluir repositórios criados em 2025. Não importar conteúdo de 2026 nesta seleção.
+1. **Período:** organizar projetos criados em 2023, 2024 e 2025 nas pastas correspondentes. Projetos criados em 2026 não entram nesta migração histórica.
 2. **Escopo:** importar projetos pequenos, exercícios e experimentos sem valor suficiente para manter um repositório independente.
 3. **Manter fora:** projetos grandes, aplicações relevantes, projetos ativos e produtos que mereçam histórico e ciclo de vida próprios.
 4. **Conteúdo real:** quando um projeto for selecionado, copiar seus arquivos para esta árvore; um link isolado não conta como migração.
@@ -29,7 +31,9 @@ Este repositório **guarda os arquivos dos projetos selecionados**, organizados 
 
 - [x] Criar a estrutura principal do monorepo.
 - [x] Iniciar a importação dos arquivos do estudo `AccelerateDevGHCopilot` para [2025/estudos-github-copilot/AccelerateDevGHCopilot](2025/estudos-github-copilot/AccelerateDevGHCopilot/README.md).
+- [x] Criar as áreas de organização para 2023 e 2024.
 - [ ] Completar a importação do projeto de estudo e validar build/testes.
+- [ ] Triar os repositórios de 2023 e 2024 por tamanho, utilidade, risco e possibilidade de preservação.
 - [ ] Triar os demais repositórios de 2025 por data, tamanho, utilidade e risco.
 - [ ] Copiar os projetos pequenos aprovados e verificar cada importação.
 - [ ] Manter fora os projetos grandes e ativos.
