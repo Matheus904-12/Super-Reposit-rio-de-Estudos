@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bingo do SENAI</title>
+</head>
+<head>
+	<link rel="shortcut icon" type="imagex/png" href="png-transparent-bingo-balls-thumbnail-removebg-preview.png">
+  	<link rel="stylesheet" href="style.css">
+<meta charset="utf-8" />
+
+<h1>Bingo do SENAI</h1>
+<p>
+  <b>Como jogar bingo:</b>
+  <ul>
+    <li>Cada jogador recebe um cartão com 25 números, dispostos em cinco linhas e cinco colunas.</li>
+    <li>Um apresentador vai chamando números aleatórios.</li>
+    <li>Os jogadores marcam os números que são chamados em seus cartões.</li>
+    <li>O primeiro jogador a marcar cinco números em uma linha, coluna ou diagonal ganha o jogo.</li>
+  </ul>
+</p>
+<p>
+  <b>Origem do bingo:</b>
+  <ul>
+    <li>O bingo é um jogo de origem italiana, que se chamava "Lo Giuoco del Lotto d'Italia".</li>
+    <li>O jogo chegou aos Estados Unidos no início do século XX e se popularizou rapidamente.</li>
+    <li>Atualmente, o bingo é um jogo popular em todo o mundo.</li>
+  </ul>
+</p>
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body onload="newCard()">
+	<div id="container">
+    <div id="header"></div>
+	<div id="content">
+		<table id="bingotable">
+			<tr class="headerr"><th class="orange">B</th><th class="orange">I</th><th class="orange">N</th><th class="orange">G</th><th class="orange">O</th></tr>
+			<tr><td id="square0"> &nbsp;</td><td id="square1"> &nbsp;</td><td id="square2"> &nbsp;</td><td id="square3"> &nbsp;</td><td id="square4"> &nbsp;</td></tr>
+			<tr><td id="square5"> &nbsp;</td><td id="square6"> &nbsp;</td><td id="square7"> &nbsp;</td><td id="square8"> &nbsp;</td><td id="square9"> &nbsp;</td></tr>
+			<tr><td id="square10"> &nbsp;</td><td id="square11"> &nbsp;</td><td id="squarefree"> FREE</td><td id="square12"> &nbsp;</td><td id="square13"> &nbsp;</td></tr>
+			<tr><td id="square14" onclick="color()"> &nbsp;</td><td id="square15"> &nbsp;</td><td id="square16"> &nbsp;</td><td id="square17"> &nbsp;</td><td id="square18"> &nbsp;</td></tr>
+			<tr><td id="square19"> &nbsp;</td><td id="square20"> &nbsp;</td><td id="square21"> &nbsp;</td><td id="square22"> &nbsp;</td><td id="square23"> &nbsp;</td></tr>
+		</table>
+	</div>
+<p><a href="#" onclick="anotherCard()">Clique Aqui </a>para criar um novo cartão</p>
+</body>
+</html>
