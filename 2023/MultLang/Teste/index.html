@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multlang</title>
+    <style>
+        .conteudo {
+            padding: 1em;
+            border: 1px solid #ccc;
+            margin-bottom: 1em;
+        }
+
+        #idiomas {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo" id="paragrafo1"></div>
+    <div class="conteudo" id="paragrafo2"></div>
+    <div class="conteudo" id="paragrafo3"></div>
+
+    <div id="idiomas">
+        <button onclick="Escolher('en')">English</button>
+        <button onclick="Escolher('ptbr')">Português</button>
+        <button onclick="Escolher('es')">Espanõl</button>
+    </div>
+
+    <script>
+        function Escolher(idioma) {
+
+            fetch(`textos_${idioma}.json`)
+                .then((resposta) => resposta.json())
+                .then(texto => {
+
+                    document.getElementById('paragrafo1').innerText = texto.paragrafo1;
+                    document.getElementById('paragrafo2').innerText = texto.paragrafo2;
+                    document.getElementById('paragrafo3').innerText = texto.paragrafo3;
+                })
+                .catch(error => console.error('Erro buscando textos:', error));
+        }
+    </script>
+</body>
+</html>
