@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h1>To Do:</h1>
+        </div>
+        <div class="formulario">
+            <form id="form">
+                <p>Adicione sua tarefa</p>
+                <div class="form-controle">
+                    <input type="text" id="tarefa-input" placeholder="O que você vai fazer?">
+                </div>
+                <button type="submit">Adicionar</button>
+            </form>
+            <form id="edit-form" class="hide">
+            <p>Edite sua tarefa</p>
+            <div class="form-controle">
+                <input type="text" id="edit-input">
+                <button type="submit">Salvar</button>
+            </div>
+            <button id="cancela-edit">Cancelar</button>
+            </form>
+            <div id="barra">
+                <div id="pesquisar">
+                    <h4>Pesquisar:</h4>
+                    <form>
+                        <input type="text" id="buscar-input" placeholder="Buscar...">
+                        <button id="limpar">Limpar</button>
+                    </form>
+                </div>
+                <div id="filtro">
+                    <h4>Filtrar:</h4>
+                    <select id="filtro-selecao">
+                        <option value="all">Todos</option>
+                        <option value="done">Feitos</option>
+                        <option value="todo">A fazer</option>
+                    </select>
+                </div>
+            </div>
+            <div id="tarefas-lista">
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
