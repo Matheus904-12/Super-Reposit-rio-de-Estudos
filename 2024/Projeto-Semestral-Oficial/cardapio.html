@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTRADAS</title>
+    <link rel="stylesheet" href="cardapio.css">
+    <link rel="stylesheet" href="/carrinho/carrinho.css">
+    <link rel="stylesheet" href="padrões.css">
+    <link rel="shortcut icon" href="/fotos2/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+
+        <section id="header">
+
+            <img src="/fotos2/logo.png" alt="Logo Taste of Arabia">
+            <section class="header">
+                <nav>
+                    <a href="/paginicial.html">Início</a>
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="#">Cardápio</a>
+                    <a href="enviar/enviar.html">Cadastro</a>
+                    <a href="#faleconosco">Fale Conosco</a>
+                </nav>
+            </section>
+            <section class="login">
+                <div class="cart-container" onclick="toggleCartDropdown()">
+                    <img src="/fotos2/carrinho.png" alt="Carrinho" class="cart-icon">
+                    <span id="cart-counter">0</span> <!-- Contador de itens -->
+                </div>
+                <!-- Dropdown do carrinho -->
+                <div id="cart-dropdown" class="cart-dropdown">
+                    <h3>Itens no Carrinho:</h3>
+                    <ul id="cart-items"></ul>
+                    <button onclick="finalizarPedido()">Finalizar Pedido</button>
+                </div>
+            </section>
+
+        </section>
+        <h1>ENTRADAS</h1>
+    </header>
+
+    <div class="linha"></div>
+
+    <div class="container">
+        <div class="comida">
+            <img src="/imagens/hummus 1.png" alt="">
+
+            <div class="juntos">
+                <h3>Hummus</h3>
+                <p>Esta clássica pasta de grão-de-bico é uma verdadeira estrela da culinária árabe. Feita com
+                    grão-de-bico cozido e tahine, o prato é temperado com limão, alho e azeite de oliva, criando uma
+                    mistura rica e cremosa. O hummus é perfeito para ser servido como entrada, acompanhado de pão sírio
+                    fresco. Além de saboroso, é uma opção saudável, repleta de proteínas e fibras, ideal para
+                    compartilhar entre amigos e familiares.</p>
+            </div>
+            <div class="preco">
+                <h4> R$19,23</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/hummus 11.png" alt="">
+
+            <div class="juntos">
+                <h3>Baba Ganoush</h3>
+                <p>Um purê suave e defumado de berinjela assada, que é misturado com tahine, alho e suco de limão.
+                    Finalizado com um fio de azeite de oliva, o Baba Ganoush traz uma explosão de sabores mediterrâneos
+                    em cada garfada. É uma opção leve e refrescante que combina bem com pães ou como acompanhamento de
+                    pratos variados.</p>
+            </div>
+            <div class="preco">
+                <h4> R$9,19</h4>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/humus 12.png" alt="">
+
+            <div class="juntos">
+                <h3>Tabule</h3>
+                <p>Uma salada vibrante e refrescante feita com trigo bulgur, tomate picado, pepino crocante, cebola roxa
+                    e folhas frescas de hortelã. Regada com azeite de oliva e suco de limão, essa salada é não apenas
+                    deliciosa, mas também saudável. O Tabule é uma escolha perfeita para aqueles que desejam um toque
+                    fresco e leve antes do prato principal.</p>
+            </div>
+            <div class="preco">
+                <h4> R$19,09</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/hummus 4.png" alt="">
+
+            <div class="juntos">
+                <h3>Falafel</h3>
+                <p>Os falafels são bolinhos fritos que conquistaram o coração de muitos. Feitos principalmente de
+                    grão-de-bico ou fava, eles são temperados com especiarias e ervas, proporcionando uma crocância
+                    irresistível por fora e uma maciez no interior. Servidos com molhos, como tahine ou molho de
+                    iogurte, os falafels são ideais como aperitivo ou lanche, oferecendo uma opção vegetariana saborosa
+                    e nutritiva.</p>
+            </div>
+            <div class="preco">
+                <h4> R$14,96</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/hummus 13.png" alt="">
+
+            <div class="juntos">
+                <h3>Kibbeh</h3>
+                <p>O kibbeh é um prato tradicional árabe que varia em formas e recheios. Consiste em bolinhos feitos de
+                    carne moída, trigo e especiarias, muitas vezes recheados com carne picada, cebola e pinhões. A
+                    mistura de sabores e texturas é simplesmente irresistível. Pode ser servido cru, assado ou frito, e
+                    é uma escolha popular em festas e celebrações, sendo apreciado por todos que o provam.</p>
+            </div>
+            <div class="preco">
+                <h4> R$14,29</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/hummus 14.png" alt="">
+
+            <div class="juntos">
+                <h3>Sambouseks</h3>
+                <p> Os sambouseks são pastéis recheados, perfeitos para quem aprecia uma mistura de texturas e sabores.
+                    O recheio pode ser de carne temperada ou queijo, e a massa é fininha e crocante, assada até dourar.
+                    Servidos quentes, os sambouseks são ideais como aperitivos, proporcionando um toque de sofisticação
+                    ao seu menu. Eles são fáceis de compartilhar e sempre fazem sucesso em qualquer reunião.
+            </div>
+            <div class="preco">
+                <h4> R$19,87</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/hummus 15.png" alt="">
+
+            <div class="juntos">
+                <h3>Moutabal</h3>
+                <p>O moutabal é uma variação do baba ganoush, com uma concentração ainda maior de tahine, que realça seu
+                    sabor. A berinjela é assada e, em seguida, misturada com tahine, alho e limão, criando uma pasta
+                    espessa e cremosa. Este prato é ideal para ser servido como um acompanhamento ou como parte de um
+                    meze, oferecendo uma experiência culinária rica e deliciosa.
+                </p>
+            </div>
+            <div class="preco">
+                <h4> R$9,34</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/hummus 16.png" alt="">
+
+            <div class="juntos">
+                <h3>Labneh</h3>
+                <p>O labneh é um iogurte espesso, popular no Oriente Médio, que é servido com um fio de azeite e às
+                    vezes temperado com ervas. Ele tem uma textura cremosa e um sabor suave, tornando-o uma opção
+                    perfeita para acompanhar pães e como base para molhos. O labneh também é uma ótima adição a saladas
+                    e pratos de arroz, oferecendo uma experiência de sabor fresca e leve.</p>
+            </div>
+            <div class="preco">
+                <h4> R$14,45</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/hummus 17.png" alt="">
+
+            <div class="juntos">
+                <h3>Fattoush</h3>
+                <p>A salada fattoush é uma deliciosa mistura de vegetais frescos e pedaços crocantes de pão sírio. Feita
+                    com alface, tomate, pepino e rabanete, a salada é temperada com molho à base de limão e especiarias.
+                    O pão sírio é frito ou tostado, adicionando uma crocância irresistível. Fattoush é uma escolha
+                    refrescante, ideal para equilibrar pratos mais pesados e um complemento vibrante ao seu menu.</p>
+            </div>
+            <div class="preco">
+                <h4> R$19,87</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="comida">
+            <img src="imagens/hummus 18.png" alt="">
+
+            <div class="juntos">
+                <h3>Mujadara</h3>
+                <p>O mujadara é um prato de conforto que combina arroz, lentilhas e cebolas fritas crocantes. Simples,
+                    mas incrivelmente saboroso, é uma opção nutritiva que oferece proteínas e fibras em abundância. Este
+                    prato é frequentemente servido com um acompanhamento de iogurte ou salada, tornando-se uma refeição
+                    reconfortante e saudável. É uma escolha popular em refeições familiares e celebrações.</p>
+            </div>
+            <div class="preco">
+                <h4> R$19,99</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="linha">
+
+    </div>
+
+    <section id="faleconosco">
+        <footer class="footer">
+            <!-- Adicionando a imagem de fundo -->
+            <img src="/fotos2/footer.png" alt="Imagem de fundo" class="imagem-fundo">
+
+            <div>
+                <div>
+                    <section id="faleconosco">
+                        <div class="duvidass">
+                            <p>DÚVIDAS OU SUGESTÕES ?</p>
+                        </div>
+                        <div class="duvidas">
+                            <p>Fale Conosco!</p>
+                        </div>
+                </div>
+                <div class="fale">
+                    <img src="/fotos2/location.png" alt="">
+                    <p>Av. Dr. Ricardo Jafet, 3332 | SP</p>
+                </div>
+                <div class="falee">
+                    <img src="/fotos2/message.png" alt="">
+                    <p>tasteofarabia.restaurante@gmail.com</p>
+                </div>
+                <div class="botao">
+                    <button onclick="enviarEmail()">Enviar</button>
+                </div>
+                <div class="redes">
+                    <button class="botao-rede">
+                        <img src="/fotos2/whats.png" alt="WhatsApp">
+                    </button>
+                    <button class="botao-rede">
+                        <img src="/fotos2/insta.png" alt="Instagram">
+                    </button>
+                    <button class="botao-rede">
+                        <img src="/fotos2/face.png" alt="Facebook">
+                    </button>
+                </div>
+    </section>
+    </div>
+
+    <!-- Botão no canto superior direito -->
+    <a href="/jogo/jogo.html" class="botao-direito">
+        <img src="/fotos2/mascote.png" alt="Botão para outra página">
+    </a>
+    </footer>
+    </section>
+    <script src="/carrinho/carrinho.js"></script>
+    <script src="/gmail/gmail.js"></script>
+</body>
+
+</html>
