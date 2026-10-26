@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sorteio de nomes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #008000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0a5c0a;
+    }
+
+    .box {
+      width: 45%;
+      margin-right: 5%;
+      float: left;
+    }
+
+    .results {
+      width: 45%;
+      float: right;
+    }
+
+    .resultado {
+      margin-top: 20px;
+      font-size: 1.5em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      font-size: 1.2em;
+      margin: 5px;
+      padding: 5px 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+
+    .btn-container {
+      text-align: right;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sorteio de nomes</h1>
+    <div class="box">
+      <input type="text" id="nome" placeholder="Adicione um nome" class="form-control">
+      <button id="adicionar">Adicionar nome</button>
+    </div>
+    <div class="results">
+      <button id="sortear">Sortear</button>
+      <div id="resultado"></div>
+    </div>
+    <ul id="nomes"></ul>
+    <div class="btn-container">
+      <a href="index.html">Voltar</a>
+    </div>
+  </div>
+
+  <script>
+    function registrarNome() {
+      var nome = document.querySelector("#nome").value;
+
+      if (nome === "") {
+        alert("O nome não pode ser vazio.");
+        return;
+      }
+
+      var li = document.createElement("li");
+      li.textContent = nome;
+
+      var nomes = document.querySelector("#nomes");
+      nomes.appendChild(li);
+    }
+
+    function sortear() {
+      var len = document.querySelector("#nomes").children.length;
+
+      if (len > 0) {
+        var index = Math.floor(Math.random() * len);
+        var nome = document.querySelector("#nomes").children[index].textContent;
+        document.querySelector("#resultado").textContent = nome;
+      } else {
+        alert("Adicione nomes antes de sortear.");
+      }
+    }
+
+    document.querySelector("#adicionar").addEventListener("click", registrarNome);
+    document.querySelector("#sortear").addEventListener("click", sortear);
+  </script>
+</body>
+</html>
