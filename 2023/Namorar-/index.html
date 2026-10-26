@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sim</title>
+
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(#6815db, #1bc309);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .btn {
+            color: #fff;
+            background-color: #c09fee;
+            font: 300 40px 'Poppins', sans-serif;
+            padding: 15px 30px;
+
+            width: 200px;
+            border-radius: 15px;
+            border: 2px solid #fff;
+            margin: 10px;
+
+            cursor: pointer;
+            transition: ease-in-out 0.3s;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tituloPrincipal {
+            font: 700 40px 'Poppins', sans-serif;
+            color: #fff;
+        }
+
+        .titulo {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: space-around;
+            margin: 0 200px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .btn {
+                display: flex;
+                width: 100px;
+                font: 300 30px 'Poppins', sans-serif;
+            }
+            
+            .botoes {
+                display: flex;
+            }
+        }
+    </style>
+    <script>
+        function sim() {
+            location.href = 'https://www.youtube.com/watch?v=0VAAS9xnS5U';
+        }
+
+        function esquivo(btn) {
+            btn.style.position = 'absolute';
+            btn.style.bottom = posicao(10, 80);
+            btn.style.left = posicao(10, 80);
+        }
+
+        function posicao(min, max) {
+            return (Math.random() * (max - min + min)) + "%"
+        }
+    </script>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1 class="tituloPrincipal">Quer namorar comigo?</h1>
+    </div>
+
+    <div class="botoes">
+        <div class="botaoS">
+            <button class="btn" onclick="sim()">SIM</button>
+        </div>
+        <div class="botaoN">
+            <button class="btn" onclick="esquivo(this)" onmouseover="esquivo(this)">NÃO</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
