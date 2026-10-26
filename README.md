@@ -53,9 +53,12 @@ Leia o [checklist de segurança](seguranca/checklist.md). Se algum segredo já f
 
 ---
 
-*Projeto em construção. O catálogo será preenchido após a revisão dos repositórios de origem.*
+*Status: inventário público inicial concluído. A revisão individual, a validação de execução e a triagem de segurança continuam em andamento.*
 
 ## Próximas trilhas
 - [Trilha Java e engenharia de software](./trilha-java-backend/README.md)
 - [Critérios de classificação do catálogo](./catalogo/criterios-classificacao.md)
 - [Diário de exercícios do Copilot](./github-copilot/exercicios/diario.md)
+
+## Revisão de projetos
+- [Triagem e prioridades de revisão](./catalogo/projetos-prioritarios.md)
