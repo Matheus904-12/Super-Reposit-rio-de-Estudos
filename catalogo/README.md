@@ -14,11 +14,11 @@ Este catálogo registra projetos de 2023, 2024 e 2025 avaliados para organizaç�
 2. Copiar o conteúdo dos projetos selecionados para pastas reais dentro do monorepo; links de origem servem somente para atribuição e conferência.
 3. Não importar segredos, arquivos privados, dependências geradas, dados sensíveis ou material sem autorização de redistribuição.
 4. Confirmar que os arquivos foram copiados e testar build/testes antes de declarar a migração completa.
-5. Só remover uma origem após validação integral. A integração conectada não oferece uma ação para excluir repositórios inteiros; portanto, as origens não foram apagadas.
+5. Só remover uma origem após validação integral. As origens ainda não foram apagadas (a exclusão deve ser feita pelo autor, com `gh repo delete` ou pela interface do GitHub).
 
 ## Estado atual
 
-A pasta de 2023 e a pasta de 2024 já têm listas iniciais de candidatos. Os projetos listados nelas ainda precisam de triagem e cópia real. A importação de `AccelerateDevGHCopilot` (2025) está parcial. `DHCP-LAN` depende da possibilidade de preservar os arquivos binários Packet Tracer.
+A importação de 2023, 2024 e 2025 está concluída (veja as etapas abaixo). Os índices por ano estão em [2023](../2023/README.md), [2024](../2024/README.md) e [2025](../2025/README.md). Pendências: validar build/testes, trocar credenciais expostas e decidir o destino dos repositórios de origem.
 
 ## Importação por clone completo (etapa 2)
 

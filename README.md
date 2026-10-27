@@ -8,9 +8,9 @@ Este repositório é o destino central dos projetos migrados: os arquivos devem 
 
 | Pasta | Conteúdo |
 |---|---|
-| [2023](2023/README.md) | Primeiros exercícios e projetos pessoais |
-| [2024](2024/README.md) | Projetos técnicos e aplicações desenvolvidas em 2024 |
-| [2025](2025/README.md) | Estudos e projetos de 2025; projetos de 2026 ficam fora desta seleção |
+| [2023](2023/README.md) | Primeiros exercícios e projetos pessoais (66 projetos) |
+| [2024](2024/README.md) | Projetos técnicos e aplicações de 2024 (72 projetos) |
+| [2025](2025/README.md) | Estudos e projetos de 2025 (39 projetos); 2026 fica fora |
 | [GitHub Copilot](github-copilot/README.md) | Guia de uso, prompts, exercícios e boas práticas |
 | [Microsoft Learn](microsoft-learn/README.md) | Trilhas oficiais e acompanhamento dos estudos |
 | [Catálogo de migração](catalogo/README.md) | Controle do que foi copiado, está pendente ou deve continuar fora |
@@ -29,16 +29,15 @@ Este repositório é o destino central dos projetos migrados: os arquivos devem 
 
 ## Estado atual
 
-- [x] Criar as áreas de organização para 2023 e 2024.
-- [ ] Completar a importação do projeto de estudo e validar build/testes.
-- [ ] Triar os repositórios de 2023 e 2024 por tamanho, utilidade, risco e possibilidade de preservação.
-- [ ] Triar os demais repositórios de 2025 por data, tamanho, utilidade e risco.
-- [ ] Copiar os projetos pequenos aprovados e verificar cada importação.
-- [ ] Conferir se cada projeto foi migrado integralmente, inclusive configurações e assets binários.
-- [ ] Excluir os repositórios de origem somente depois de confirmar a cópia completa, validar os arquivos e registrar os links de demonstração.
+- [x] Importação dos repositórios de 2023, 2024 e 2025 concluída: **66 projetos em 2023, 72 em 2024 e 39 em 2025**, cada um na sua pasta.
+- [x] Repositórios de 2026 ficam de fora, de propósito.
+- [x] Dependências geradas, históricos de editor, credenciais e arquivos acima de 10 MB foram omitidos; chaves removidas aparecem como `REMOVIDA_*`/`REMOVIDO_*`.
+- [ ] Validar build/testes de cada projeto (as importações não foram executadas).
+- [ ] Revogar/trocar as credenciais expostas nos repositórios de origem (lista no [catálogo](catalogo/README.md)).
+- [ ] Apagar ou arquivar os repositórios de origem depois de conferir a cópia.
 
 ## Segurança
 
 Leia o [checklist de segurança](seguranca/checklist.md). Remover um segredo do arquivo atual não o invalida nem o apaga do histórico Git: credenciais expostas precisam ser revogadas ou rotacionadas.
 
-**Importante:** a importação inicial de `AccelerateDevGHCopilot` está parcial e ainda não foi testada. O repositório de origem não foi apagado.
+**Importante:** os repositórios de origem ainda não foram apagados. Antes disso, troque as credenciais listadas no [catálogo](catalogo/README.md).
