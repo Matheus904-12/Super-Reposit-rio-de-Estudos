@@ -1,0 +1,16 @@
+# Dependências para Teste Automatizado com Vídeo
+# Instalar com: pip install -r test_requirements.txt
+
+# Automação Web
+selenium==4.15.2
+
+# Processamento de Imagem e Vídeo
+opencv-python==4.8.1.78
+Pillow==10.0.1
+numpy==1.24.3
+
+# Requisições HTTP
+requests==2.31.0
+
+# WebDriver Manager (opcional - para gerenciar drivers automaticamente)
+webdriver-manager==4.0.1

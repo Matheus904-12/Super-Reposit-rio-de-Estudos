@@ -1,0 +1,24 @@
+[
+  {
+    "model": "apps.estacao",
+    "pk": 1,
+    "fields": {
+      "nome": "Luz",
+      "linha": 1,
+      "latitude": -23.5346,
+      "longitude": -46.6334,
+      "codigo": "LUZ"
+    }
+  },
+  {
+    "model": "apps.estacao",
+    "pk": 2,
+    "fields": {
+      "nome": "Brás",
+      "linha": 1,
+      "latitude": -23.5216,
+      "longitude": -46.5646,
+      "codigo": "BRAS"
+    }
+  }
+]

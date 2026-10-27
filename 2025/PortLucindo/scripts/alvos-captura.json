@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "agendei",
+    "url": "https://agendei-alpha.vercel.app",
+    "espera": 4000
+  },
+  {
+    "slug": "prodmais",
+    "url": "https://prodmais-6g41.onrender.com",
+    "espera": 3000,
+    "timeout": 180000,
+    "esperarSumir": "SERVICE WAKING UP"
+  },
+  {
+    "slug": "claude-cortex",
+    "url": "https://claude-cortex.vercel.app/",
+    "espera": 4000
+  },
+  {
+    "slug": "conectatea",
+    "url": "https://conectatea.netlify.app/",
+    "espera": 3500,
+    "clicar": "Painel do\\s*Especialista"
+  },
+  {
+    "slug": "sunnythings",
+    "url": "https://sunny-things.vercel.app",
+    "espera": 3500
+  }
+]

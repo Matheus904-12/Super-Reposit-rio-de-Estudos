@@ -1,0 +1,169 @@
+/* Estilos básicos para Golden Movie Studio */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.destaque {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+#recommendations-section,
+#search-section,
+#signup-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: #ffd700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+#recommendations div {
+    text-align: center;
+    max-width: 150px;
+}
+
+#recommendations img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#recommendations img:hover {
+    transform: scale(1.05);
+}
+
+#search-input,
+#signup-firstname,
+#signup-lastname,
+#signup-email,
+#signup-phone,
+#signup-password {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+#search-button,
+#clear-button,
+#signup-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover,
+#clear-button:hover,
+#signup-button:hover {
+    background-color: #ffed4e;
+}
+
+#results-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+#results-section div {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+    max-width: 200px;
+}
+
+#results-section img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#signup-section {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#signup-response {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #666;
+    color: #999;
+}
+
+a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

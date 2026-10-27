@@ -1,0 +1,11 @@
+[
+  {
+    "model": "apps.linha",
+    "pk": 1,
+    "fields": {
+      "nome": "Linha 7-Rubi",
+      "cor": "#8e44ad",
+      "codigo": "7"
+    }
+  }
+]

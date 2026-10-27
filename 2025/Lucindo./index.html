@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- UNICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <!-- Add favicon -->
+    <link rel="shortcut icon" href="IMAGE/eu2.png" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <script src="https://kit.fontawesome.com/fd29053194.js" crossorigin="anonymous"></script>
+
+    <title>Portfolio | Matheus Lucindo</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- --------------- CABEÇALHO --------------- -->
+
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Lucindo</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Início</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">Sobre</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#history" class="nav-link">Histórico</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projetos</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contato</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="fi fi-br-bars-staggered" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!-- -------------- PRINCIPAL ---------------- -->
+
+        <main class="wrapper">
+
+            <!-- -------------- DESTAQUE ---------------- -->
+
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Matheus Lucindo</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>Eu sou <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Desenvolvedor Web especializado na criação de sites e aplicações modernas, focado em
+                            performance, design responsivo e usabilidade.
+                        </p>
+                    </div>
+                    <div class="social_icons">
+                        <a href="https://www.instagram.com/matheus_lucindo/" target="_blank" class="icon"><i
+                                class="uil uil-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/matheus-lucindo-b35b68190/" target="_blank" class="icon"><i
+                                class="uil uil-linkedin-alt"></i></a>
+                        <a href="/PDF/CV de Matheus Lucindo dos Santos.pdf"
+                            download="Currículo de Matheus Lucindo dos Santos.pdf" class="icon"
+                            title="Baixar Currículo">
+                            <i class="fa-regular fa-file-pdf" style="color: #6e57e0;"></i></a>
+                        <a href="https://github.com/Matheus904-12" target="_blank" class="icon"><i
+                                class="uil uil-github-alt"></i></a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="/IMAGE/eu.png" alt="avatar">
+                    </div>
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Role para baixo</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- -------------- SOBRE ---------------- -->
+
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>Sobre Mim</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>Minha Introdução</h3>
+                            <p>Sou um Desenvolvedor Web apaixonado por transformar ideias em experiências digitais
+                                fluidas e eficientes. Atualmente, curso um tecnólogo em Análise e Desenvolvimento de
+                                Sistemas e sou formado pelo SENAI no curso técnico de Desenvolvimento de Sistemas. Com 2
+                                anos de experiência, trabalho com HTML, CSS, JavaScript, React e outras tecnologias para
+                                criar soluções web funcionais e de alto desempenho.</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>FrontEnd</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>BackEnd</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>PHP</span>
+                                <span>Node.JS</span>
+                                <span>APIs</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Database</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                                <span>Cloud Firestore</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- HISTÓRICO ---------------- -->
+
+            <section class="section" id="history">
+                <div class="top-header">
+                    <h1>Histórico</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Concluídos</h3>
+                        <label>20+ Projetos Finalizados</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="fa-solid fa-check"></i>
+                        <h3>Experiência</h3>
+                        <label>2 Anos na Área</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-award"></i>
+                        <h3>Formação</h3>
+                        <label>Desenvolvimento de Sistemas - SENAI</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- PROJETOS ---------------- -->
+
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Meus Projetos</h1>
+                    <span>Confira alguns dos meus melhores trabalhos em desenvolvimento web.</span>
+                </div>
+                <div class="project-container">
+                    <div class="project-box2">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h3>Supermarket App</h3>
+                        <label>App para facilitar compras</label>
+                        <a href="https://github.com/Matheus904-12/SunnyThings" target="_blank"
+                            class="project-btn">Visitar Projeto</a>
+                    </div>
+
+                    <div class="project-box2">
+                        <i class="fa-solid fa-table-list"></i>
+                        <h3>Recitativos CCB</h3>
+                        <label>Contador para Auxiliares</label>
+                        <a href="https://centralccb.netlify.app/" target="_blank" class="project-btn">Visitar
+                            Projeto</a>
+                    </div>
+
+                    <div class="project-box2">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h3>Eggman Fan-Page</h3>
+                        <label>Fan site do vilão</label>
+                        <a href="https://github.com/Cartoon-Network/Projeto-Semestral" target="_blank"
+                            class="project-btn">Visitar Projeto</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- -------------- CONTATO ---------------- -->
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Fale Comigo</h1>
+                    <span>Tem um projeto em mente? Entre em contato comigo aqui</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Me Encontre <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: matheuslucindo904@gmail.com</p>
+                            <p><i class="uil uil-phone"></i> +55 11 97166-6817</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                                <!-- Web3Forms Access Key -->
+                                <input type="hidden" name="access_key" value="6fcc2d3d-5e0e-45d1-8796-744e52a1c64b" />
+                                <!-- Redirecionamento desabilitado -->
+                                <input type="hidden" name="redirect" value="">
+                                <!-- Nome do Email -->
+                                <input type="hidden" name="from_name" value="Portfolio | Novo Projeto Solicitado">
+
+                                <div class="form-inputs">
+                                    <input type="text" name="name" class="input-field" placeholder="Nome" required />
+                                    <input type="email" name="email" class="input-field" placeholder="Email" required />
+                                </div>
+                                <div class="text-area">
+                                    <textarea name="message" placeholder="Mensagem" required></textarea>
+                                </div>
+                                <div class="form-button">
+                                    <button type="submit" class="btn" id="submitButton">
+                                        Enviar <i class="uil uil-message"></i>
+                                    </button>
+                                </div>
+                                <p id="responseMessage" class="hidden"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- --------------- RODAPÉ --------------- -->
+
+        <footer>
+            <div class="top-footer">
+                <p>Matheus Lucindo.</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Início</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">Sobre</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#history">Histórico</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projetos</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><a href="https://www.instagram.com/matheus_lucindo/" target="_blank"><i
+                            class="uil uil-instagram"></i></a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/matheus-lucindo-b35b68190/" target="_blank"><i
+                            class="uil uil-linkedin-alt"></i></a></div>
+                <div class="icon"><a href="/PDF/CV de Matheus Lucindo dos Santos.pdf"
+                        download="Currículo de Matheus Lucindo dos Santos.pdf" title="Baixar Currículo">
+                        <i class="fa-regular fa-file-pdf" style="color: #3c2d86;"></i></a></div>
+                <div class="icon"><a href="https://github.com/Matheus904-12" target="_blank"><i
+                            class="uil uil-github-alt"></i></a></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Direitos Autorais &copy;<a href="#home" style="text-decoration: none;">Matheus Lucindo</a> - Todos
+                    os direitos
+                    reservados
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- ----- SCROLL REVEAL JS Link ----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- JS ----- -->
+    <script src="/JS/script.js"></script>
+    <script src="/JS/enviar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+# ========================================
+# POSITIVESENSE - EDITORCONFIG
+# ========================================
+# Configuração de formatação de código
+# Mantém consistência entre editores
+
+root = true
+
+# Padrão para todos os arquivos
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Arquivos PHP
+[*.php]
+indent_size = 4
+
+# Arquivos CSS
+[*.css]
+indent_size = 4
+
+# Arquivos JavaScript
+[*.js]
+indent_size = 2
+
+# Arquivos JSON
+[*.json]
+indent_size = 2
+
+# Arquivos HTML
+[*.html]
+indent_size = 2
+
+# Arquivos Markdown
+[*.md]
+trim_trailing_whitespace = false
+
+# Arquivos de configuração
+[{package.json,.htaccess}]
+indent_size = 2

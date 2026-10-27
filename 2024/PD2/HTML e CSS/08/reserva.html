@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MixLix - Restaurante</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="informações.html">Sobre Nós</a></li>
+				<li><a href="cardapio.html">Cardápio</a></li>
+				<li><a href="reserva.html">Reservas</a></li>
+			</ul>
+		</nav>
+		<div class="banner">
+			<h1>MixLix</h1>
+			<h2>Restaurante</h2>
+			<p>Comida deliciosa em um ambiente aconchegante</p>
+		</div>
+	</header>
+	<main>
+		<section id="reservas">
+			<h2>Reservas</h2>
+			<p>Faça sua reserva preenchendo o formulário abaixo:</p>
+			<form action="enviar_reserva.php" method="post">
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" name="nome" required>
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="telefone">Telefone:</label>
+				<input type="tel" id="telefone" name="telefone" required>
+				<label for="data">Data:</label>
+				<input type="date" id="data" name="data" required>
+				<label for="hora">Hora:</label>
+				<input type="time" id="hora" name="hora" required>
+				<label for="pessoas">Número de Pessoas:</label>
+				<input type="number" id="pessoas" name="pessoas" required>
+				<label for="observacoes">Observações:</label>
+				<textarea id="observacoes" name="observacoes"></textarea>
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<center><p>© 2021 MixLix. Todos os direitos reservados.</p></center>
+	</footer>
+</body>
+</html>

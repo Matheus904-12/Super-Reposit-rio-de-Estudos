@@ -1,0 +1,149 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para a barra de navegação */
+  nav {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #ff6347;
+  }
+  
+  /* Estilos para o banner */
+  .banner {
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .banner h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .banner h2 {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  .banner p {
+    font-size: 24px;
+  }
+  
+  /* Estilos para a seção de informações */
+  #informacoes {
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  #informacoes h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #informacoes p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  #informacoes .avaliacoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  #informacoes .avaliacao {
+    width: calc(33.33% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #informacoes .avaliacao p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  #informacoes .avaliacao .nome {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para a seção do cardápio */
+  #cardapio {
+    background-color: #f9f9f9;
+    padding: 50px;
+  }
+  
+  #cardapio h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #cardapio .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  #cardapio .item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
+  
+  #cardapio .item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #cardapio .item p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom:
+  
+    #img {
+    widht: 200px;
+    height: 500px;
+
+   } 

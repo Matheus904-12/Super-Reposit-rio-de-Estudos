@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="sys.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="fundo">
+        <div class="box">
+            <p class="txt" id="verificar"></p>
+
+            <label class="txt" id="rotulo">Insira o código:</label>
+            <input type="number" class="txt" id="senha" min="0">
+            <button class="botao" id="entrar" onclick="clicar()">Entrar</button>
+
+        </div>
+    </section>
+
+    <script>
+        let cor = document.body.style;
+
+        function clicar() {
+            let acessar = document.getElementById("senha").value;
+            let conferir = document.getElementById("entrar");
+
+            let resultado = document.getElementById("verificar").innerHTML;
+
+            if (acessar <= 999) {
+                document.getElementById("verificar").innerHTML = "Insira um valor válido";
+            }
+
+            else if (acessar >= 1000 && acessar <= 1999) {
+                var acesso = "Liberado"
+                document.getElementById("verificar").innerHTML = "Acesso liberado";
+            }
+
+            else if (acessar >= 2000 && acessar <= 2999) {
+                var acesso = "Limitado"
+                document.getElementById("verificar").innerHTML = "Acesso limitado";
+            }
+
+            else {
+                var acesso = "Negado";
+                document.getElementById("verificar").innerHTML = "Acesso negado";
+            }
+
+            switch (acesso) {
+                case "Liberado":
+                    cor.backgroundColor = "#60ca22";
+                    break
+
+
+                case "Limitado":
+                    cor.backgroundColor = "#dfc412";
+                    break
+
+                case "Negado":
+                    cor.background = "#cf1919";
+                    break;
+
+                default:
+                    cor.backgroundColor = "#414141";
+            }
+        };
+    </script>
+
+</body>
+
+</html>

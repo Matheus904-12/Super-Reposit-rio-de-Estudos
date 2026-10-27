@@ -1,0 +1,140 @@
+/* Estilos globais */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #F8F8F8;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: #2A2A2A;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .logo {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Estilos da seção de apresentação */
+  .presentation {
+    background-image: url(https://images.pexels.com/photos/2804750/pexels-photo-2804750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .presentation h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+  }
+  
+  .presentation p {
+    font-size: 1.5em;
+    max-width: 700px;
+    margin-bottom: 40px;
+    line-height: 1.5em;
+  }
+  
+  /* Estilos do botão da seção de apresentação */
+  .presentation button {
+    border: none;
+    background-color: #FFAE00;
+    color: #FFF;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .presentation button:hover {
+    transform: scale(1.1);
+    background-color: #E59E00;
+  }
+  
+  /* Estilos do ícone de seta na seção de apresentação */
+  .presentation i {
+    font-size: 2em;
+    margin-top: 20px;
+    animation: arrow 2s ease-in-out infinite;
+  }
+  
+  @keyframes arrow {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilos da seção de notícias */
+  .news {
+    margin: 80px 0;
+  }
+  
+  .news h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .news-card {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  
+  .news-card img {
+    width: 30%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .news-card-content {
+    display: flex;
+    flex-direction: column
+  

@@ -1,0 +1,7 @@
+# ================================================
+# .htaccess VERSÃO MÍNIMA
+# Use esta se a versão completa não funcionar
+# ================================================
+
+DirectoryIndex index.php inicial.php
+Options -Indexes

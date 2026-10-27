@@ -1,0 +1,8 @@
+.git
+.history
+node_modules
+vendor
+*.log
+.env.local
+.DS_Store
+Thumbs.db

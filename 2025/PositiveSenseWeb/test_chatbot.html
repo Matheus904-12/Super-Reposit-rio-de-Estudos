@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste do Chatbot PositiveSense</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #5B8FC4 0%, #4a7bb0 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .test-section {
+            padding: 30px;
+        }
+
+        .test-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .example-questions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .example-btn {
+            padding: 12px 20px;
+            background: #f0f0f0;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            color: #333;
+            text-align: left;
+        }
+
+        .example-btn:hover {
+            background: #5B8FC4;
+            color: white;
+            border-color: #5B8FC4;
+            transform: translateY(-2px);
+        }
+
+        .chat-interface {
+            margin-top: 30px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            flex: 1;
+            padding: 15px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #5B8FC4;
+        }
+
+        .input-group button {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #5B8FC4 0%, #4a7bb0 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+        }
+
+        .input-group button:hover {
+            transform: scale(1.05);
+        }
+
+        .input-group button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .response-box {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            min-height: 150px;
+            white-space: pre-wrap;
+            line-height: 1.6;
+            color: #333;
+            border: 2px solid #e0e0e0;
+        }
+
+        .response-box.loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            color: #999;
+        }
+
+        .response-box.empty {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-style: italic;
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #5B8FC4;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .stats {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f4f8;
+            border-radius: 10px;
+            border-left: 4px solid #5B8FC4;
+        }
+
+        .stats strong {
+            color: #5B8FC4;
+        }
+
+        /* Banner de aviso para servidor incorreto */
+        .warning-banner {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            display: none;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .warning-banner.show {
+            display: block;
+        }
+
+        .warning-banner i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Banner de aviso -->
+    <div class="warning-banner" id="warningBanner">
+        <i class="fas fa-exclamation-triangle"></i>
+        <strong>ATENÇÃO:</strong> Acesse através de <code
+            style="background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 4px;">http://localhost:8000/test_chatbot.html</code>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-robot"></i> Teste do Chatbot PositiveSense</h1>
+            <p>Assistente Virtual sobre TEA e Jogos Educativos</p>
+        </div>
+
+        <div class="test-section">
+            <h2><i class="fas fa-question-circle"></i> Perguntas Sugeridas</h2>
+            <div class="example-questions">
+                <button class="example-btn" onclick="askQuestion('O que é autismo?')">
+                    <i class="fas fa-brain"></i> O que é autismo?
+                </button>
+                <button class="example-btn" onclick="askQuestion('Quais jogos vocês têm?')">
+                    <i class="fas fa-gamepad"></i> Quais jogos vocês têm?
+                </button>
+                <button class="example-btn" onclick="askQuestion('Benefícios do jogo da memória')">
+                    <i class="fas fa-brain"></i> Jogo da Memória
+                </button>
+                <button class="example-btn" onclick="askQuestion('Como usar o genius?')">
+                    <i class="fas fa-music"></i> Jogo Genius
+                </button>
+                <button class="example-btn" onclick="askQuestion('Dicas para professores')">
+                    <i class="fas fa-chalkboard-teacher"></i> Dicas para professores
+                </button>
+                <button class="example-btn" onclick="askQuestion('Mitos sobre autismo')">
+                    <i class="fas fa-times-circle"></i> Mitos sobre autismo
+                </button>
+                <button class="example-btn" onclick="askQuestion('Fruit Ninja para TEA')">
+                    <i class="fas fa-apple-whole"></i> Fruit Ninja
+                </button>
+                <button class="example-btn" onclick="askQuestion('Terapias para autismo')">
+                    <i class="fas fa-hands-helping"></i> Terapias
+                </button>
+            </div>
+
+            <div class="chat-interface">
+                <h2><i class="fas fa-comment"></i> Faça sua Pergunta</h2>
+                <div class="input-group">
+                    <input type="text" id="questionInput" placeholder="Digite sua pergunta aqui..."
+                        onkeypress="if(event.key==='Enter') sendQuestion()">
+                    <button onclick="sendQuestion()" id="sendBtn">
+                        <i class="fas fa-paper-plane"></i> Enviar
+                    </button>
+                </div>
+
+                <div id="responseBox" class="response-box empty">
+                    <i class="fas fa-comment-dots"></i> As respostas aparecerão aqui...
+                </div>
+
+                <div class="stats">
+                    <strong><i class="fas fa-info-circle"></i> Status:</strong>
+                    <span id="statusText">Pronto para responder perguntas!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Verificar se está rodando no servidor correto
+        const isWrongServer = window.location.port === '5500' ||
+            window.location.host.includes('127.0.0.1:5500') ||
+            window.location.host.includes('127.0.0.1:5501');
+
+        if (isWrongServer) {
+            // Mostrar banner de aviso
+            const banner = document.getElementById('warningBanner');
+            if (banner) {
+                banner.classList.add('show');
+            }
+
+            // Alert com opção de redirecionamento
+            setTimeout(() => {
+                const correctUrl = 'http://localhost:8000/test_chatbot.html';
+                if (confirm('⚠️ SERVIDOR INCORRETO!\n\nO chatbot precisa do servidor PHP para funcionar.\n\nServidor atual: ' + window.location.href + '\nServidor correto: ' + correctUrl + '\n\n✅ Deseja ser redirecionado automaticamente?')) {
+                    window.location.href = correctUrl;
+                }
+            }, 500);
+        }
+
+        function askQuestion(question) {
+            document.getElementById('questionInput').value = question;
+            sendQuestion();
+        }
+
+        async function sendQuestion() {
+            const input = document.getElementById('questionInput');
+            const question = input.value.trim();
+
+            if (!question) {
+                alert('Por favor, digite uma pergunta!');
+                return;
+            }
+
+            const responseBox = document.getElementById('responseBox');
+            const statusText = document.getElementById('statusText');
+            const sendBtn = document.getElementById('sendBtn');
+
+            // Mostra loading
+            responseBox.className = 'response-box loading';
+            responseBox.innerHTML = '<div class="spinner"></div> Processando sua pergunta...';
+            sendBtn.disabled = true;
+            statusText.textContent = 'Consultando base de conhecimento...';
+
+            try {
+                // Usar URL absoluta para o servidor PHP
+                const apiUrl = window.location.port === '8000'
+                    ? '/chatbot_api.php'
+                    : 'http://localhost:8000/chatbot_api.php';
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ question: question })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    responseBox.className = 'response-box';
+                    responseBox.textContent = data.response;
+                    statusText.innerHTML = `<i class="fas fa-check-circle"></i> Resposta gerada com sucesso!`;
+                } else {
+                    responseBox.className = 'response-box';
+                    responseBox.textContent = '❌ Erro: ' + (data.message || 'Não foi possível gerar resposta');
+                    statusText.innerHTML = `<i class="fas fa-exclamation-circle"></i> Erro ao processar pergunta`;
+                }
+            } catch (error) {
+                responseBox.className = 'response-box';
+                responseBox.textContent = '❌ Erro de conexão: ' + error.message + '\n\n⚠️ Certifique-se de acessar via http://localhost:8000';
+                statusText.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Erro de conexão com o servidor`;
+            } finally {
+                sendBtn.disabled = false;
+            }
+        }
+
+        // Foco automático no input ao carregar
+        window.onload = () => {
+            document.getElementById('questionInput').focus();
+        };
+    </script>
+</body>
+
+</html>

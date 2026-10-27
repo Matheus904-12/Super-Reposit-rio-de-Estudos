@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Formulário de contato</title>
+  </head>
+  <body>
+    <!-- Formulário "fantasma": o Netlify só detecta formulários presentes no HTML estático publicado.
+         O formulário real é renderizado pelo React e envia para "/" com form-name=contato. -->
+    <form name="contato" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="nome" />
+      <input name="email" />
+      <textarea name="mensagem"></textarea>
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>

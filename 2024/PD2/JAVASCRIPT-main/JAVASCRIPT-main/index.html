@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perímetro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <center><h1>Perímetro</h1></center>
+  </header>
+  <main>
+    <div class="catalog">
+      <div class="box">
+        <h2 class="title">Quadrado</h2>
+        <img class="image" src="Quadrado-removebg-preview.png" alt="Imagem 3">
+        <p>Perímetro: 4 * lado</p>
+        <input type="text" id="sideLength">
+        <input type="button" value="Calcular" onclick="calculatePerimeter()">
+        <p id="perimeter"></p>
+      </div>
+      <div class="box">
+        <h2 class="title">Triângulo</h2>
+        <img class="image" src="Triângulo-removebg-preview.png" alt="Imagem 3">
+        <p>Perímetro: a + b + c</p>
+        <input type="text" id="sideLength">
+        <input type="button" value="Calcular" onclick="calculatePerimeter()">
+        <p id="perimeter"></p>
+      </div>
+      <div class="box">
+        <h2 class="title">Círculo</h2>
+        <img class="image" src="Círculo-removebg-preview.png" alt="Imagem 3">
+        <p>Perímetro: 2 * π * r</p>
+        <input type="text" id="sideLength">
+        <input type="button" value="Calcular" onclick="calculatePerimeter()">
+        <p id="perimeter"></p>
+      </div>
+      <div class="box">
+        <h2 class="title">Losango</h2>
+        <img class="image" src="Losango-removebg-preview.png" alt="Imagem 3">
+        <p>Perímetro: 4 * diagonal</p>
+        <input type="text" id="sideLength">
+        <input type="button" value="Calcular" onclick="calculatePerimeter()">
+        <p id="perimeter"></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>O perímetro de uma figura é a distância ao redor dela.</p>
+  </footer>
+  <script>
+    // This function is called when the user clicks on a box.
+    function calculatePerimeter() {
+      // Get the value of the input field.
+      var sideLength = document.getElementById("sideLength").value;
+
+      // Calculate the perimeter.
+      var perimeter = 4 * sideLength;
+
+      // Display the perimeter in the output field.
+      document.getElementById("perimeter").innerHTML = perimeter;
+
+      // Show an alert message.
+      alert("O perímetro do quadrado é " + perimeter);
+      alert("O perímetro do triângulo é " + perimeter);
+      alert("O perímetro do círculo é " + perimeter);
+      alert("O perímetro do losango é " + perimeter);
+    }
+  </script>
+</body>
+</html>

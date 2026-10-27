@@ -1,0 +1,10 @@
+/* Estilos adicionais para o App */
+.MuiPaper-root {
+  border-radius: 16px;
+  background: #fff;
+}
+
+.MuiButton-containedPrimary {
+  background: linear-gradient(90deg, #1976d2 0%, #64b5f6 100%);
+  color: #fff;
+}

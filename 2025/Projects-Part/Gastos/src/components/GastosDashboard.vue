@@ -87,7 +87,7 @@ import ExportarRelatorio from './ExportarRelatorio.vue';
 import GoogleCalendarPanel from './GoogleCalendarPanel.vue';
 import { gapi } from 'gapi-script';
 
-const CLIENT_ID = '398641066466-07tmrn7g9o9kchdjt56r22vmr7hkljqr.apps.googleusercontent.com';
+const CLIENT_ID = 'REMOVIDO_CLIENT_ID.apps.googleusercontent.com';
 const API_KEY = 'REMOVIDA_CHAVE_API';
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 const SCOPES = "https://www.googleapis.com/auth/calendar.readonly";

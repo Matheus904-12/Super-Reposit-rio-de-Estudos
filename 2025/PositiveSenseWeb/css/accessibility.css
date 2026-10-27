@@ -1,0 +1,712 @@
+/**
+ * ========================================
+ * ESTILOS DE ACESSIBILIDADE
+ * PositiveSense - Modo Inclusivo
+ * ========================================
+ */
+
+/* ========================================
+   MODO ALTO CONTRASTE
+   ======================================== */
+
+[data-high-contrast="true"] {
+    --text-primary: #000000;
+    --text-secondary: #1a1a1a;
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F5F5F5;
+    --primary: #0047AB;
+    --primary-dark: #001F60;
+    --border: #000000;
+}
+
+/* Fundo e textos com contraste alto */
+[data-high-contrast="true"] body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+[data-high-contrast="true"] *:not(i):not(svg):not(.fa):not(.fas):not(.fab) {
+    background-color: transparent !important;
+    color: #000000 !important;
+}
+
+/* Textos */
+[data-high-contrast="true"] p,
+[data-high-contrast="true"] span,
+[data-high-contrast="true"] li,
+[data-high-contrast="true"] h1,
+[data-high-contrast="true"] h2,
+[data-high-contrast="true"] h3,
+[data-high-contrast="true"] h4,
+[data-high-contrast="true"] h5,
+[data-high-contrast="true"] h6,
+[data-high-contrast="true"] label,
+[data-high-contrast="true"] td,
+[data-high-contrast="true"] th {
+    color: #000000 !important;
+    background-color: transparent !important;
+}
+
+/* Header e Footer */
+[data-high-contrast="true"] header,
+[data-high-contrast="true"] .navbar {
+    background-color: #F5F5F5 !important;
+    border-bottom: 3px solid #000000 !important;
+}
+
+[data-high-contrast="true"] footer {
+    background-color: #F5F5F5 !important;
+    border-top: 3px solid #000000 !important;
+}
+
+/* Links com underline obrigatório e cor de contraste */
+[data-high-contrast="true"] a,
+[data-high-contrast="true"] a:link {
+    color: #0047AB !important;
+    text-decoration: underline !important;
+    background-color: transparent !important;
+}
+
+[data-high-contrast="true"] a:visited {
+    color: #551A8B !important;
+}
+
+[data-high-contrast="true"] a:hover,
+[data-high-contrast="true"] a:focus {
+    color: #FF6B35 !important;
+    background-color: #FFFFCC !important;
+    text-decoration: underline !important;
+}
+
+/* Botões com bordas nítidas e cores forte*/
+[data-high-contrast="true"] button,
+[data-high-contrast="true"] .btn,
+[data-high-contrast="true"] .btn-primary,
+[data-high-contrast="true"] input[type="button"],
+[data-high-contrast="true"] input[type="submit"] {
+    border: 3px solid #000000 !important;
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-weight: 700 !important;
+}
+
+[data-high-contrast="true"] button:hover,
+[data-high-contrast="true"] .btn:hover,
+[data-high-contrast="true"] .btn-primary:hover,
+[data-high-contrast="true"] input[type="button"]:hover,
+[data-high-contrast="true"] input[type="submit"]:hover {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    border: 3px solid #000000 !important;
+}
+
+/* Inputs com contraste */
+[data-high-contrast="true"] input,
+[data-high-contrast="true"] textarea,
+[data-high-contrast="true"] select {
+    border: 2px solid #000000 !important;
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+[data-high-contrast="true"] input:focus,
+[data-high-contrast="true"] textarea:focus,
+[data-high-contrast="true"] select:focus {
+    outline: 3px solid #FF6B35 !important;
+    border: 2px solid #FF6B35 !important;
+    background-color: #FFFFCC !important;
+}
+
+/* Cards e containers */
+[data-high-contrast="true"] .game-card,
+[data-high-contrast="true"] .card,
+[data-high-contrast="true"] .info-card {
+    background-color: #FFFFFF !important;
+    border: 3px solid #000000 !important;
+    color: #000000 !important;
+}
+
+[data-high-contrast="true"] .card-link {
+    color: #0047AB !important;
+    text-decoration: underline !important;
+}
+
+/* Tabelas */
+[data-high-contrast="true"] table {
+    border-collapse: collapse;
+}
+
+[data-high-contrast="true"] th {
+    background-color: #F5F5F5 !important;
+    color: #000000 !important;
+    border: 2px solid #000000 !important;
+    font-weight: 700 !important;
+}
+
+[data-high-contrast="true"] td {
+    border: 2px solid #000000 !important;
+    background-color: #FFFFFF !important;
+}
+
+/* ========================================
+   MODO ESCURO
+   ======================================== */
+
+[data-dark-mode="true"] {
+    --text-primary: #E8E8E8;
+    --text-secondary: #B0B0B0;
+    --bg-primary: #1A1A1A;
+    --bg-secondary: #2D2D2D;
+    --bg-hero: #0F0F0F;
+    --bg-accent: #3A3A3A;
+}
+
+[data-dark-mode="true"] body {
+    background-color: #1A1A1A;
+    color: #E8E8E8;
+}
+
+[data-dark-mode="true"] .game-card,
+[data-dark-mode="true"] .profile-header,
+[data-dark-mode="true"] .ranking-table,
+[data-dark-mode="true"] .info-card,
+[data-dark-mode="true"] .welcome-banner {
+    background-color: #2D2D2D !important;
+    color: #E8E8E8 !important;
+}
+
+[data-dark-mode="true"] .ranking-header-row {
+    background: linear-gradient(135deg, #0047AB 0%, #001F60 100%) !important;
+}
+
+/* ========================================
+   MODO ESCURO + ALTO CONTRASTE
+   ======================================== */
+
+[data-dark-mode="true"][data-high-contrast="true"] {
+    --text-primary: #FFFFFF;
+    --text-secondary: #DDDDDD;
+    --bg-primary: #000000;
+    --bg-secondary: #222222;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] body {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] h1,
+[data-dark-mode="true"][data-high-contrast="true"] h2,
+[data-dark-mode="true"][data-high-contrast="true"] h3,
+[data-dark-mode="true"][data-high-contrast="true"] h4,
+[data-dark-mode="true"][data-high-contrast="true"] h5,
+[data-dark-mode="true"][data-high-contrast="true"] h6,
+[data-dark-mode="true"][data-high-contrast="true"] p,
+[data-dark-mode="true"][data-high-contrast="true"] span {
+    color: #FFFFFF !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] a {
+    color: #FFD700 !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] button,
+[data-dark-mode="true"][data-high-contrast="true"] .btn {
+    border: 2px solid #FFFFFF !important;
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .game-card,
+[data-dark-mode="true"][data-high-contrast="true"] .info-card,
+[data-dark-mode="true"][data-high-contrast="true"] .card {
+    background-color: #1A1A1A !important;
+    border: 2px solid #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+
+/* ========================================
+   ESPAÇAMENTO AUMENTADO
+   ======================================== */
+
+[data-increased-spacing="true"] {
+    --spacing-unit: 1.3rem;
+}
+
+[data-increased-spacing="true"] body {
+    line-height: 1.8 !important;
+    letter-spacing: 0.02em;
+}
+
+[data-increased-spacing="true"] p {
+    line-height: 1.8 !important;
+    margin-bottom: 1rem !important;
+}
+
+[data-increased-spacing="true"] li {
+    line-height: 1.8 !important;
+}
+
+/* ========================================
+   MOVIMENTO REDUZIDO
+   ======================================== */
+
+[data-reduced-motion="true"] * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+}
+
+[data-reduced-motion="true"] {
+    scroll-behavior: auto !important;
+}
+
+/* ========================================
+   FOCO MELHORADO (Tab/Navegação por Teclado)
+   ======================================== */
+
+:focus {
+    outline: 3px solid var(--primary, #5B8FC4) !important;
+    outline-offset: 2px !important;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 3px solid var(--primary, #5B8FC4) !important;
+    outline-offset: 2px !important;
+    box-shadow: 0 0 0 5px rgba(91, 143, 196, 0.3);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--primary, #5B8FC4) !important;
+    outline-offset: 2px !important;
+}
+
+/* ========================================
+   PAINEL DE ACESSIBILIDADE
+   ======================================== */
+
+#accessibility-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    border: 2px solid var(--primary, #5B8FC4);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    max-width: 350px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    display: none;
+}
+
+[data-dark-mode="true"] #accessibility-panel {
+    background: #2D2D2D;
+    border-color: #0047AB;
+    color: #E8E8E8;
+}
+
+[data-high-contrast="true"] #accessibility-panel {
+    background: #FFFFFF;
+    border: 3px solid #000000 !important;
+    box-shadow: 0 0 0 3px #000000;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] #accessibility-panel {
+    background: #000000 !important;
+    border: 3px solid #FFFFFF !important;
+    box-shadow: 0 0 0 3px #FFFFFF;
+    color: #FFFFFF !important;
+}
+
+.accessibility-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--bg-secondary, #E8E8E8);
+    padding-bottom: 0.5rem;
+}
+
+[data-high-contrast="true"] .accessibility-panel-header {
+    border-bottom: 2px solid #000000 !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .accessibility-panel-header {
+    border-bottom: 2px solid #FFFFFF !important;
+}
+
+.accessibility-panel-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.accessibility-panel-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0;
+    color: var(--text-secondary, #666);
+}
+
+[data-high-contrast="true"] .accessibility-panel-close {
+    color: #000000 !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .accessibility-panel-close {
+    color: #FFFFFF !important;
+}
+
+.accessibility-panel-close:hover,
+.accessibility-panel-close:focus-visible {
+    color: var(--text-primary, #000);
+}
+
+.accessibility-panel-section {
+    margin-bottom: 1.2rem;
+}
+
+.accessibility-panel-section:last-child {
+    margin-bottom: 0;
+}
+
+.accessibility-section-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-secondary, #666);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+[data-high-contrast="true"] .accessibility-section-title {
+    color: #000000 !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .accessibility-section-title {
+    color: #FFFFFF !important;
+}
+
+.accessibility-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.accessibility-btn {
+    flex: 1;
+    min-width: 45px;
+    padding: 0.5rem;
+    border: 2px solid var(--bg-secondary, #E0E0E0);
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--text-primary, #000);
+}
+
+[data-dark-mode="true"] .accessibility-btn {
+    background: #1A1A1A;
+    color: #E8E8E8;
+}
+
+[data-high-contrast="true"] .accessibility-btn {
+    border: 2px solid #000000 !important;
+    background: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .accessibility-btn {
+    border: 2px solid #FFFFFF !important;
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+.accessibility-btn:hover {
+    border-color: var(--primary, #5B8FC4);
+    background: var(--bg-accent, #F5F5F5);
+}
+
+[data-high-contrast="true"] .accessibility-btn:hover {
+    border: 3px solid #000000 !important;
+    background: #F0F0F0 !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .accessibility-btn:hover {
+    border: 3px solid #FFFFFF !important;
+    background: #222222 !important;
+}
+
+.accessibility-btn:focus-visible {
+    outline: 3px solid var(--primary, #5B8FC4);
+    outline-offset: 2px;
+}
+
+[data-high-contrast="true"] .accessibility-btn:focus-visible {
+    outline: 3px solid #000000 !important;
+    outline-offset: 2px;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .accessibility-btn:focus-visible {
+    outline: 3px solid #FFFFFF !important;
+    outline-offset: 2px;
+}
+
+.accessibility-btn.active {
+    background: var(--primary, #5B8FC4);
+    color: white;
+    border-color: var(--primary, #5B8FC4);
+}
+
+[data-high-contrast="true"] .accessibility-btn.active {
+    background: #0047AB !important;
+    color: #FFFFFF !important;
+    border: 2px solid #0047AB !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .accessibility-btn.active {
+    background: #FFD700 !important;
+    color: #000000 !important;
+    border: 2px solid #FFD700 !important;
+}
+
+.accessibility-btn i {
+    font-size: 1.2rem;
+}
+
+.accessibility-btn-label {
+    font-size: 0.65rem;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+}
+
+.accessibility-slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.accessibility-slider button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 2px solid var(--bg-secondary, #E0E0E0);
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+[data-dark-mode="true"] .accessibility-slider button {
+    background: #1A1A1A;
+    color: #E8E8E8;
+}
+
+[data-high-contrast="true"] .accessibility-slider button {
+    border: 2px solid #000000 !important;
+    background: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .accessibility-slider button {
+    border: 2px solid #FFFFFF !important;
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+.accessibility-slider button:hover {
+    border-color: var(--primary, #5B8FC4);
+}
+
+[data-high-contrast="true"] .accessibility-slider button:hover {
+    border: 3px solid #000000 !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .accessibility-slider button:hover {
+    border: 3px solid #FFFFFF !important;
+}
+
+.accessibility-slider button:focus-visible {
+    outline: 2px solid var(--primary, #5B8FC4);
+    outline-offset: 2px;
+}
+
+#accessibility-font-size {
+    flex: 1;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    min-width: 40px;
+    color: var(--text-primary, #000);
+}
+
+[data-dark-mode="true"] #accessibility-font-size {
+    color: #E8E8E8;
+}
+
+[data-high-contrast="true"] #accessibility-font-size {
+    color: #000000 !important;
+    font-weight: 700;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] #accessibility-font-size {
+    color: #FFFFFF !important;
+}
+
+.accessibility-reset-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #FF6B6B;
+    background: white;
+    color: #FF6B6B;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+[data-dark-mode="true"] .accessibility-reset-btn {
+    background: #1A1A1A;
+}
+
+[data-high-contrast="true"] .accessibility-reset-btn {
+    border: 2px solid #000000 !important;
+    background: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .accessibility-reset-btn {
+    border: 2px solid #FFFFFF !important;
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+.accessibility-reset-btn:hover {
+    background: #FF6B6B;
+    color: white;
+}
+
+[data-high-contrast="true"] .accessibility-reset-btn:hover {
+    background: #D63031 !important;
+    color: #FFFFFF !important;
+    border: 2px solid #000000 !important;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .accessibility-reset-btn:hover {
+    background: #FFD700 !important;
+    color: #000000 !important;
+    border: 2px solid #FFFFFF !important;
+}
+
+.accessibility-reset-btn:focus-visible {
+    outline: 2px solid #FF6B6B;
+    outline-offset: 2px;
+}
+
+.accessibility-help-text {
+    font-size: 0.75rem;
+    color: var(--text-secondary, #999);
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+[data-high-contrast="true"] .accessibility-help-text {
+    color: #000000 !important;
+    font-weight: 500;
+}
+
+[data-dark-mode="true"][data-high-contrast="true"] .accessibility-help-text {
+    color: #FFFFFF !important;
+}
+
+/* ========================================
+   ARIA LIVE REGION
+   ======================================== */
+
+#accessibility-aria-live {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* ========================================
+   SKIP LINK
+   ======================================== */
+
+[data-skip-link] {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary, #5B8FC4) !important;
+    color: white !important;
+    padding: 8px 16px !important;
+    z-index: 100000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+[data-skip-link]:focus {
+    top: 0;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 600px) {
+    #accessibility-panel {
+        max-width: calc(100vw - 40px);
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
+    }
+
+    .accessibility-buttons {
+        gap: 0.25rem;
+    }
+
+    .accessibility-btn {
+        min-width: 40px;
+        padding: 0.4rem;
+    }
+}
+
+/* ========================================
+   PRINT
+   ======================================== */
+
+@media print {
+    #accessibility-panel {
+        display: none !important;
+    }
+
+    [data-skip-link] {
+        display: none !important;
+    }
+
+    #accessibility-aria-live {
+        display: none !important;
+    }
+}

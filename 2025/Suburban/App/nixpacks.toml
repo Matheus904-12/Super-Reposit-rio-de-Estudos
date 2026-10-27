@@ -1,0 +1,11 @@
+
+[start]
+cmd = 'python manage.py migrate && python manage.py collectstatic --noinput && python manage.py popular_dados && python manage.py runserver 0.0.0.0:$PORT'
+
+[variables]
+NIXPACKS_PYTHON_VERSION = '3.11'
+DEBUG = 'False'
+DJANGO_SETTINGS_MODULE = 'cptm_tracker.settings'
+
+[build]
+cmds = ['pip install -r requirements.txt']

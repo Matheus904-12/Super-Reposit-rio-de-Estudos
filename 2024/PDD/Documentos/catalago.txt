@@ -1,0 +1,109 @@
+HTML
+
+<div class="conteiner1">
+        <div class="card">
+            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/09_Pizza_Familia_600g_Pack-1.jpg"
+                alt="Pizza Família 600g">
+            <h2>Pizza Família 600g</h2>
+        </div>
+        <div class="card">
+            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/04_-Massa_pizza_300_Pack-02-1.jpg"
+                alt="Pizza Média">
+            <h2>Pizza Média</h2>
+        </div>
+        <div class="card">
+            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/06_-Massa_pizza_brota%CC%83o_300_Pack-1.jpg"
+                alt="Pizza Brotão">
+            <h2>Pizza Brotão</h2>
+        </div>
+        <div class="card">
+            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/10_Pizza_Brotinho_300g_Pack.jpg"
+                alt="Pizza Brotinho 300g">
+            <h2>Pizza Brotinho 300g</h2>
+        </div>
+        <div class="card">
+            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/07_pizza-quadrada_300g_Pack-1.jpg"
+                alt="Pizza Quadrada">
+            <h2>Pizza Quadrada</h2>
+        </div>
+        <div class="card">
+            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/08_broto300g_Pack-1.jpg"
+                alt="Pizza Broto com Molho">
+            <h2>Pizza Broto com Molho</h2>
+        </div>
+        <div class="card">
+            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/01_Massa_Pastel_2_kg_Pack-1.jpg"
+                alt="Massa para Pastel Cortada">
+            <h2>Massa para Pastel Cortada</h2>
+        </div>
+        <div class="card">
+            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/02_Massa_para_pastel_500_pack-1.jpg"
+                alt="Massa para Pastel">
+            <h2>Massa para Pastel</h2>
+        </div>
+        <div class="card">
+            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/03_Massa_Pastel_Prof2_2kg_Pack-1.jpg"
+                alt="Massa para Pastel 2kg">
+            <h2>Massa para Pastel 2kg</h2>
+        </div>
+    </div>
+
+
+CSS
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fffbe5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    display: inline-block;
+    width: 300px;
+    height: 355px;
+    vertical-align: top;
+}
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card h2 {
+    color: #000000c5;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card p {
+    color: #333;
+    margin-top: 10px;
+}
+
+.card span {
+    font-size: 1.2em;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

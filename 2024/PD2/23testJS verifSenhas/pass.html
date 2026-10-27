@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verificador de senhas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="espacoSenha">
+            <input type="password" id="entradaSenha" placeholder="Digite sua senha">
+            <div id="mostrarSenha">Exibir</div>
+        </div>
+
+        <section class="fundoPoder">
+            <div id="medidorPoder"></div>
+            <div id="textoPoder">Força da senha: 0%</div>
+        </section>
+
+        <div id="requisitos">
+            <div id="requisitoComprimento" class="requisito">Comprimento</div>
+            <div id="requisitoMinuscula" class="requisito">Letra minúscula</div>
+            <div id="requisitoMaiuscula" class="requisito">Letra maiúscula</div>
+            <div id="requisitoNumero" class="requisito">Número</div>
+            <div id="requisitoSimbolo" class="requisito">Símbolo</div>
+        </div>
+
+        <button>Criar Conta</button>
+    </section>
+
+    <!-- script JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>

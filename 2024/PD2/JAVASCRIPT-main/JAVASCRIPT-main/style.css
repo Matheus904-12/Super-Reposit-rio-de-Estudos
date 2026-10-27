@@ -1,0 +1,139 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: snow;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  main {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-around;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    border: 1.5px solid black;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 500px 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .image {
+    display: block;
+    margin: 5px auto;
+  }
+  
+  @media (max-width: 768px) {
+    .catalog {
+      flex-direction: column;
+    }
+  
+    .box {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .title {
+      font-size: 16px;
+    }
+  
+    .image {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
+  @keyframes title-animation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes image-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .box {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .box:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  .box img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+  }
+  
+  .title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .image {
+    display: block;
+    margin: 5px auto;
+  }
+  
+  @media (max-width: 768px) {
+    .catalog {
+      flex-direction: column;
+    }
+  
+    .box {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .title {
+      font-size: 16px;
+    }
+  
+    .image {
+      display: block;
+      margin: 0 auto;
+    }
+  }

@@ -1,0 +1,60 @@
+/* Projetos: três destaques grandes e uma grade com o resto. */
+.proj { position: relative; isolation: isolate; display: grid; gap: 22px; border: 1px solid var(--line); border-radius: 24px; background: var(--surface); overflow: hidden; transition: border-color 0.4s, box-shadow 0.5s var(--ease-out); }
+/* Hover: brilho que segue o cursor (--mx/--my vêm do JS), borda neutra mais clara, título que desliza e seta que aparece. */
+.proj::before, .cert::before { content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0; transition: opacity 0.4s;
+  background: radial-gradient(520px circle at var(--mx, 50%) var(--my, 0%), color-mix(in srgb, var(--accent) 14%, transparent), transparent 62%); }
+.proj:hover { border-color: color-mix(in srgb, var(--text) 26%, var(--line)); box-shadow: 0 44px 90px -44px hsl(0 0% 0% / 0.75); }
+.proj:hover::before, .cert:hover::before { opacity: 1; }
+.proj > .capa, .proj > .proj-corpo { position: relative; z-index: 1; }
+.proj h3 { transition: transform 0.45s var(--ease-out); }
+.proj:hover h3 { transform: translateX(6px); }
+.capa-seta { position: absolute; top: 14px; right: 14px; width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: var(--accent); color: var(--on-accent); font-size: 1.15rem;
+  opacity: 0; transform: translate(-8px, 8px) scale(0.7); transition: opacity 0.35s, transform 0.5s var(--ease-out); }
+.proj:hover .capa-seta { opacity: 1; transform: none; }
+.capa { position: relative; aspect-ratio: 16 / 10; background: var(--surface-hi); overflow: hidden; }
+.capa > img:first-child { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.8s var(--ease-out), filter 0.5s; }
+.proj:hover .capa > img:first-child { transform: scale(1.04); filter: brightness(1.06); }
+.capa-celular { position: absolute; right: 3%; bottom: -8%; width: 17%; height: auto; border-radius: 14px; border: 3px solid var(--bg); box-shadow: 0 24px 50px -16px hsl(0 0% 0% / 0.7); }
+.capa-tipografica { display: grid; place-items: center; background: radial-gradient(120% 120% at 20% 0%, color-mix(in srgb, var(--accent) 22%, var(--surface-hi)), var(--surface-hi) 60%); }
+.capa-tipografica span { font-family: var(--font-display); font-style: italic; font-size: clamp(4rem, 12vw, 7rem); line-height: 1; color: var(--accent); letter-spacing: -0.04em; }
+.proj-corpo { display: grid; gap: 10px; padding: 0 clamp(20px, 3vw, 36px) clamp(24px, 3vw, 36px); align-content: start; }
+.proj-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.proj-status { margin-left: auto; padding: 2px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--text-soft); text-transform: none; letter-spacing: 0.02em; }
+.proj-status[data-status='em-construcao'] { border-style: dashed; border-color: var(--accent); color: var(--text); }
+.proj h3 { font-family: var(--font-display); font-weight: 400; font-size: clamp(2rem, 4.2vw, 3.2rem); line-height: 1; letter-spacing: -0.02em; }
+.proj-papel { color: var(--text-soft); font-weight: 500; }
+.proj-resumo { color: var(--text-soft); font-size: 0.97rem; max-width: 62ch; }
+.chips { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.chips li { padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; font: 400 0.78rem var(--font-mono); color: var(--text-soft); }
+.proj-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 10px; }
+.proj-privado { padding: 6px 12px; border: 1px dashed var(--line); border-radius: 999px; }
+.proj-aviso { font-size: 0.8rem; color: var(--text-soft); }
+
+.proj-lista { display: grid; gap: clamp(24px, 3.5vw, 40px); }
+.proj-destaque .capa { border-bottom: 1px solid var(--line); }
+.proj-subtitulo { margin: clamp(56px, 8vw, 96px) 0 24px; padding-bottom: 12px; border-bottom: 1px solid var(--line); color: var(--text); }
+.proj-subtitulo span { color: var(--text-soft); }
+.proj-grade { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); }
+.proj-grade .proj h3 { font-size: clamp(1.7rem, 2.4vw, 2.1rem); }
+
+@media (min-width: 700px) { .proj-grade { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) {
+  .proj-destaque { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 0; align-items: stretch; }
+  .proj-destaque .capa { aspect-ratio: auto; min-height: 100%; border-bottom: 0; border-right: 1px solid var(--line); }
+  .proj-destaque .proj-corpo { padding: clamp(28px, 3vw, 44px); align-content: center; }
+  .proj-destaque:nth-child(even) .capa { order: 2; border-right: 0; border-left: 1px solid var(--line); }
+  .proj-grade { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* Side projects: linhas enxutas, sem imagem */
+.side-intro { color: var(--text-soft); max-width: 60ch; margin-bottom: 28px; }
+.side-lista { list-style: none; margin: 0; padding: 0; display: grid; }
+.side-item { display: grid; gap: 12px; padding: 24px 0; border-top: 1px solid var(--line); transition: background 0.3s; }
+.side-item:last-child { border-bottom: 1px solid var(--line); }
+.side-titulo h4 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.05; }
+.side-resumo { color: var(--text-soft); font-size: 0.96rem; max-width: 64ch; }
+.side-acao { display: flex; align-items: center; gap: 10px; }
+@media (min-width: 1024px) {
+  .side-item { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr) auto; gap: 40px; align-items: start; }
+  .side-item .chips { margin-top: 0; }
+}

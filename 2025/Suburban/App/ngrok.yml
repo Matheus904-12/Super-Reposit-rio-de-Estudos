@@ -1,0 +1,8 @@
+tunnels:
+  cptm-tracker:
+    addr: 127.0.0.1:8000
+    bind_tls: true
+    inspect: false
+    proto: http
+    subdomain: cptm-tracker
+version: '2'

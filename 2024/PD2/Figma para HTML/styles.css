@@ -1,0 +1,145 @@
+*{
+    margin: auto;
+}
+
+.desktop-1-THv {
+    align-items: center;
+    background: linear-gradient(111.78deg, rgba(0, 0, 0, 0.200000003) 48.63%, rgba(0, 0, 0, 0.200000003) 50.07%);
+    background-color: #ffffff;
+    background-image: url('matiti.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 45.3rem;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-size: 100vw;
+}
+    .auto-group-45nk-SvY {
+      align-items: center;
+      background-color: #262121;
+      box-sizing: border-box;
+      display: flex;
+      flex-shrink: 0;
+      margin-bottom: 1.2rem;
+      padding: 1.5rem 5.602rem 1.4rem 3.1rem;
+      width: 100%;
+      
+    }
+      .car-now-1-efE {
+        flex-shrink: 0;
+        height: auto;
+        margin-right: 1.7rem;
+        object-fit: cover;
+        vertical-align: top;
+        
+      }
+      .wrench-car-D64 {
+        color: #ffffff;
+        flex-shrink: 0;
+        font-family: Alegreya Sans SC, 'Source Sans Pro';
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.2;
+        margin: 0.1rem 39.9rem 0rem 0rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .incio-SDi {
+        color: #ffffff;
+        flex-shrink: 0;
+        font-family: Alegreya Sans SC, 'Source Sans Pro';
+        font-size: 1.2rem;
+        font-weight: 900;
+        line-height: 1.2;
+        margin: 0.4rem 14.4rem 0rem 0rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+        position: relative;
+        
+      }
+      .contato-WjN {
+        color: #ffffff;
+        flex-shrink: 0;
+        font-family: Alegreya Sans SC, 'Source Sans Pro';
+        font-size: 1.2rem;
+        font-weight: 900;
+        line-height: 1.2;
+        margin: 0.2rem 14.4rem 0rem 0rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .login-RrL {
+        color: #ffffff;
+        flex-shrink: 0;
+        font-family: Alegreya Sans SC, 'Source Sans Pro';
+        font-size: 1.2rem;
+        font-weight: 900;
+        line-height: 1.2;
+        margin: 0rem 13.6rem 0.2rem 0rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .vector-x5a {
+        flex-shrink: 0;
+        height: 2.9994rem;
+        margin-top: 0.1994rem;
+        object-fit: contain;
+        vertical-align: top;
+        width: 4.6977rem;
+      }
+    .precisando-de-servios-para-o-seu-carro-solicite-oramentos-e-agende-servios-com-as-melhores-oficinas-insira-sua-localizao-fEt {
+      color: #ffffff;
+      flex-shrink: 0;
+      font-family: Alegreya Sans SC, 'Source Sans Pro';
+      font-size: 3.2rem;
+      font-weight: 900;
+      line-height: 1.2;
+      margin: 0rem 62.2rem 20.9rem 0rem;
+      max-width: 75.6rem;
+      text-transform: uppercase;
+    }
+      .precisando-de-servios-para-o-seu-carro-solicite-oramentos-e-agende-servios-com-as-melhores-oficinas-insira-sua-localizao-fEt-sub-0 {
+        color: #ffffff;
+        font-family: Alegreya Sans SC, 'Source Sans Pro';
+        font-size: 1.6rem;
+        font-weight: 900;
+        line-height: 1.2;
+        text-transform: uppercase;
+      }
+      .precisando-de-servios-para-o-seu-carro-solicite-oramentos-e-agende-servios-com-as-melhores-oficinas-insira-sua-localizao-fEt-sub-1 {
+      }
+      .precisando-de-servios-para-o-seu-carro-solicite-oramentos-e-agende-servios-com-as-melhores-oficinas-insira-sua-localizao-fEt-sub-2 {
+        color: #ffffff;
+        font-family: Alegreya Sans SC, 'Source Sans Pro';
+        font-size: 1.2rem;
+        font-weight: 900;
+        line-height: 1.2;
+        text-transform: uppercase;
+      }
+    
+    .auto-group-s74y-7ec {
+      align-items: center;
+      background-color: #453e3e;
+      border-radius: 1.1rem;
+      color: #ffffff;
+      display: flex;
+      flex-shrink: 0;
+      font-family: Alegreya Sans SC, 'Source Sans Pro';
+      font-size: 2rem;
+      font-weight: 900;
+      height: 5.9rem;
+      justify-content: center;
+      line-height: 1.2;
+      margin: 0 61.9rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+      width: calc(100% - 123.8rem);
+    }
+  
+

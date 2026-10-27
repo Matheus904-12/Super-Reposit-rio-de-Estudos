@@ -1,0 +1,9 @@
+# Credenciais locais
+.env
+.env.local
+.env.*.local
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+.DS_Store

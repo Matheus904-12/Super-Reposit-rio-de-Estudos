@@ -1,0 +1,256 @@
+{
+    "autismo": {
+        "descricao": "Transtorno do Espectro Autista (TEA) é uma condição do neurodesenvolvimento caracterizada por diferenças na comunicação, interação social e padrões de comportamento e interesses. A intervenção precoce, adaptações ambientais e atividades estruturadas podem promover desenvolvimento e inclusão.",
+        "caracteristicas": [
+            "Dificuldades na comunicação verbal e não-verbal",
+            "Padrões repetitivos de comportamento",
+            "Interesses restritos e específicos",
+            "Sensibilidades sensoriais (hiper ou hipossensibilidade)",
+            "Preferência por rotinas e previsibilidade",
+            "Processamento de informações de forma diferente"
+        ],
+        "mitos": [
+            "Vacinas NÃO causam autismo (cientificamente comprovado)",
+            "Pessoas autistas TÊM emoções e empatia, apenas expressam de forma diferente",
+            "TEA não é uma doença, é uma condição neurológica",
+            "Autismo afeta pessoas de todas as etnias, gêneros e classes sociais",
+            "Não existe 'cura' para autismo, pois não é uma doença"
+        ],
+        "apoio": [
+            "Terapia comportamental (ABA) - Applied Behavior Analysis",
+            "Terapia ocupacional para habilidades motoras e sensoriais",
+            "Fonoaudiologia para comunicação",
+            "Psicoterapia e apoio emocional",
+            "Educação inclusiva com adaptações",
+            "Comunicação Alternativa e Aumentativa (CAA)",
+            "Grupos de apoio para famílias"
+        ],
+        "fontes_sugeridas": [
+            "https://www.who.int",
+            "https://portal.fiocruz.br",
+            "https://www.autismspeaks.org",
+            "https://www.cdc.gov/autism"
+        ]
+    },
+    "beneficios_gerais_jogos": {
+        "cognitivos": [
+            "Estimulação da memória de trabalho",
+            "Desenvolvimento do raciocínio lógico",
+            "Melhora da atenção e concentração",
+            "Fortalecimento do planejamento e estratégia",
+            "Reconhecimento de padrões"
+        ],
+        "socioemocionais": [
+            "Aprendizado de turnos (esperar a vez)",
+            "Gestão de frustração e tentativa/erro",
+            "Celebração de conquistas",
+            "Desenvolvimento de autoconfiança",
+            "Regulação emocional através de atividades estruturadas"
+        ],
+        "sensoriais": [
+            "Coordenação motora fina (touch/clique)",
+            "Processamento visual organizado",
+            "Feedback sensorial controlado",
+            "Ajuste de estímulos sonoros e visuais"
+        ]
+    },
+    "jogos": {
+        "jogo-memoria": {
+            "titulo": "Jogo da Memória",
+            "descricao": "Teste sua memória encontrando pares de cartas iguais",
+            "nivel_dificuldade": "Fácil a Médio",
+            "habilidades_trabalhadas": [
+                "Memória visual de curto prazo",
+                "Atenção sustentada",
+                "Reconhecimento de padrões visuais",
+                "Discriminação de estímulos",
+                "Concentração"
+            ],
+            "beneficios": [
+                "Estimula a memória de trabalho e atenção sustentada",
+                "Ajuda no reconhecimento visual e discriminação de estímulos",
+                "Pode ser adaptado com imagens e ritmos mais calmos para reduzir sobrecarga sensorial",
+                "Promove autoconfiança ao completar níveis",
+                "Fortalece a persistência e foco"
+            ],
+            "adaptacoes_tea": [
+                "Use imagens previsíveis e não muito complexas",
+                "Mantenha sons suaves ou permita desabilitar áudio",
+                "Comece com poucos pares e aumente gradualmente",
+                "Ofereça tempo ilimitado para reduzir ansiedade",
+                "Celebre cada acerto com feedback positivo visual"
+            ],
+            "quando_usar": "Ideal para sessões de 10-15 minutos, em ambiente calmo, como atividade de aquecimento ou recompensa após tarefas mais desafiadoras"
+        },
+        "jogodavelha": {
+            "titulo": "Jogo da Velha",
+            "descricao": "Clássico jogo de estratégia para dois jogadores ou contra o computador",
+            "nivel_dificuldade": "Fácil",
+            "habilidades_trabalhadas": [
+                "Raciocínio lógico",
+                "Planejamento antecipado",
+                "Pensamento estratégico",
+                "Regras sociais (turnos)",
+                "Tomada de decisão"
+            ],
+            "beneficios": [
+                "Promove raciocínio lógico e planejamento antecipado",
+                "Ajuda no desenvolvimento de regras sociais e turnos (esperar a vez)",
+                "Tem formato simples e regras claras, adequado para quem prefere estrutura",
+                "Ensina sobre ganhar e perder de forma controlada",
+                "Desenvolve antecipação de consequências"
+            ],
+            "adaptacoes_tea": [
+                "Explique as regras visualmente com exemplos",
+                "Pratique o conceito de 'esperar a vez' antes de jogar",
+                "Use marcadores visuais claros (X e O bem distintos)",
+                "Ofereça modo contra computador primeiro (menos pressão social)",
+                "Celebre tanto vitórias quanto aprendizados nas derrotas"
+            ],
+            "quando_usar": "Ótimo para praticar turnos e regras sociais, sessões de 5-10 minutos, pode ser usado em terapias ocupacionais e fonoaudiologia"
+        },
+        "jogodasequencia": {
+            "titulo": "Genius - Jogo da Sequência",
+            "descricao": "Memorize e repita a sequência de cores e sons",
+            "nivel_dificuldade": "Médio",
+            "habilidades_trabalhadas": [
+                "Memória sequencial",
+                "Percepção de padrões",
+                "Coordenação visuo-motora",
+                "Atenção auditiva e visual",
+                "Ordenação e sequenciamento"
+            ],
+            "beneficios": [
+                "Trabalha padrões, percepção sequencial e habilidades de ordenação",
+                "Melhora habilidades de previsão e pensamento lógico",
+                "Pode reforçar rotinas e previsibilidade, o que beneficia muitos estudantes com TEA",
+                "Desenvolve memória de trabalho auditiva e visual",
+                "Treina autocontrole (esperar a sequência terminar antes de agir)"
+            ],
+            "adaptacoes_tea": [
+                "Permita ajustar a velocidade da sequência",
+                "Ofereça modo visual-apenas para sensibilidade auditiva",
+                "Comece com sequências de 2-3 itens",
+                "Use cores bem contrastantes",
+                "Permita pausas entre tentativas"
+            ],
+            "quando_usar": "Sessões de 5-10 minutos, ideal para trabalhar memória e sequenciamento, pode ser usado como parte de atividades de rotina diária"
+        },
+        "cacapalavras": {
+            "titulo": "Caça Palavras",
+            "descricao": "Encontre todas as palavras escondidas no diagrama",
+            "nivel_dificuldade": "Médio a Difícil",
+            "habilidades_trabalhadas": [
+                "Atenção ao detalhe",
+                "Varredura visual sistemática",
+                "Reconhecimento de padrões linguísticos",
+                "Vocabulário",
+                "Perseverança"
+            ],
+            "beneficios": [
+                "Aprimora atenção ao detalhe e reconhecimento de padrões linguísticos",
+                "Ajuda no desenvolvimento do vocabulário e leitura visual",
+                "Pode ser oferecido em níveis de dificuldade progressivos para reduzir frustração",
+                "Estimula estratégias de busca sistemática",
+                "Promove familiaridade com ortografia de palavras"
+            ],
+            "adaptacoes_tea": [
+                "Use temas de interesse especial do estudante",
+                "Ofereça dicas visuais (primeira letra destacada)",
+                "Comece com grades menores (8x8) antes de avançar",
+                "Permita tempo ilimitado",
+                "Ofereça feedback positivo a cada palavra encontrada",
+                "Use temas previsíveis (animais, cores, frutas)"
+            ],
+            "quando_usar": "Atividade calma para momentos de regulação, sessões de 10-20 minutos, pode ser usado para expandir vocabulário de forma lúdica"
+        },
+        "fruitninja": {
+            "titulo": "Fruit Ninja",
+            "descricao": "Corte frutas com agilidade e precisão",
+            "nivel_dificuldade": "Médio",
+            "habilidades_trabalhadas": [
+                "Coordenação motora fina",
+                "Tempo de reação",
+                "Atenção visual dinâmica",
+                "Coordenação olho-mão",
+                "Processamento rápido de informações"
+            ],
+            "beneficios": [
+                "Exercita tempo de reação e coordenação motora fina (toque/sensorial)",
+                "Pode melhorar o foco em estímulos rápidos de forma controlada",
+                "Desenvolve precisão de movimentos",
+                "Trabalha integração sensorial",
+                "Oferece feedback imediato e gratificante"
+            ],
+            "adaptacoes_tea": [
+                "AJUSTE efeitos sonoros para evitar sobrecarga sensorial",
+                "Reduza a velocidade inicial das frutas",
+                "Use modo treino sem limite de tempo",
+                "Permita desabilitar bombas (menos estresse)",
+                "Ofereça pausas frequentes",
+                "Monitore sinais de superestimulação"
+            ],
+            "quando_usar": "Sessões curtas de 5 minutos, ideal para energia alta, mas EVITE se o estudante tiver hipersensibilidade a estímulos rápidos. Use em momentos de pausa ativa",
+            "cuidados": "Pode ser muito estimulante para alguns - observe sinais de sobrecarga sensorial. Não recomendado para crianças com epilepsia fotossensível sem avaliação"
+        },
+        "quebracabeca": {
+            "titulo": "Quebra-Cabeça",
+            "descricao": "Monte a imagem completa movendo as peças",
+            "nivel_dificuldade": "Médio a Difícil",
+            "habilidades_trabalhadas": [
+                "Percepção espacial",
+                "Resolução de problemas",
+                "Planejamento",
+                "Estratégias de tentativa/erro",
+                "Visualização mental"
+            ],
+            "beneficios": [
+                "Estimula percepção espacial e resolução de problemas",
+                "Promove perseverança e estratégias de tentativa/erro",
+                "É uma atividade previsível e estruturada, boa para rotinas terapêuticas",
+                "Desenvolve pensamento sequencial",
+                "Trabalha frustração de forma controlada"
+            ],
+            "adaptacoes_tea": [
+                "Comece com grids 3x3 antes de avançar",
+                "Use imagens de interesse especial",
+                "Permita ver a imagem completa como referência",
+                "Ofereça dica de próximo movimento se necessário",
+                "Celebre cada peça colocada corretamente",
+                "Não limite o tempo"
+            ],
+            "quando_usar": "Atividade calma para desenvolvimento de estratégias, sessões de 10-20 minutos, excelente para momentos de autorregulação e foco"
+        }
+    },
+    "dicas_uso_plataforma": {
+        "professores": [
+            "Use os jogos como recompensa após tarefas mais desafiadoras",
+            "Adapte o tempo de jogo conforme a capacidade de atenção do aluno",
+            "Monitore sinais de frustração e ofereça suporte",
+            "Celebre progressos, não apenas resultados finais",
+            "Use os jogos para trabalhar objetivos específicos do PEI (Plano Educacional Individualizado)"
+        ],
+        "terapeutas": [
+            "Integre os jogos em sessões de terapia ocupacional, fono ou ABA",
+            "Use como ferramenta de avaliação de habilidades",
+            "Ajuste dificuldade progressivamente",
+            "Registre progressos ao longo do tempo",
+            "Combine jogos com outras estratégias terapêuticas"
+        ],
+        "familias": [
+            "Estabeleça rotina de jogo em horários previsíveis",
+            "Jogue junto com a criança sempre que possível",
+            "Não force se a criança estiver desregulada",
+            "Use os jogos como ponte para conversas",
+            "Respeite preferências - nem todos os jogos agradarão todos",
+            "Limite tempo de tela conforme recomendações pediátricas"
+        ]
+    },
+    "sinais_alerta": [
+        "Se a criança mostrar sinais de sobrecarga sensorial (tapar ouvidos, agitação), pause imediatamente",
+        "Frustração excessiva indica necessidade de reduzir dificuldade",
+        "Tempo excessivo de tela pode causar problemas - respeite limites",
+        "Se houver comportamentos repetitivos excessivos relacionados aos jogos, busque orientação profissional",
+        "Cada criança é única - ajuste conforme necessário"
+    ]
+}

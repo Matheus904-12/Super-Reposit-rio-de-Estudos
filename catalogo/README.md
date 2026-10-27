@@ -49,3 +49,21 @@ Importados também os demais públicos de 2023–2025 (incluindo `dowcode`, `Dem
 ### Etapa 4 — repositórios privados de estudo
 
 Importados 34 repositórios que eram privados (exercícios de HTML/CSS/JS, PHP, C# e Copilot de 2023–2025). Como este repositório é público, esse conteúdo agora está público (decisão do autor). `Rock`, `Testes`, `Verificador-de-Senhas` e `WarHammer` estão vazios na origem. Um `.pptx` de 18 MB de terceiros foi omitido de `GitHub-Copilot-Global-Bootcamp`.
+
+### Etapa 5 — projetos restantes (privados, comerciais e ativos)
+
+Importados por decisão do autor: `GoldLar`, `GoldLarAdmin`, `GoldLarCristais`, `melhorenvio-proxy`, `melhorenvio-proxy-vercel`, `TCC-Helo-Ana`, `Lucindo.`, `PortLucindo`, `LookHolder`, `ADS-Nick`, `gms-test`, `PD1`, `PD2`, `PD3`, `PDD`, `PDD2`, `veran-base`, `VF-Mercado`, `Auxilio-Mercado`, `Projeto-Semestral`, `nota-mil`, `PositiveSenseWeb`, `EcommerceWeb`, `Suburban` e `Template-PHP`.
+
+Vazios na origem (sem pasta): `Versions-ZIP`, `Meu-PenDrive`.
+
+**Omitido da cópia:** dumps SQL com dados reais (`GoldLar`, `EcommerceWeb`), pastas `uploads/` de clientes, `db.sqlite3`, arquivos `bling_*.json` com tokens, `site_link.txt` (token na URL), `.apk`, `.bin`, `ngrok.exe`, GIFs/vídeos e demais arquivos >10 MB, `.zip`/`.rar`.
+
+**Credenciais removidas da cópia — revogue/troque todas, pois seguem no histórico dos repositórios de origem:**
+- Senha, usuário e host do MySQL de produção (`goldlar_2025`, hospedagem dbaas) em `GoldLar`/`EcommerceWeb`/`Template-PHP`
+- Bling: client id/secret e access/refresh tokens
+- Melhor Envio: client secret
+- Senhas fixas `admin123` em `EcommerceWeb`
+- Chave Google OAuth (client id e secret) em `GoldLar`; chave Google/Firebase em `veran-base`/`Auxilio-Mercado`
+- Chave OMDb em `gms-test`
+
+**Atenção:** `GoldLar`, `EcommerceWeb` e `Template-PHP` são trabalho de cliente (Cristais Gold Lar) e agora estão públicos; confirme que você pode publicá-los. O link do `Template-PHP` fica apenas como código.

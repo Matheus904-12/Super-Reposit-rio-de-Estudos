@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .image {
+    background: url('https://pbs.twimg.com/media/FVlIYdfXsAEC2h7.jpg') no-repeat left center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .text {
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+/* Estilos da barra de navegação */
+nav {
+	background-color: #333;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+}
+
+nav a:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+/* Estilos da logo */
+nav a.logo {
+  float: left;
+  display: block;
+  background-image: url('https://aloan.neocities.org/pronalogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+nav a.logo:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeitos de hover nos links */
+nav a:not(.logo) {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:not(.logo):before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav a:not(.logo):hover:before {
+  transform: scaleX(1);
+}
+
+nav a:not(.logo):hover {
+  color: #fff;
+}

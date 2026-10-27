@@ -1,0 +1,36 @@
+# VS Code History
+.history/
+
+# VS Code Settings (opcional - descomente se não quiser compartilhar)
+# .vscode/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+php_errors.log
+error_log
+
+# Temporários
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Node modules (se usar no futuro)
+node_modules/
+
+# Composer (se usar no futuro)
+vendor/
+
+# Ambiente
+.env
+.env.local
+
+# Cache
+cache/
+*.cache

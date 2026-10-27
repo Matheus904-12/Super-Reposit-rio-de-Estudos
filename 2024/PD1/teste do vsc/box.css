@@ -1,0 +1,23 @@
+.box {
+    background-color: aquamarine;
+    width: 400px;
+    height: 400px;
+}
+
+.content-box {
+    width: 400px;
+    height: 200px;
+    background-color: yellow;
+    border: 10px solid black;
+    padding: 5px;
+    box-sizing: content-box;
+}
+
+.border {
+    width: 400px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 10px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+}

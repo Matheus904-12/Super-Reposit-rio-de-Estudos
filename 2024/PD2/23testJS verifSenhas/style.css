@@ -1,0 +1,146 @@
+#entradaSenha {
+    padding: 10px;
+    font-size: 16px;
+
+    margin: 25px 0px;
+
+    border-radius: 25px;
+
+    height: 50px;
+    width: 85%;
+
+    position: absolute;
+    left: 0;
+}
+
+#requisitos {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.requisito {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.vermelho {
+    color: red;
+    transition: color 0.3s;
+}
+
+.amarelo {
+    color: #ffc800;
+    transition: color 0.3s;
+}
+
+.verde {
+    color: lime;
+    transition: color 0.3s;
+}
+
+#mostrarSenha {
+    display: flex;
+    cursor: pointer;
+    font-size: 14px;
+    color: blue;
+
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: #000 2px solid;
+
+    width: 50px;
+    height: 50px;
+
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    right: 0;
+}
+
+.espacoSenha {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px 0px;
+
+    position: relative;
+}
+
+/* estilo pagina login */
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(136, 0, 255);
+
+    align-items: center;
+    justify-content: center;
+
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    height: 650px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.5);
+
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.fundoPoder {
+    display: flex;
+
+    background-color: #000;
+    border-radius: 25px;
+    overflow: hidden;
+
+    width: 100%;
+    height: 25px;
+
+    position: relative;
+}
+
+#medidorPoder {
+    height: 100%;
+    width: 0;
+    background-color: gray;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+#textoPoder {
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+
+    position: absolute;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+
+}

@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+.env*
+.history
+*.log
+*.tsbuildinfo
+next-env.d.ts
+.superpowers
