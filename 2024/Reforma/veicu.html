@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículos - Chance Veículos</title>
+
+    <link rel="stylesheet" href="./CSS/styles5.css">
+    <!----- FONT AWESOME CSS FOR ICONS FONTS ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="imagens/white.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="imagens/dark.png" alt="Logo da Loja">
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="finan.html">Financiamento</a>
+                <a href="veicu.html">Veículos</a>
+            </nav>
+            <button class="btn" id="login-btn">
+                <span class="btn-text-one">Entrar</span>
+                <span class="btn-text-two">Vamos Lá!</span>
+            </button>
+        </div>
+    </header>
+    <br><br><br><br><br><br><br><br>
+    <div class="marketplace-container">
+        <aside class="sidebar">
+            <h2>O que Deseja?</h2>
+            <input type="text" placeholder="Digite Aqui">
+            <select name="model">
+                <option value="">Modelo</option>
+                <option value="Hatch">Hatch</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Picape">Picape</option>
+                <option value="Perua">Perua</option>
+                <option value="Coupé">Coupé</option>
+                <option value="Conversível">Conversível</option>
+                <option value="Minivan">Minivan</option>
+                <option value="Van">Van</option>
+                <option value="Utilitário">Utilitário</option>
+            </select>
+            
+            <select name="cambio">
+                <option value="">Câmbio</option>
+                <option value="Manual">Manual</option>
+                <option value="Automático">Automático</option>
+                <option value="Automatizado">Automatizado</option>
+                <option value="CVT">CVT</option>
+                <option value="Dualogic">Dualogic</option>
+            </select>
+            
+            <select name="year">
+                <option value="">Ano</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+            </select>
+            
+            <select name="type">
+                <option value="">Selecione o Veículo</option>
+                <option value="Fiat Argo">Fiat Argo</option>
+                <option value="Chevrolet Onix">Chevrolet Onix</option>
+                <option value="Volkswagen Gol">Volkswagen Gol</option>
+                <option value="Hyundai HB20">Hyundai HB20</option>
+                <option value="Renault Kwid">Renault Kwid</option>
+                <option value="Ford Ka">Ford Ka</option>
+                <option value="Fiat Mobi">Fiat Mobi</option>
+                <option value="Toyota Corolla">Toyota Corolla</option>
+                <option value="Honda Civic">Honda Civic</option>
+                <option value="Jeep Renegade">Jeep Renegade</option>
+                <option value="Volkswagen Polo">Volkswagen Polo</option>
+                <option value="Nissan Kicks">Nissan Kicks</option>
+                <option value="Fiat Toro">Fiat Toro</option>
+                <option value="Chevrolet Tracker">Chevrolet Tracker</option>
+                <option value="Honda HR-V">Honda HR-V</option>
+                <option value="Renault Duster">Renault Duster</option>
+                <option value="Volkswagen T-Cross">Volkswagen T-Cross</option>
+                <option value="Jeep Compass">Jeep Compass</option>
+                <option value="Chevrolet Spin">Chevrolet Spin</option>
+                <option value="Toyota Hilux">Toyota Hilux</option>
+            </select>
+            
+            <div class="price-range">
+                <label for="price">Preço</label>
+                <input type="range" min="0" max="100000" value="50000" id="price">
+                <span id="price-value">50,000 USD</span>
+            </div>
+            
+            <button class="search-btn">Procurar</button>
+        </aside>
+
+        <div class="marketplace">
+            <div class="vehicle-card" onclick="window.location.href='individual.html'">
+                <div class="image">
+                    <img src="veiculos/img7.png" alt="Chevrolet Onix">
+                    <div class="for-sale">À VENDA</div>
+                </div>
+                <div class="details">
+                    <h2>Chevrolet Onix Joy</h2>
+                    <p>Ribeirão Preto - SP, Brasil</p>
+                    <p class="price">R$ 65.000</p>
+                    <div class="tags">
+                        <span>Gasolina</span>
+                        <span>30.000 km</span>
+                        <span>Manual</span>
+                        <span>Hatch</span>
+                        <span>Branco</span>
+                        <span>2019</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="vehicle-card" onclick="window.location.href='individual.html'">
+                <div class="image">
+                    <img src="veiculos/img15.png" alt="Fiat Argo">
+                    <div class="for-sale">À VENDA</div>
+                </div>
+                <div class="details">
+                    <h2>Fiat Argo</h2>
+                    <p>Ribeirão Preto - SP, Brasil</p>
+                    <p class="price">R$ 65.000</p>
+                    <div class="tags">
+                        <span>Gasolina</span>
+                        <span>20.000 km</span>
+                        <span>Automático</span>
+                        <span>Hatchback</span>
+                        <span>Branco</span>
+                        <span>2021</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="vehicle-card" onclick="window.location.href='individual.html'">
+                <div class="image">
+                    <img src="veiculos/img8.png" alt="Volkswagen Gol">
+                    <div class="for-sale">À VENDA</div>
+                </div>
+                <div class="details">
+                    <h2>Volkswagen Polo</h2>
+                    <p>Ribeirão Preto - SP, Brasil</p>
+                    <p class="price">R$ 95.000</p>
+                    <div class="tags">
+                        <span>Gasolina</span>
+                        <span>1.000 km</span>
+                        <span>Automático</span>
+                        <span>Hatchback</span>
+                        <span>Branco</span>
+                        <span>2021</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="vehicle-card" onclick="window.location.href='individual.html'">
+                <div class="image">
+                    <img src="veiculos/img12.png" alt="Renault Kwid">
+                    <div class="for-sale">À VENDA</div>
+                </div>
+                <div class="details">
+                    <h2>Renault Kwid</h2>
+                    <p>Ribeirão Preto - SP, Brasil</p>
+                    <p class="price">R$ 38.000</p>
+                    <div class="tags">
+                        <span>Gasolina</span>
+                        <span>85.000 km</span>
+                        <span>Manual</span>
+                        <span>Hatchback</span>
+                        <span>Bronze</span>
+                        <span>2018</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="vehicle-card" onclick="window.location.href='individual.html'">
+                <div class="image">
+                    <img src="veiculos/img13.png" alt="Honda Civic">
+                    <div class="for-sale">À VENDA</div>
+                </div>
+                <div class="details">
+                    <h2>Honda Civic</h2>
+                    <p>Ribeirão Preto - SP, Brasil</p>
+                    <p class="price">R$ 75.000</p>
+                    <div class="tags">
+                        <span>Gasolina</span>
+                        <span>150.000 km</span>
+                        <span>Automático</span>
+                        <span>Sedan</span>
+                        <span>Prata</span>
+                        <span>2016</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="vehicle-card" onclick="window.location.href='individual.html'">
+                <div class="image">
+                    <img src="veiculos/img6.png" alt="Toyota Corolla">
+                    <div class="for-sale">À VENDA</div>
+                </div>
+                <div class="details">
+                    <h2>Toyota Corolla</h2>
+                    <p>Ribeirão Preto - SP, Brasil</p>
+                    <p class="price">R$ 60.000</p>
+                    <div class="tags">
+                        <span>Gasolina</span>
+                        <span>125.000 km</span>
+                        <span>Automático</span>
+                        <span>Sedan</span>
+                        <span>Branco</span>
+                        <span>2009</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="vehicle-card" onclick="window.location.href='individual.html'">
+                <div class="image">
+                    <img src="veiculos/img11.png" alt="Hyundai HB20">
+                    <div class="for-sale">À VENDA</div>
+                </div>
+                <div class="details">
+                    <h2>Hyundai HB20</h2>
+                    <p>Ribeirão Preto - SP, Brasil</p>
+                    <p class="price">R$ 42.000</p>
+                    <div class="tags">
+                        <span>Gasolina</span>
+                        <span>28.000 km</span>
+                        <span>Automático</span>
+                        <span>Hatchback</span>
+                        <span>Branco</span>
+                        <span>2016</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="vehicle-card" onclick="window.location.href='individual.html'">
+                <div class="image">
+                    <img src="veiculos/img14.png" alt="Nissan Versa">
+                    <div class="for-sale">À VENDA</div>
+                </div>
+                <div class="details">
+                    <h2>Nissan Versa</h2>
+                    <p>Ribeirão Preto - SP, Brasil</p>
+                    <p class="price">R$ 95.000</p>
+                    <div class="tags">
+                        <span>Gasolina</span>
+                        <span>35.000 km</span>
+                        <span>Automático</span>
+                        <span>Sedan</span>
+                        <span>Chumbo</span>
+                        <span>2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br><br><br><br><br><br><br><br>
+
+    <script src="./JS/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Remove a tela de carregamento após o carregamento da página
+            const loadingScreen = document.getElementById("loading-screen");
+            loadingScreen.classList.add("loaded");
+
+            // Animação de surgimento para todos os elementos
+            gsap.from(".body, .header, .hero, .servicos, .produto, .navbar, .logo, .nav-links a, .btn, .card, .card__article, .container, .row, .social, .footer, .links,", {
+                duration: 1.2,
+                opacity: 0,
+                y: 50,
+                stagger: 0.1,
+                ease: "power2.out"
+            });
+
+            // Animação para elementos ao rolar a página
+            gsap.utils.toArray(".servicos, .produto, .garantia-qualidade").forEach(section => {
+                gsap.from(section, {
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 80%",
+                        end: "bottom 30%",
+                        scrub: true
+                    },
+                    opacity: 0,
+                    y: 50,
+                    duration: 1
+                });
+            });
+        });
+
+        window.addEventListener("scroll", () => {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+    <script>
+        // Função para formatar o valor como moeda
+        function formatCurrency(value) {
+            return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
+        }
+    
+        // Obter o elemento do input e o span
+        const priceInput = document.getElementById('price');
+        const priceValue = document.getElementById('price-value');
+    
+        // Atualizar o valor exibido
+        function updatePrice() {
+            const value = parseInt(priceInput.value, 10);
+            priceValue.textContent = formatCurrency(value);
+        }
+    
+        // Adicionar um ouvinte de evento para o input
+        priceInput.addEventListener('input', updatePrice);
+    
+        // Inicializar o valor no carregamento
+        updatePrice();
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+
+
+.multi-step-registration-form {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 900px;
+    box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+}
+
+.multi-step-registration-form header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.multi-step-registration-form .progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.multi-step-registration-form .step {
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.multi-step-registration-form .step p {
+    margin-bottom: 10px;
+}
+
+.multi-step-registration-form .bullet {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.multi-step-registration-form .bullet span {
+    font-size: 16px;
+}
+
+.multi-step-registration-form .check {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.multi-step-registration-form .step p,
+.multi-step-registration-form .bullet,
+.multi-step-registration-form .check {
+    transition: all 0.4s;
+}
+
+.multi-step-registration-form .page {
+    display: none;
+}
+
+.multi-step-registration-form .page.active {
+    display: block;
+}
+
+.multi-step-registration-form .form-outer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.multi-step-registration-form .form-outer form {
+    display: flex;
+    width: 600%;
+}
+
+.multi-step-registration-form .form-outer form .page {
+    width: 16.66%;
+    transition: margin-left 0.4s;
+}
+
+.multi-step-registration-form .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.multi-step-registration-form .field {
+    margin-bottom: 20px;
+}
+
+.multi-step-registration-form .field .label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.multi-step-registration-form .field input,
+.multi-step-registration-form .field select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.multi-step-registration-form .field button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.multi-step-registration-form .field button:hover {
+    background-color: #555;
+}
+
+.multi-step-registration-form .field.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.multi-step-registration-form .field.btns button {
+    width: 48%;
+}
+
+.multi-step-registration-form .step.active .check {
+    display: block;
+    background-color: #f60;
+    border-radius: 50%;
+}
+
+.multi-step-registration-form .step.active .bullet {
+    background-color: #f60;
+    color: #fff;
+}
+
+.multi-step-registration-form .step.active p {
+    color: #f60;
+}

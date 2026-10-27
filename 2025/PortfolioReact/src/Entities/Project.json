@@ -1,0 +1,53 @@
+{
+  "name": "Project",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Nome do projeto"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descrição detalhada do projeto"
+    },
+    "technologies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tecnologias utilizadas"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL da imagem do projeto"
+    },
+    "demo_url": {
+      "type": "string",
+      "description": "URL da demo/site"
+    },
+    "github_url": {
+      "type": "string",
+      "description": "URL do repositório GitHub"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "web",
+        "mobile",
+        "fullstack",
+        "api",
+        "outros"
+      ],
+      "description": "Categoria do projeto"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Projeto em destaque"
+    }
+  },
+  "required": [
+    "title",
+    "description"
+  ]
+}

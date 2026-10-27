@@ -1,0 +1,542 @@
+.marketplace-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: fixed; /* Fixa a sidebar na tela */
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sidebar input,
+.sidebar select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.price-range {
+    margin-bottom: 20px;
+}
+
+.price-range label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.price-range input {
+    width: 100%;
+}
+
+#price-value {
+    display: block;
+    margin-top: 10px;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.search-btn:hover {
+    background-color: #000000;
+}
+
+.marketplace {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    width: calc(100% - 270px);
+    margin-left: 325px; /* Ajuste da largura da área dos cards */
+}
+
+.vehicle-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    width: calc(25% - 20px); /* Diminuindo o tamanho dos cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.vehicle-card:hover {
+    transform: scale(1.05);
+}
+
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.for-sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.details {
+    padding: 15px; /* Reduzindo o padding para acompanhar o tamanho menor dos cards */
+}
+
+.details h2 {
+    font-size: 1.25rem; /* Reduzindo o tamanho da fonte do título */
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.price {
+    font-size: 1.15rem; /* Reduzindo o tamanho da fonte do preço */
+    color: #f60;
+    margin-top: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tags span {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.75rem; /* Reduzindo o tamanho da fonte das tags */
+    color: #666;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    color: #333;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ff6600;
+}
+
+select::-ms-expand {
+    display: none; /* Remove seta padrão no IE */
+}
+
+.select-container {
+    position: relative;
+    width: 100%;
+}
+
+.select-container::after {
+    content: '\f078'; /* Código para a seta do FontAwesome */
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #333;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 55px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+    margin: 20px 50px;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .navbar.scrolled {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 55px;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 5px 15px;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 50px;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    transform: scale(0.3);
+    transition: transform 0.3s ease-in-out;
+    margin-left: -220px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 15px;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: width 0.3s;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links a:hover {
+    color: #333;
+  }
+  
+  .btn {
+    width: 140px;
+      height: 50px;
+      background: linear-gradient(to top, #000000, #272727, #6d6d6d);
+      color: #fff;
+      border-radius: 50px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: relative;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      position: absolute;
+      right: 50px;
+      text-decoration: none; /* Para remover o sublinhado do link */
+      display: flex;
+      justify-content: center;
+    transition: background 0.3s;
+  }
+  
+  .btn span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+  }
+  
+  .btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn:hover .btn-text-one {
+    top: -100%;
+  }
+  
+  .btn:hover .btn-text-two {
+    top: 50%;
+  }
+  
+  .btn:active {
+    transform: translateY(1px);
+  }
+
+footer {
+    background-color: #2a2a2a;
+    position: relative; /* Torna o footer fixo */
+    bottom: 25px; /* Adiciona uma margem do fundo da página */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    width: 97%; /* Ajusta a largura do footer */
+    height: auto; /* Ajusta a altura do footer */
+    padding: 1rem; /* Ajusta o padding do footer */
+    border-radius: 15px; /* Aplica border-radius nos quatro cantos */
+    z-index: 1000; /* Garante que o footer esteja acima de outros elementos */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+  }
+  .container {
+   max-width: 1140px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  
+  
+  }
+  .row{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+  
+  .col{
+   min-width: 250px;
+   color:#f2f2f2f2;
+   font-family: poppins;
+   padding:0 2rem;
+  }
+  .col .logo{
+   width: 100px;
+   margin-bottom:25px;
+  }
+  .col h3{
+   color:#ffffff;
+   margin-bottom: 20px;
+   position: relative;
+   cursor: pointer;
+  }
+  .col h3::after{
+   content: '';
+   height:3px;
+   width:0px;
+   background-color: #ffffff;
+   position: absolute;
+   bottom: 0;
+   left:0;
+   transition: 0.3s ease;
+  
+  }
+  .col h3:hover::after{
+   width:30px
+  }
+  .col .social a i{
+   color:#ffffff;
+   margin-top:2rem;
+   margin-right: 5px;
+   transition: 0.3s ease;
+  }
+  .col .social a i:hover{
+   transform: scale(1.5);
+   filter:grayscale(25);
+  }
+  .col .links a{
+   display: block;
+   text-decoration: none;
+   color:#f2f2f2;
+   margin-bottom: 5px;
+   position: relative;
+   transition: 0.3s ease;
+  }
+  .col .links a::before{
+   content:'';
+   height: 16px;
+   width:3px;
+   position: absolute;
+   top:5px;
+   left:-10px;
+   background-color: #ffffff;
+   transition: 0.5s ease;
+   opacity: 0;
+  }
+  .col .links a:hover::before{
+   opacity: 1;
+  }
+  .col .links a:hover{
+   transform: translateX(-8px);
+   color:#ffffff;
+  }
+  .col .contact-details{
+   display: inline-flex;
+   justify-content: space-between;
+  }
+  .col .contact-details i{
+   margin-right:15px;
+  }
+  .row .form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:2rem 0;
+  }
+  .row .form input{
+   background-color: #000000;
+   border:0;
+   outline:none;
+   padding:14px 20px;
+   border-radius: 6px;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+  }
+  .form button{
+   padding:14px 20px;
+   border:0;
+   border-radius: 6px;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+   background-color: #ffffff;
+  }
+  
+  /********** Responsive Design ********/
+  @media(max-width:900px)
+  {
+  .row{
+   flex-direction: column;
+  }
+  .col{
+   width: 100%;
+   text-align: left;
+   margin-bottom: 25px;
+  }
+  }
+  @media(max-width:768px)
+  {
+  .row{
+   flex-direction: column;
+  }
+  .col{
+   width: 100%;
+   text-align: left;
+   margin-bottom: 20px;
+  }
+  }
+  
+  .error-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .error-container h1 {
+    font-size: 100px;
+    margin: 0;
+  }
+  
+  .error-container p {
+    font-size: 24px;
+  }
+  
+  .error-container .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .error-container .btn:hover {
+    background-color: #555;
+  }
+  
+  .scroll-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade-in.scroll-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Para WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 6px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor de fundo da trilha da barra de rolagem */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f60; /* Cor do "polegar" da barra de rolagem */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000; /* Cor do "polegar" quando o mouse passa sobre ele */
+}
+
+/* Exemplo de configuração para todo o corpo */
+body {
+  scrollbar-width: thin; /* Largura fina para a barra de rolagem */
+  scrollbar-color: #ff6600 #f1f1f1; /* Cor do "polegar" e da trilha */
+}
+
+/* Exemplo de configuração para um elemento específico */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}

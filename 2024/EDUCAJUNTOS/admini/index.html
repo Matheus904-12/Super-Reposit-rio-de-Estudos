@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/admini/setores/1.css">
+    <link rel="stylesheet" href="/admini/setores/2.css">
+    <link rel="stylesheet" href="/admini/setores/3.css">
+</head>
+<body>
+    <div class="sidebar">
+        <br><br>
+        <h3>Dashboard - EDUCAJUNTOS</h3>
+        <br><br>
+        <button onclick="selectSection(this, 'section1')">
+            <img src="/image/icon/acess.png" alt="Ícone 1" class="icon"> Controle de Usuários
+        </button>
+        <button onclick="selectSection(this, 'section2')">
+            <img src="/image/icon/users.png" alt="Ícone 2" class="icon"> Controle de Acessos
+        </button>
+        <button onclick="selectSection(this, 'section3')">
+            <img src="/image/icon/anali.png" alt="Ícone 3" class="icon"> Analíse de Resultados
+        </button>
+        <a href="/inicio/index.html" class="back-button">
+            <img src="/image/icon/voltar.png" alt="Voltar Ícone" class="icon"> Voltar
+        </a>
+    </div>
+    
+    <div class="content">
+        <div id="loadingIcon" class="loading-icon">
+            <img src="/image/icon/decoration.png" alt="Ícone decorativo">
+        </div>
+        
+        <section id="section1" class="section">
+            <div class="welcome-section">
+                <div class="welcome-text">
+                    <h3>BEM-VINDO ESTUDANTE!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.</p>
+                </div>
+                <img src="/image/9.png" alt="Ilustração do Usuário" class="welcome-image">
+            </div>
+            
+            <div class="user-stats">
+                <div class="card total-users" onclick="openReport('total')">
+                    <img src="/image/icon/group.png" alt="Ícone Total" class="card-icon">
+                    <h4>TOTAL DE USUÁRIOS</h4>
+                    <br>
+                    <p>$$$$$$$</p>
+                    <br>
+                    <button class="report-button">Abrir Relatório</button>
+                </div>
+                
+                <div class="card active-users" onclick="openReport('active')">
+                    <img src="/image/icon/peo.png" alt="Ícone Ativos" class="card-icon">
+                    <h4>USUÁRIOS ATIVOS</h4>
+                    <br>
+                    <p>$$$$$$$</p>
+                    <br>
+                    <button class="report-button">Abrir Relatório</button>
+                </div>
+                
+                <div class="card inactive-users" onclick="openReport('inactive')">
+                    <img src="/image/icon/min.png" alt="Ícone Inativos" class="card-icon">
+                    <h4>USUÁRIOS INATIVOS</h4>
+                    <br>
+                    <p>$$$$$$$</p>
+                    <br>
+                    <button class="report-button">Abrir Relatório</button>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="section2" class="section">
+            <h2>CONTROLE DE ACESSOS</h2>
+            <button class="add-user-button" onclick="toggleUserForm()">ADICIONAR USUÁRIO</button>
+            <div id="userForm" class="user-form-container" style="display: none;">
+                <form class="access-control-form">
+                    <div>
+                        <label>NOME COMPLETO</label>
+                        <input type="text" placeholder="Seu nome">
+                    </div>
+        
+                    <div>
+                        <label>EMAIL</label>
+                        <input type="email" placeholder="Seu email">
+                    </div>
+        
+                    <div>
+                        <label>DATA DE NASCIMENTO</label>
+                        <input type="text" placeholder="DD/MM/AA">
+                    </div>
+        
+                    <div>
+                        <label>TELEFONE</label>
+                        <input type="text" placeholder="11 99999-9999">
+                    </div>
+        
+                    <div>
+                        <label>SENHA</label>
+                        <input type="password" placeholder="••••••••">
+                    </div>
+        
+                    <div>
+                        <label>CONFIRMAÇÃO DA SENHA</label>
+                        <input type="password" placeholder="••••••••">
+                    </div>
+        
+                    <div style="grid-column: span 2;">
+                        <button type="submit" class="submit-button">ADICIONAR</button>
+                    </div>
+                </form>
+            </div>
+            <div class="user-list">
+                
+                <!-- Exemplo de Usuário -->
+                <div class="user-item">
+                    <div class="user-summary">
+                        <img src="/image/icon/account.png" alt="Ícone Usuário" class="user-icon">
+                        <div class="user-info">
+                            <p><strong>NOME COMPLETO</strong></p>
+                            <p>seuemail@gmail.com</p>
+                            <p>telefone +5511</p>
+                        </div>
+                        <p class="status">ATIVO</p>
+                        <button class="expand-collapse-button" onclick="toggleDetails(this)">▼</button>
+                    </div>
+                    
+                    <!-- Informações detalhadas (inicialmente ocultas) -->
+                    <div class="user-details">
+                        <p><strong>TIPO DE USUÁRIO:</strong> aluno</p>
+                        <p><strong>DATA DE REGISTRO:</strong> data de registro</p>
+                        <div class="user-options">
+                            <button class="edit-button">EDITAR INFORMAÇÕES</button>
+                            <button class="delete-button">EXCLUIR USUÁRIO</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+        
+                <div class="user-item">
+                    <div class="user-summary">
+                        <img src="/image/icon/account.png" alt="Ícone Usuário" class="user-icon">
+                        <div class="user-info">
+                            <p><strong>NOME COMPLETO</strong></p>
+                            <p>seuemail@gmail.com</p>
+                            <p>telefone +5511</p>
+                        </div>
+                        <p class="status">ATIVO</p>
+                        <button class="expand-collapse-button" onclick="toggleDetails(this)">▼</button>
+                    </div>
+                    
+                    <!-- Informações detalhadas (inicialmente ocultas) -->
+                    <div class="user-details">
+                        <p><strong>TIPO DE USUÁRIO:</strong> aluno</p>
+                        <p><strong>DATA DE REGISTRO:</strong> data de registro</p>
+                        <div class="user-options">
+                            <button class="edit-button">EDITAR INFORMAÇÕES</button>
+                            <button class="delete-button">EXCLUIR USUÁRIO</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="user-item">
+                    <div class="user-summary">
+                        <img src="/image/icon/account.png" alt="Ícone Usuário" class="user-icon">
+                        <div class="user-info">
+                            <p><strong>NOME COMPLETO</strong></p>
+                            <p>seuemail@gmail.com</p>
+                            <p>telefone +5511</p>
+                        </div>
+                        <p class="status">ATIVO</p>
+                        <button class="expand-collapse-button" onclick="toggleDetails(this)">▼</button>
+                    </div>
+                    
+                    <!-- Informações detalhadas (inicialmente ocultas) -->
+                    <div class="user-details">
+                        <p><strong>TIPO DE USUÁRIO:</strong> aluno</p>
+                        <p><strong>DATA DE REGISTRO:</strong> data de registro</p>
+                        <div class="user-options">
+                            <button class="edit-button">EDITAR INFORMAÇÕES</button>
+                            <button class="delete-button">EXCLUIR USUÁRIO</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="user-item">
+                    <div class="user-summary">
+                        <img src="/image/icon/account.png" alt="Ícone Usuário" class="user-icon">
+                        <div class="user-info">
+                            <p><strong>NOME COMPLETO</strong></p>
+                            <p>seuemail@gmail.com</p>
+                            <p>telefone +5511</p>
+                        </div>
+                        <p class="status">ATIVO</p>
+                        <button class="expand-collapse-button" onclick="toggleDetails(this)">▼</button>
+                    </div>
+                    
+                    <!-- Informações detalhadas (inicialmente ocultas) -->
+                    <div class="user-details">
+                        <p><strong>TIPO DE USUÁRIO:</strong> aluno</p>
+                        <p><strong>DATA DE REGISTRO:</strong> data de registro</p>
+                        <div class="user-options">
+                            <button class="edit-button">EDITAR INFORMAÇÕES</button>
+                            <button class="delete-button">EXCLUIR USUÁRIO</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="user-item">
+                    <div class="user-summary">
+                        <img src="/image/icon/account.png" alt="Ícone Usuário" class="user-icon">
+                        <div class="user-info">
+                            <p><strong>NOME COMPLETO</strong></p>
+                            <p>seuemail@gmail.com</p>
+                            <p>telefone +5511</p>
+                        </div>
+                        <p class="status">ATIVO</p>
+                        <button class="expand-collapse-button" onclick="toggleDetails(this)">▼</button>
+                    </div>
+                    
+                    <!-- Informações detalhadas (inicialmente ocultas) -->
+                    <div class="user-details">
+                        <p><strong>TIPO DE USUÁRIO:</strong> aluno</p>
+                        <p><strong>DATA DE REGISTRO:</strong> data de registro</p>
+                        <div class="user-options">
+                            <button class="edit-button">EDITAR INFORMAÇÕES</button>
+                            <button class="delete-button">EXCLUIR USUÁRIO</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repetir o bloco user-item para mais usuários -->
+            </div>
+        </section>
+        
+        
+        <section id="section3">
+            <h2 class="section-title">ANÁLISE DE RESULTADOS</h2>
+            <div class="filter-buttons">
+                <button>Nome Completo</button>
+                <button>Email</button>
+                <button>Número de Registro</button>
+            </div>
+        <br>
+        <br>
+            <div class="chart-container">
+                <h3>GRÁFICO DE ACESSO</h3>
+                <canvas id="access-chart"></canvas>
+            </div>
+        <br>
+        <br>
+            <div class="chart-container">
+                <h3>PROGRESSOS</h3>
+                <canvas id="progress-chart"></canvas>
+            </div>
+        <br>
+        <br>
+            <div class="analysis-text">
+                <h3>ANALISE PESSOAL</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac lorem vitae purus bibendum pretium ut id orci. Ut lacus felis, faucibus molestie dolor et, ornare fermentum quam. Suspendisse eget risus iaculis, blandit odio eget, ultricies dolor. Vivamus sed ante scelerisque, venenatis enim eu, laoreet felis. Donec mattis est quis efficitur placerat. Integer arcu velit, interdum sed nulla ut, commodo aliquam turpis. Etiam feugiat, augue fermentum suscipit tempus, quam leo hendrerit eros, vel auctor magna ante sit amet sapien. Phasellus a fermentum lorem. Vestibulum eget est at lectus faucibus hendrerit. Aenean id nisi massa. Duis rhoncus turpis lacus, in auctor mauris auctor in. Fusce accumsan purus pellentesque, sodales elit sit amet, vehicula dolor. In vehicula risus at volutpat tincidunt.
+                </p>
+            </div>
+        </section>
+        
+        
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Gráfico de Acesso
+        const accessChartCtx = document.getElementById('access-chart').getContext('2d');
+        const accessChart = new Chart(accessChartCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum'],
+                datasets: [
+                    {
+                        label: '2022',
+                        data: [30, 60, 45, 70, 55],
+                        backgroundColor: '#1E90FF'
+                    },
+                    {
+                        label: '2023',
+                        data: [50, 70, 60, 80, 65],
+                        backgroundColor: '#FF69B4'
+                    },
+                    {
+                        label: '2024',
+                        data: [40, 55, 75, 60, 90],
+                        backgroundColor: '#32CD32'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' }
+                }
+            }
+        });
+        
+        // Gráfico de Progresso
+        const progressChartCtx = document.getElementById('progress-chart').getContext('2d');
+        const progressChart = new Chart(progressChartCtx, {
+            type: 'line',
+            data: {
+                labels: ['2022', '2023', '2024'],
+                datasets: [
+                    {
+                        label: 'Lorem Ipsum',
+                        data: [20, 40, 30],
+                        borderColor: '#FF4500',
+                        fill: false,
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Lorem Ipsum',
+                        data: [30, 60, 50],
+                        borderColor: '#6A5ACD',
+                        fill: false,
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Lorem Ipsum',
+                        data: [40, 70, 60],
+                        borderColor: '#20B2AA',
+                        fill: false,
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' }
+                },
+                scales: {
+                    x: { beginAtZero: true },
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - RedaENEM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css" id="dark-mode">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="perfil-page">
+    <!-- Sidebar incluído via JavaScript -->
+    <div id="sidebar-container"></div>
+    
+    <div class="main-content">
+        <!-- Header incluído via JavaScript -->
+        <header id="header-container" class="main-header"></header>
+        
+        <div class="perfil-content">
+            <div class="perfil-header">
+                <h1>Meu Perfil</h1>
+                <button class="btn-edit" id="edit-profile">
+                    <i class="fas fa-edit"></i> Editar Perfil
+                </button>
+            </div>
+            
+            <div class="perfil-body">
+                <div class="perfil-card">
+                    <div class="perfil-avatar">
+                        <img src="assets/images/user-avatar.jpg" alt="Avatar" id="profile-avatar">
+                        <div class="avatar-overlay" id="change-avatar">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="perfil-info">
+                        <h2 id="profile-name">Carregando...</h2>
+                        <p id="profile-email">carregando@email.com</p>
+                        <p id="profile-school">Instituição não informada</p>
+                    </div>
+                </div>
+                
+                <div class="perfil-stats">
+                    <div class="stat-item">
+                        <h3>Redações Analisadas</h3>
+                        <p id="stats-analyzed">0</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Média Geral</h3>
+                        <p id="stats-average">0</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>IA Detectada</h3>
+                        <p id="stats-ia">0%</p>
+                    </div>
+                </div>
+                
+                <div class="perfil-section">
+                    <h3>Informações Pessoais</h3>
+                    <form id="profile-form" class="perfil-form">
+                        <div class="form-group">
+                            <label for="profile-name-input">Nome Completo</label>
+                            <input type="text" id="profile-name-input" disabled>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="profile-email-input">E-mail</label>
+                            <input type="email" id="profile-email-input" disabled>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="profile-school-input">Instituição de Ensino</label>
+                            <input type="text" id="profile-school-input" disabled>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="profile-subjects-input">Disciplinas</label>
+                            <input type="text" id="profile-subjects-input" disabled placeholder="Ex: Português, Redação">
+                        </div>
+                        
+                        <div class="form-actions" id="form-actions" style="display: none;">
+                            <button type="button" class="btn-cancel" id="cancel-edit">Cancelar</button>
+                            <button type="submit" class="btn-save">Salvar Alterações</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="perfil-section">
+                    <h3>Configurações</h3>
+                    <div class="settings-list">
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <i class="fas fa-moon"></i>
+                                <span>Modo Escuro</span>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="dark-mode-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <i class="fas fa-bell"></i>
+                                <span>Notificações</span>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="notifications-toggle" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Relatórios em PDF</span>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="pdf-reports-toggle" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="perfil-actions">
+                    <button class="btn-logout" id="logout-btn">
+                        <i class="fas fa-sign-out-alt"></i> Sair da Conta
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para alterar avatar -->
+    <div class="modal" id="avatar-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Alterar Foto de Perfil</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="avatar-options">
+                    <div class="option-upload">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Enviar uma foto</p>
+                        <input type="file" id="avatar-upload" accept="image/*">
+                    </div>
+                    <div class="option-default">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Usar foto padrão</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cancel">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/perfil.js"></script>
+    <script src="js/gsap-animations.js"></script>
+    <script src="js/includes.js"></script>
+</body>
+</html>

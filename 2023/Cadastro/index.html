@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eggman Empire</title>
+  <meta name="title" content="Eggman Empire">
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/font/font.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cursor.css">
+  <link rel="stylesheet" href="./css/cad.css">
+  <link rel="stylesheet" href="./css/tag.css">
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+  <link rel="icon" type="image/x-icon" href="./assets/images/iconX.png">
+</head>
+<body id="top">
+
+  <!-- Carregamento da página -->
+
+  <div class="preloader" data-preloader>
+    <span class="line"></span>
+  </div>
+
+  <!--Navegação-->
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/logo eggman.png"
+         width="84" height="26" alt="logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="cadastro.html" class="logo">
+            <img src="./assets/images/logo eggman.png" 
+            width="84" height="26" alt="logo">
+          </a>
+
+          <button class="nav-close-btn" 
+          aria-label="close menu" data-nav-toggler>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link"
+             data-nav-link>Início</a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link"
+             data-nav-link>Serviços</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" 
+            data-nav-link>Sobre</a>
+          </li>
+
+          <li>
+            <a href="#project" class="navbar-link" 
+            data-nav-link>Projetos</a>
+          </li>
+
+          <li>
+            <a href="#review" class="navbar-link" 
+            data-nav-link>Informações</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link"
+            data-nav-link>Contato</a>
+          </li>
+          <br>
+          
+          <li class="entrar-mobile">
+            <div id="fotoTeste"></div>
+            <a href="cadastro.html" class="navbar-link btn btn:hover">
+              <span class="span">Entrar</span>
+          </a>
+        </li>
+    </ul>
+  </nav>
+      
+      
+
+      <button class="nav-open-btn btn:hover" 
+      aria-label="open menu" data-nav-toggler>
+        <span class="line line-3"></span>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+
+      </button>
+
+      <div class="overlay" 
+      data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+  <main>
+    <article>
+
+      <!--Início-->
+
+      <div class="hero text-center" id="home">
+        <div class="container">
+
+          <div class="banner-outline has-after">
+
+            <div class="hero-banner img-holder 
+            has-after" style="--width: 500;
+            --height: 680;" data-tilt>
+            <img src="./assets/images/principal.png" 
+            width="500" height="680" alt="" class="img-cover">
+            </div>
+            <span class="span title">Dr. Eggman</span>
+          </div>
+          <div class="hero-content">
+            <h1 class="h1 title">
+              O inventor do futuro que mudou o mundo para sempre!
+</h1>
+            <div class="wrapper">
+              <p class="hero-text">
+                A história do homem que quer mudar o mundo, para melhor ou para pior.
+              </p>
+            </div>
+          </div>
+
+          <img src="./assets/images/hero-shape-1.png"
+          width="559" height="232" alt="shape" class="shape shape-1">
+
+          <img src="./assets/images/hero-shape-2.png"
+          width="1358" height="497" alt="shape" class="shape shape-2">
+        </div>
+      </div>
+
+      <!--Fim-->
+
+      <!--Inicio Sobre-->
+
+      <section class="service text-center" 
+      aria-label="my services" id="service">
+        <div class="container">
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+  <img src="./assets/images/icons8-microscópio-100.png" 
+  width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+                <h3 class="card-title">
+                  <a href="#">
+                    Ciência <br>
+                  </a>
+                </h3>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+    <img src="./assets/images/icons8-manutenção-100 (1).png"
+     width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+                <h3 class="card-title">
+                  <a href="#">
+                    Engenharia <br>
+                    Mecânica
+                  </a>
+                </h3>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+    <img src="./assets/images/icons8-luz-automática-100.png" 
+    width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+                <h3 class="card-title">
+                  <a href="#">
+                    Engenharia <br>
+                    Elétrica
+                  </a>
+                </h3>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+ <img src="./assets/images/icons8-serviço-100.png" 
+ width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+                <h3 class="card-title">
+                  <a href="#">
+                    Engenharia <br>
+                    Civil
+                  </a>
+                </h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+<!--Fim-->
+
+<!--Sobre - 2-->
+
+      <section class="section about"
+       aria-label="about-me" id="about">
+        <div class="container">
+          <div class="tab-container">
+            <ul class="tab-btn-list">
+              <li class="tab-btn-item">
+              <button class="tab-btn title h6 active"
+                 data-tab-btn="about">Sobre Mim</button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6"
+                 data-tab-btn="skillset">Habilidades
+                </button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6"
+                 data-tab-btn="interview">Entrevista
+                </button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" 
+                data-tab-btn="awward">Prêmios</button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" 
+                data-tab-btn="exhibition">
+                Exibição</button>
+              </li>
+            </ul>
+
+            <!--Fim-->
+
+            <!--Sobre - 3-->
+
+            <div class="tab-content active" 
+            data-tab-content="about">
+              <div class="grid-list">
+<figure class="about-banner img-holder"
+                 style="--width: ; --height: ;" 
+                 data-tilt>
+ <img src="./assets/images/egg40.jpg"
+  width="570" height="420" loading="lazy"
+   alt="about banner"
+                    class="img-cover">
+                </figure>
+                <div class="about-content">
+                  <h2 class="h4 title section-title">
+                    Dr. Robotnik: Conheça o Gênio por Trás da Inovação
+                  </h2>
+                  <p class="section-text">
+                    Em um mundo impulsionado pela inovação e pela busca pelo conhecimento, o Dr. Robotnik se destaca como um verdadeiro gênio. Com décadas de experiência no campo da robótica e inteligência artificial, ele tem sido uma figura pioneira na criação de soluções tecnológicas de vanguarda.
+                    ua paixão por desafios complexos o levou a desenvolver sistemas autônomos de última geração e algoritmos de aprendizado de máquina que estão moldando o futuro da indústria. O Dr. Robotnik é movido por uma visão: tornar o impossível em realidade, e ele o faz com maestria.
+                  </p>
+                  <ul class="about-list">
+                    <li class="about-item">
+                      <p class="list-title">Nome</p>
+                      <span class="span title h5">
+                        Eggman</span>
+                    </li>
+                    <li class="about-item">
+                      <p class="list-title">
+                        Telefone</p>
+                      <span class="span title h5"
+                      >+123-555-6789</span>
+                    </li>
+                    <li class="about-item">
+                      <p class="list-title">
+                        Meu Email</p>
+                      <span class="span title h5"
+                      >drrobotnik@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!--Fim-->
+
+            <!--Sobre-4-->
+
+            <div class="tab-content" 
+            data-tab-content="skillset">
+              <div class="grid-list">
+                <div class="skill-content">
+                  <h3 class="h4 title section-title">
+                    Mestre em Ciências e Engenharia
+                  </h3>
+                  <p class="section-text">
+                    Dr. Robotnik é um virtuoso nos campos da engenharia mecânica, elétrica e civil. Com um profundo entendimento dos princípios científicos, ele aplica sua expertise para enfrentar desafios complexos no mundo da tecnologia e inovação.
+                  </p>
+                  <ul class="skill-list">
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Engenharia Mecânica</span>
+                        <span class="value">98%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 98%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Engenharia Elétrica</span>
+                        <span class="value">95%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Engenharia Civil</span>
+                        <span class="value">90%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <!--Fim-->
+
+                <!--Sobre-5-->
+
+ <figure class="skill-banner img-holder" 
+ style="--width: 570; --height: 420;" 
+ data-tilt>
+    <img src="./assets/images/lab.jpg"
+     width="570" height="420" loading="lazy"
+      alt="skill banner"
+                    class="img-cover">
+                </figure>
+              </div>
+            </div>
+            <div class="tab-content" 
+            data-tab-content="interview">
+              <div class="grid-list">
+     <div class="interview-card img-holder"
+      style="--width: 376; --height: 420;" 
+      data-tilt>
+   <img src="./assets/images/bomm1.jpg"
+    width="376" height="420" loading="lazy"
+     alt="interview 1"
+                    class="img-cover">
+                  <button class="btn btn:hover">
+                    Play</button>
+                </div>
+                <div class="interview-card 
+                img-holder" style="--width: 376;
+                 --height: 420;" data-tilt>
+<img src="./assets/images/bomm2.jpg"
+ width="376" height="420" loading="lazy"
+  alt="interview 2"
+                    class="img-cover">
+                  <button class="btn btn:hover">
+                    Play</button>
+                </div>
+    <div class="interview-card img-holder" 
+    style="--width: 376; --height: 420;" 
+    data-tilt>
+   <img src="./assets/images/boom3.jpg"
+    width="376" height="420" loading="lazy" 
+    alt="interview 3"
+                    class="img-cover">
+                  <button class="btn btn:hover">
+                    Play</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content"
+             data-tab-content="awward">
+              <h3 class="h4 title section-title">
+                O Dr. Robotnik é um líder reconhecido em sua área, com uma impressionante lista de prêmios e certificações. Seu compromisso com a excelência é evidente em cada conquista que acumulou ao longo dos anos.
+              </h3>
+              <ul class="grid-list">
+                <li>
+                  <div class="award-card">
+    <figure class="card-banner img-holder"
+     style="--width: 534; --height: 383;"
+      data-tilt>
+   <img src="./assets/images/eng1.jpg"
+    width="534" height="383" loading="lazy"
+     alt="certificate"
+                        class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-card">
+                    <figure class="card-banner
+                     img-holder" style="--width:
+                      534; --height: 383;" 
+                      data-tilt>
+                      <img 
+             src="./assets/images/eng2.jpg"
+              width="534" height="383" 
+              loading="lazy" alt="certificate"
+                        class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li>
+     <div class="award-card">
+                    <figure class="card-banner 
+                    img-holder" style="--width: 534;
+                     --height: 383;" data-tilt>
+    <img src="./assets/images/eng3.jpg"
+     width="534" height="383" loading="lazy"
+      alt="certificate"
+                        class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content"
+             data-tab-content="exhibition">
+              <ul class="grid-list">
+                <li>
+                  <div class="exhibition-card">
+                    <figure class="card-banner
+                     img-holder" 
+                     style="--width: 376;
+                      --height: 200;" data-tilt>
+    <img src="./assets/images/lab3.jpg"
+     width="376" height="200" loading="lazy" 
+     alt="image"
+                        class="img-cover">
+                    </figure>
+                    <div class="card-icon">
+                      <ion-icon name="image-outline"
+                       aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+
+                  <!--FIm-->
+
+                  <!--Sobre-6-->
+                  <div class="exhibition-card">
+                    <figure class="card-banner
+                     img-holder" style="--width: 376;
+                      --height: 200;" data-tilt>
+  <img src="./assets/images/lab2.jpg"
+   width="376" height="200" loading="lazy" 
+   alt="video"
+                        class="img-cover">
+                    </figure>
+                    <div class="card-icon">
+                      <ion-icon name="logo-youtube"
+                       aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="exhibition-card">
+                    <figure class="card-banner
+                     img-holder" style="--width: 376;
+                      --height: 200;" data-tilt>
+   <img src="./assets/images/lab1.jpg"
+    width="376" height="200" loading="lazy" 
+    alt="music"
+                        class="img-cover">
+                    </figure>
+                    <div class="card-icon">
+                      <ion-icon name="logo-soundcloud"
+                       aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="exhibition-card">
+                    <figure class="card-banner 
+                    img-holder" style="--width: 376;
+                     --height: 200;" data-tilt>
+   <img src="./assets/images/lab4.jpg" 
+   width="376" height="200" loading="lazy"
+    alt="image"
+                        class="img-cover">
+                    </figure>
+                    <div class="card-icon">
+                      <ion-icon name="image-outline" 
+                      aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="exhibition-card">
+                    <figure class="card-banner
+                     img-holder" style="--width: 376;
+                      --height: 200;" data-tilt>
+  <img src="./assets/images/lab5.jpg" 
+  width="376" height="200" loading="lazy" alt="image"
+                        class="img-cover">
+                    </figure>
+                    <div class="card-icon">
+                      <ion-icon name="image-outline"
+                       aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="exhibition-card">
+      <figure class="card-banner img-holder" 
+      style="--width: 376; --height: 200;" data-tilt>
+  <img src="./assets/images/lab6.jpg"
+   width="376" height="200" loading="lazy"
+    alt="image"
+                        class="img-cover">
+                    </figure>
+                    <div class="card-icon">
+                      <ion-icon name="image-outline" 
+                      aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Fim-->
+
+      <!--Carrossel-->
+
+      <section class="section cta"
+       aria-label="work with me">
+        <div class="container">
+          <h2 class="title h2 section-title
+           text-center">
+           Compre um de meus robôs e ajude-me a construir o futuro!
+          </h2>
+          <a href="compra.html" class="btn btn:hover">
+            <span class="span">Comprar Agora</span>
+          </a>
+        </div>
+      </section>
+
+      <!--Fim-->
+
+      <!--Cartões-Carrossel-->
+
+<section class="section project" aria-label="meus projetos mais recentes" id="project">
+    <ul class="slider-list">
+        <li class="slider-item">
+            <div class="project-card text-center">
+                <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                    <img src="./assets/images/ent.jpg" width="1000" height="763" loading="lazy"
+                        alt="Cartaz do projeto: Estúdio de design digital criativo e experiente" class="img-cover">
+                    <a href="#" class="btn btn:hover">
+                        <span class="span">Detalhes do Projeto</span>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <p class="card-subtitle">BluePrint, Robo</p>
+                    <h3 class="title h3">
+                        <a href="#" class="card-title">Egg Juggernaut</a>
+                    </h3>
+                </div>
+            </div>
+        </li>
+        <li class="slider-item">
+            <div class="project-card text-center">
+                <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                    <img src="./assets/images/ent2.png" width="1000" height="763" loading="lazy"
+                        alt="Cartaz do projeto: Desenvolvimento e Manutenção Front-End" class="img-cover">
+                    <a href="#" class="btn btn:hover">
+                        <span class="span">Detalhes do Projeto</span>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <p class="card-subtitle">BluePrint, Robo</p>
+                    <h3 class="title h3">
+                        <a href="#" class="card-title">Metal Sonic</a>
+                    </h3>
+                </div>
+            </div>
+        </li>
+        <li class="slider-item">
+            <div class="project-card text-center">
+                <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                    <img src="./assets/images/ent3.jpg" width="1000" height="763" loading="lazy"
+                        alt="Cartaz do projeto: Flutter Framework & Design Warframe" class="img-cover">
+                    <a href="#" class="btn btn:hover">
+                        <span class="span">Detalhes do Projeto</span>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <p class="card-subtitle">BluePrint, Robo</p>
+                    <h3 class="title h3">
+                        <a href="#" class="card-title">O Futuro me Aguarda!</a>
+                    </h3>
+                </div>
+            </div>
+        </li>
+        <li class="slider-item">
+            <div class="project-card text-center">
+                <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                    <img src="./assets/images/ent4.jpg" width="1000" height="763" loading="lazy"
+                        alt="Cartaz do projeto: Projeto Completo de Desenvolvimento Web com JavaScript"
+                        class="img-cover">
+                    <a href="#" class="btn btn:hover">
+                        <span class="span">Detalhes do Projeto</span>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <p class="card-subtitle">BluePrint, Robo</p>
+                    <h3 class="title h3">
+                        <a href="#" class="card-title">Egg Pawn 1.0</a>
+                    </h3>
+                </div>
+            </div>
+        </li>
+        <li class="slider-item">
+            <div class="project-card text-center">
+                <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                    <img src="./assets/images/ent5.jpg" width="1000" height="763" loading="lazy"
+                        alt="Cartaz do projeto: Migração para a Nuvem & Serviços AWS" class="img-cover">
+                    <a href="#" class="btn btn:hover">
+                        <span class="span">Detalhes do Projeto</span>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <p class="card-subtitle">BluePrint, Robo</p>
+                    <h3 class="title h3">
+                        <a href="#" class="card-title">Death Egg</a>
+                    </h3>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!--Fim-->
+
+
+      <!--Comentário-->
+
+      <section class="section testi"
+       aria-label="what our client says" 
+       id="review">
+        <div class="container">
+          <div class="testi-content">
+            <blockquote class="title h4 
+            section-text">
+              &ldquo;Os robôs do Dr. Eggman são exemplares de engenharia de precisão. Cada unidade é concebida com maestria para atingir os mais altos padrões de desempenho. A avançada tecnologia integrada em cada robô reflete a busca incessante por inovação. A produção é uma verdadeira demonstração de excelência em engenharia.
+               &rdquo;
+            </blockquote>
+            <div class="profile-card">
+              <figure class="card-banner 
+              img-holder" style="--width:
+               70; --height: 70;">
+                <img src="./assets/images/prin.jpg"
+                 width="70" height="70"
+                  loading="lazy" 
+                  alt="Princesa Elise Terceira."
+                  class="img-cover">
+              </figure>
+              <div>
+                <p class="title h5 card-title">
+                  Princesa Elise Terceira.</p>
+                <p class="card-subtitle">
+                  Personagem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!--Fim-->
+
+<!--Contatos-->
+
+      <section class="section contact" 
+      aria-label="contact me" id="contact">
+        <div class="container">
+          <h2 class="title h2 section-title">
+            Fale conosco</h2>
+          <div class="contact-content">
+            <form action="./index.html" 
+            method="post" class="contact-form">
+              <input type="text" name="name"
+               placeholder="Nome" 
+               autocomplete="off" required
+                class="input-field">
+              <input type="email"
+               name="email_address" 
+               placeholder="Email"
+                autocomplete="off" required
+                class="input-field">
+              <input type="tel" name="phone" 
+              placeholder="Telefone" autocomplete="off"
+               class="input-field">
+              <textarea name="message"
+               placeholder="Enter massges"
+                required class="input-field">
+              </textarea>
+              <button type="submit"
+               class="btn btn:hover">
+                <span class="span">Enviar</span>
+              </button>
+            </form>
+            <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49546.95205971946!2d-86.64537321066696!3d36.23450711213322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88643ff2a4a05f93%3A0x505188fc976904a0!2sGreen%20Hill%2C%20TN%2C%20EUA!5e1!3m2!1spt-BR!2sbr!4v1700264165661!5m2!1spt-BR!2sbr"
+              width="600" height="450"
+               style="border: 0;" allowfullscreen="" 
+               loading="lazy"
+referrerpolicy="no-referrer-when-downgrade"
+ class="map"></iframe>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <div class="item-icon">
+<img src="./assets/images/contact-icon-1.png" 
+width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+                <div>
+                  <span class="title h6">+1 (123) 456-7890</span>
+                  <span class="title h6">+123-555-6789</span>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="item-icon">
+<img src="./assets/images/contact-icon-2.png" 
+width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+                <div>
+                  <address class="title h6">
+                    5932 Green Hill, Eggman Empire, EG 56789, Tennessee EUA
+                  </address>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="item-icon">
+<img src="./assets/images/contact-icon-3.png"
+ width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+                <div>
+                  <span class="title h6">
+                    eggmanstore@gmail.com</span>
+                  <span class="title h6">
+                    drrobotnik@gmail.com</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!--Rodapé-->
+
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        Copyright & Design By Dr. Eggman - 2023
+      </p>
+      <a href="#top" class="back-top-btn">
+        <span class="span">Voltar ao Topo</span>
+        <ion-icon name="arrow-up"
+         aria-hidden="true"></ion-icon>
+      </a>
+    </div>
+  </footer>
+
+  <!--Fim-->
+
+  <!--Cursor-->
+
+  <div class="cursor-dot" data-cursor></div>
+  <div class="cursor-outline" data-cursor></div>
+
+  <script src="script.js"></script>
+  
+
+
+
+  <!--Icones-->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+</body>
+</html>

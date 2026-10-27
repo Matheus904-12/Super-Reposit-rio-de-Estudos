@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Tarefas - Matheus</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="task-container">
+    <header>
+      <h1>Minhas Tarefas</h1>
+    </header>
+    <main>
+      <form action="/tasks" method="post" class="task-form">
+        <input type="text" name="title" placeholder="Título" required>
+        <textarea name="description" placeholder="Descrição" required></textarea>
+        <button type="submit" class="btn-add">Adicionar Tarefa</button>
+      </form>
+      <ul class="task-list">
+        <% tasks.forEach(task => { %>
+          <li class="task-item <%= task.completed ? 'completed' : '' %>">
+            <div class="task-info">
+              <strong><%= task.title %></strong>
+              <p><%= task.description %></p>
+            </div>
+            <div class="task-actions">
+              <form action="/tasks/<%= task.id %>/complete" method="post">
+                <button type="submit" class="btn-complete">Completar</button>
+              </form>
+              <form action="/tasks/<%= task.id %>/delete" method="post">
+                <button type="submit" class="btn-delete">Excluir</button>
+              </form>
+              <a href="/tasks/<%= task.id %>/edit" class="btn-edit">Editar</a>
+            </div>
+          </li>
+        <% }); %>
+      </ul>
+    </main>
+  </div>
+</body>
+</html>

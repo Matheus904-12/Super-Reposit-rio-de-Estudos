@@ -1,0 +1,213 @@
+
+
+.login-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-left: 300px;
+}
+
+.login-left, .login-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.login-left {
+    background: linear-gradient(to top, #000000, #272727, #6d6d6d);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-size: 1em;
+    color: #ff6600;
+}
+
+.login-right {
+    background-color: #fff;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.form-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-toggle {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to top, #000000, #272727, #6d6d6d);
+    font-size: 1em;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.toggle-btn.active {
+    background-color: #000;
+    color: #00ff22;
+}
+
+form {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-btn {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to top, #000000, #272727, #6d6d6d);
+    cursor: pointer;
+    color: #fff;
+}
+
+.form-btn:hover {
+    background-color: #00ff22;
+}
+
+.login-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-footer a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Garantir que os botões tenham o mesmo tamanho */
+form .form-btn {
+    width: 100%;
+}
+
+/* Transição suave para a troca entre os formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.5s ease;
+}
+
+form.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+form.visible {
+    opacity: 1;
+    position: relative;
+}
+
+#profile-setup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+#profile-setup.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#profile-setup p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#file-input {
+    margin-bottom: 20px;
+}
+
+#preview {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+}
+
+#complete-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#complete-btn:hover {
+    background-color: #45a049;
+}

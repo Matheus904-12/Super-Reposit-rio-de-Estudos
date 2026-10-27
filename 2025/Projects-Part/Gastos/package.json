@@ -1,0 +1,22 @@
+{
+  "name": "painel-gastos-mensais",
+  "version": "1.0.0",
+  "description": "Painel para controle de gastos mensais domésticos com lembretes automáticos no Google Calendar.",
+  "main": "src/main.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chart.js": "^4.5.0",
+    "gapi-script": "^1.2.0",
+    "jspdf": "^3.0.2",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.0",
+    "jest": "^29.0.0"
+  }
+}

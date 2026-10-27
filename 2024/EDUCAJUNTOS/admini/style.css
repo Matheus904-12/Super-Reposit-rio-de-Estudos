@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 350px;
+    background-color: #334eac;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar button, .sidebar .back-button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #d0f3ff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar button:hover, .sidebar .back-button:hover {
+    background-color: #ffffff;
+}
+
+.sidebar button.active {
+    background-color: #ffffff;
+    color: #334eac;
+    font-weight: bold;
+}
+
+.content {
+    margin-left: 370px;
+    padding: 20px;
+    width: calc(100% - 370px);
+}
+
+section {
+    display: none;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section.active {
+    display: block;
+}
+
+h2 {
+    color: #333;
+}
+
+.loading-icon {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.loading-icon img {
+    width: 80px; /* Tamanho do ícone decorativo */
+    opacity: 0.7;
+}

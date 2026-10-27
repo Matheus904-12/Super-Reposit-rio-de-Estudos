@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Tarefa</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="task-container">
+    <header>
+      <h1>Editar Tarefa</h1>
+    </header>
+    <main>
+      <form action="/tasks/<%= task.id %>/update" method="post" class="task-form">
+        <input type="text" name="title" value="<%= task.title %>" required>
+        <textarea name="description" required><%= task.description %></textarea>
+        <button type="submit" class="btn-save">Salvar</button>
+      </form>
+      <a href="/" class="btn-back">Voltar</a>
+    </main>
+  </div>
+</body>
+</html>

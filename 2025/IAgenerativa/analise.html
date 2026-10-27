@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise - RedaENEM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css" id="dark-mode">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="analise-page">
+    <div class="sidebar">
+        <!-- Mesmo sidebar do dashboard -->
+    </div>
+    
+    <div class="main-content">
+        <header class="main-header">
+            <div class="header-left">
+                <button class="btn-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>Análise de Redação</h1>
+            </div>
+            <div class="header-right">
+                <button class="btn-export" id="export-pdf">
+                    <i class="fas fa-file-pdf"></i> Exportar PDF
+                </button>
+            </div>
+        </header>
+        
+        <div class="analise-content">
+            <div class="analise-header">
+                <div class="analise-info">
+                    <h2 id="redacao-titulo">Título da Redação</h2>
+                    <div class="info-row">
+                        <span><strong>Aluno:</strong> <span id="redacao-aluno">Nome do Aluno</span></span>
+                        <span><strong>Data:</strong> <span id="redacao-data">00/00/0000</span></span>
+                        <span><strong>Tema:</strong> <span id="redacao-tema">Tema da Redação</span></span>
+                    </div>
+                </div>
+                
+                <div class="analise-score">
+                    <div class="score-circle">
+                        <div class="circle-progress" id="circle-progress">
+                            <svg>
+                                <circle class="progress-bg" cx="60" cy="60" r="54"></circle>
+                                <circle class="progress-fill" cx="60" cy="60" r="54" style="stroke-dashoffset: 340;"></circle>
+                            </svg>
+                            <div class="score-value" id="score-value">0</div>
+                        </div>
+                    </div>
+                    <div class="score-details">
+                        <div class="detail-item">
+                            <span class="detail-label">IA Detectada:</span>
+                            <span class="detail-value" id="ia-detected">Não</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Parágrafos:</span>
+                            <span class="detail-value" id="paragraphs-count">0</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Palavras:</span>
+                            <span class="detail-value" id="words-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="analise-body">
+                <div class="analise-column">
+                    <div class="analise-section">
+                        <h3>Texto Motivador</h3>
+                        <div class="texto-motivador" id="texto-motivador">
+                            <!-- Texto motivador será inserido aqui -->
+                        </div>
+                    </div>
+                    
+                    <div class="analise-section">
+                        <h3>Redação do Aluno</h3>
+                        <div class="redacao-text" id="redacao-text">
+                            <!-- Texto da redação será inserido aqui -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="analise-column">
+                    <div class="analise-section">
+                        <h3>Análise Automática</h3>
+                        <div class="ia-analysis" id="ia-analysis">
+                            <div class="ia-result">
+                                <div class="ia-probability">
+                                    <div class="probability-bar">
+                                        <div class="probability-fill human" style="width: 70%"></div>
+                                        <div class="probability-fill ai" style="width: 30%"></div>
+                                    </div>
+                                    <div class="probability-labels">
+                                        <span>Humano (70%)</span>
+                                        <span>IA (30%)</span>
+                                    </div>
+                                </div>
+                                <div class="ia-highlights">
+                                    <h4>Trechos possivelmente gerados por IA:</h4>
+                                    <ul id="ia-highlights-list">
+                                        <!-- Trechos destacados serão inseridos aqui -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="analise-section">
+                        <h3>Competências ENEM</h3>
+                        <div class="competencias-enem">
+                            <div class="competencia-item">
+                                <div class="competencia-header">
+                                    <span class="competencia-name">Competência 1: Domínio da norma padrão</span>
+                                    <span class="competencia-score">200/200</span>
+                                </div>
+                                <div class="competencia-bar">
+                                    <div class="competencia-fill" style="width: 100%"></div>
+                                </div>
+                                <div class="competencia-comments">
+                                    <p>O aluno demonstra excelente domínio da norma padrão da língua portuguesa.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Repetir para as outras 4 competências -->
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="analise-section">
+                        <h3>Comentários do Professor</h3>
+                        <textarea id="professor-comments" placeholder="Adicione seus comentários sobre a redação..."></textarea>
+                        <button class="btn-save-comments">Salvar Comentários</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/analise.js"></script>
+    <script src="js/pdf-generator.js"></script>
+    <script src="js/gsap-animations.js"></script>
+    <script src="js/includes.js"></script>
+</body>
+</html>

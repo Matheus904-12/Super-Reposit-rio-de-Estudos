@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eggman Empire - Login</title>
+  <meta name="title" content="Eggman Empire - Login">
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/font/font.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cursor.css">
+  <link rel="stylesheet" href="./css/cad.css">
+  <link rel="stylesheet" href="./css/tag.css">
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+  <link rel="icon" type="image/x-icon" href="./assets/images/dbgg5ml-5480b4b2-1a5a-4b91-b06f-699c8e9285f5-removebg-preview.png">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body id="top">
+
+  <!-- Carregamento da página -->
+
+  <div class="preloader" data-preloader>
+    <span class="line"></span>
+  </div>
+
+  <!--Navegação-->
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/logo eggman.png"
+         width="84" height="26" alt="logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo eggman.png" 
+            width="84" height="26" alt="logo">
+          </a>
+
+          <button class="nav-close-btn" 
+          aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" 
+            aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          
+      <a href="index.html" class="btn btn:hover">
+        <span class="span">Voltar</span>
+
+        <ion-icon name="arrow-forward" 
+        aria-hidden="true"></ion-icon>
+      </a>
+    </ul>
+  </nav>
+
+      <button class="nav-open-btn btn:hover" 
+      aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <div class="overlay" 
+      data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+  <main>
+    <article>
+      <div class="cursor-dot" data-cursor></div>
+      <div class="cursor-outline" data-cursor></div>
+
+      
+      
+  <br>
+      <!-- Código do card com formulários de login e cadastro -->
+      <section class="card-section">
+        <div class="card-container">
+          <div class="card" id="card">
+            <div class="card-front">
+              <h4 class="mb-4 pb-3">Entrar</h4>
+              <div class="form-group">
+                <input type="email" name="email" class="form-style" placeholder="Seu Email" id="email" autocomplete="off">
+                <i class="input-icon uil uil-at"></i>
+              </div> 
+              <div class="form-group mt-2">
+                <input type="password" name="senha" class="form-style" placeholder="Sua Senha" id="senha" autocomplete="off">
+                <i class="input-icon uil uil-lock-alt"></i>
+              </div>
+              <a href="index.html" class="btn mt-4" onclick="flipCard()">Entrar</a>
+              <div class="social-buttons">
+                <button class="social-btn google-btn" onclick="signInWithGoogle()">
+                </button>
+                <button class="social-btn microsoft-btn">
+                </button>
+                <button class="social-btn facebook-btn">
+                </button>
+              </div>
+              <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Esqueceu sua senha?</a></p>
+              
+              <a href="#" class="btn mt-4" onclick="flipCard()">Não é Cadastrado?</a>
+            </div>
+    
+            <div class="card-back">
+              <h4 class="mb-4 pb-3">Cadastre-se</h4>
+              <div class="form-group1">
+                <input type="text" name="nome" class="form-style1" placeholder="Seu Nome Completo" id="nome" autocomplete="off">
+              </div> 
+              <div class="form-group1 mt-2">
+                <input type="email" name="email" class="form-style1" placeholder="Seu Email" id="email" autocomplete="off">
+              </div> 
+              <div class="form-group1 mt-2">
+                <input type="password" name="senha" class="form-style1" placeholder="Sua Senha" id="senha" autocomplete="off">
+              </div>
+              <!-- Espaço para tirar a foto de cadastro -->
+                <div class="form-group mt-2">
+                <video id="camera" autoplay></video>
+                <button class="btn btn-left btn-open-camera" onclick="abrirCamera()"></button>
+                <button class="btn btn-left btn-take-photo" onclick="tirarFoto()"></button>
+                <button class="btn btn-left btn-close-camera" onclick="fechar()"></button>
+
+              </div>
+              <a href="#" class="btn mt-4" onclick="flipCard()">Voltar</a>
+              
+              <nav class="navbar" data-navbar>
+
+              <ul class="navbar-list">
+              <a href="index.html" class="navbar-link mt-4" onclick="flipCard()">Cancelar</a>
+              <a href="index.html" class="navbar-link mt-4" onclick="flipCard()">Cadastrar</a>
+
+            </ul>
+          </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      
+        <script src="script.js"></script>
+      
+        <!--Icones-->
+      
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      </body>
+      <script>
+        function signInWithGoogle() {
+          // Implemente a lógica de autenticação com o Google aqui
+          // Por exemplo, você pode usar o Google Sign-In API
+          // https://developers.google.com/identity/sign-in/web/sign-in
+          console.log('Autenticar com Google');
+        }
+      </script>
+      </html>

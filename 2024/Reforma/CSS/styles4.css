@@ -1,0 +1,262 @@
+:root {
+    --primary: #ff6600; /* Cor principal para o formulário de financiamento */
+    --secondary: #000000; /* Cor secundária */
+    --errorColor: #FF0000; /* Cor de erro */
+    --stepNumber: 6;
+    --relativiWidth: 700px;
+    --bgColor: #f2f2f2;
+    --inputBorderColor: #cccccc;
+}
+
+::selection {
+    color: #fff;
+    background: var(--primary);
+}
+
+.relativi {
+    width: var(--relativiWidth);
+    background: #fff;
+    text-align: center;
+    padding: 50px 35px 0px 35px;
+    box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.relativi header {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+.relativi .form-outer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.relativi .form-outer form {
+    display: flex;
+    width: calc(100% * var(--stepNumber));
+}
+
+.form-outer form .page {
+    width: calc(100% / var(--stepNumber));
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.form-outer form .page .title {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.form-outer form .page .field {
+    width: 100%;
+    height: 45px;
+    margin: 45px 0;
+    display: flex;
+    position: relative;
+}
+
+form .page .field .label {
+    position: absolute;
+    top: -30px;
+    font-weight: 500;
+}
+
+form .page .field input,
+form .page .field select {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--inputBorderColor);
+    border-radius: 5px;
+    padding-left: 15px;
+    margin: 0 1px;
+    font-size: 18px;
+    transition: border-color 150ms ease;
+}
+
+form .page .field input.invalid-input,
+form .page .field select.invalid-input {
+    border-color: var(--errorColor);
+}
+
+form .page .field select {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+form .page .field button {
+    width: 100%;
+    height: calc(100% + 5px);
+    border: none;
+    background: linear-gradient(to top, #000000, #272727, #6d6d6d);
+    margin-top: -20px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+
+form .page .field button:hover {
+    background: linear-gradient(to top, #000000, #272727, #6d6d6d);
+}
+
+form .page .btns button {
+    margin-top: -20px !important;
+}
+
+form .page .btns button.prev {
+    margin-right: 3px;
+    font-size: 17px;
+}
+
+form .page .btns button.next {
+    margin-left: 3px;
+}
+
+.relativi .progress-bar {
+    display: flex;
+    margin: 40px 0;
+    user-select: none;
+}
+
+.relativi .progress-bar .step {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.relativi .progress-bar .step p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.progress-bar .step .bullet {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.progress-bar .step .bullet.active {
+    border-color: var(--primary);
+    background: var(--primary);
+}
+
+.progress-bar .step .bullet span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress-bar .step .bullet.active span {
+    display: none;
+}
+
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after {
+    position: absolute;
+    content: "";
+    bottom: 11px;
+    right: -51px;
+    height: 3px;
+    width: 44px;
+    background: #262626;
+}
+
+.progress-bar .step .bullet.active:after {
+    background: var(--primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 0.3s linear forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after {
+    display: none;
+}
+
+.progress-bar .step p.active {
+    color: var(--primary);
+    transition: 0.2s linear;
+}
+
+.progress-bar .step .check {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.progress-bar .step .check.active {
+    display: block;
+    color: #fff;
+}
+
+@media screen and (max-width: 660px) {
+    :root {
+        --relativiWidth: 400px;
+    }
+    .progress-bar .step p {
+        display: none;
+    }
+    .progress-bar .step .bullet::after,
+    .progress-bar .step .bullet::before {
+        display: none;
+    }
+    .progress-bar .step .bullet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .progress-bar .step .check {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 15px;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    .step {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    :root {
+        --relativiWidth: 100%;
+    }
+    .relativi {
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+}

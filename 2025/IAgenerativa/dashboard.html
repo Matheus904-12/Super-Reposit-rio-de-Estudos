@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - RedaENEM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css" id="dark-mode">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="dashboard-page">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="assets/images/logo-enem-small.png" alt="RedaENEM" class="logo-small">
+            <h2>RedaENEM</h2>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active"><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="redacoes.html"><i class="fas fa-file-alt"></i> Redações</a></li>
+                <li><a href="analise.html"><i class="fas fa-search"></i> Análise Automática</a></li>
+                <li><a href="relatorios.html"><i class="fas fa-chart-bar"></i> Relatórios</a></li>
+                <li><a href="perfil.html"><i class="fas fa-user-cog"></i> Configurações</a></li>
+            </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <button id="toggle-dark-mode" class="btn-dark-mode">
+                <i class="fas fa-moon"></i> Modo Escuro
+            </button>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <header class="main-header">
+            <div class="header-left">
+                <button class="btn-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>Dashboard</h1>
+            </div>
+            <div class="header-right">
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                <div class="user-profile">
+                    <img src="assets/images/user-avatar.jpg" alt="Professor" id="user-avatar">
+                    <span id="user-name">Carregando...</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </header>
+        
+        <div class="dashboard-content">
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <div class="stat-icon red">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Redações</h3>
+                        <p id="total-redacoes">0</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon blue">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Analisadas</h3>
+                        <p id="redacoes-analisadas">0</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Possível IA</h3>
+                        <p id="redacoes-ia">0</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon orange">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Média Geral</h3>
+                        <p id="media-geral">0</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="charts-container">
+                <div class="chart-card">
+                    <h3>Distribuição de Notas</h3>
+                    <canvas id="notasChart"></canvas>
+                </div>
+                
+                <div class="chart-card">
+                    <h3>Desempenho por Competência</h3>
+                    <canvas id="competenciasChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="recent-activity">
+                <h3>Últimas Redações Analisadas</h3>
+                <div class="activity-list" id="recent-activities">
+                    <!-- Preenchido via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/gsap-animations.js"></script>
+</body>
+</html>

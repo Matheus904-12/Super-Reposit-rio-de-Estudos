@@ -1,0 +1,97 @@
+<html> 
+<head> 
+<style> 
+
+.outer {
+    margin: auto;
+    height: 300px;
+    width: 400px;
+    border: 2px solid black;
+    position: relative;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+text-align:center {
+    text-align: center;
+    font-family: Arial, bold;
+    color: #333;
+}
+p {
+    margin-left: 20px;
+    font-family: Arial, sans-serif;
+    color: #666;
+}
+.in {
+    margin-left: 20px;
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+#bt{ 
+margin-top:20px; 
+position:absolute; 
+left:150px; 
+width: 100px;
+padding: 10px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 5px;
+transition: background-color 0.3s, transform 0.3s;
+} 
+#bt:hover{ 
+background:green; 
+font-size:13px; 
+cursor:pointer; 
+transform: scale(1.05);
+color:white; 
+} 
+</style> 
+<script> 
+function fa(){ 
+if(a.value=="" || b.value==""){ 
+f() 
+document.getElementById("a").style.border="3px solid red" 
+document.getElementById("b").style.border="3px solid red" 
+bt.value="Pahila data tak" 
+} 
+else{ 
+document.getElementById("a").style.border="3px solid green" 
+document.getElementById("b").style.border="3px solid green" 
+bt.value="Ha thik ahe ata" 
+bt.style.left="120px"; 
+} 
+} 
+flag=1 
+function f(){ 
+if(flag==1){ 
+bt.style.left="210px" 
+flag=2 
+} 
+else if(flag==2){ 
+bt.style.left="80px" 
+flag=1 
+} 
+} 
+</script> 
+</head> 
+<body> 
+<div class="outer"> 
+<h1 style="text-align:center">Entrar</h1> 
+<p>Email</p> 
+<input class="in" type="text" placeholder="Enter email" id="a"/> 
+<p>Senha</p> 
+<input class="in" type="password" placeholder="Enter password" id="b"/> 
+<br> 
+<input type="submit" onmouseenter="fa()" onclick="alert('waaaa')" id="bt" /> 
+
+</div> 
+
+</body> 
+
+
+</html>

@@ -1,0 +1,397 @@
+na segunda segunda section que é a de Produtos e ela tem que ter um carrossel de cards com uma imagem em cada card e com dois botoes de setas pra movimentar um card por vez pelas setas esquerda e direita e embaixo do carrossel ter um endicador de linhas de seção de cards, use essa imagem 
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+    margin: 20px 50px;
+    position: relative;
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+}
+
+.logo {
+    position: absolute;
+    left: 50px;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.btn {
+    width: 140px;
+    height: 50px;
+    background: linear-gradient(to top, #000000, #272727, #6d6d6d);
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: absolute;
+    right: 50px;
+    text-decoration: none; /* Para remover o sublinhado do link */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+}
+
+.btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+    top: -100%;
+}
+
+.btn:hover .btn-text-two {
+    top: 50%;
+}
+
+.btn:active {
+    transform: translateY(1px); /* Efeito de afundar ao clicar */
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Ajuste a altura conforme necessário */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    width: 94%;
+    height: auto;
+    object-fit: cover;
+}
+
+.servicos {
+    padding: 100px;
+}
+
+.servicos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.produtos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.servicos h2 {
+    font-size: 2.7em;
+    margin: 0 0 10px 0; /* Ajuste a margem inferior para aproximar do parágrafo */
+    margin-left: 190px;
+}
+
+.description {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0;
+    margin-right: 190px;
+}
+.description2 {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0;
+    margin-right: 320px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.card-image img {
+    width: 257px;
+    height: 205px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.card-content {
+    text-align: left;
+}
+
+.card-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.card-content p {
+    margin: 0;
+    color: #555;
+}
+
+.produtos {
+    padding: 100px;
+    background-color: #f9f9f9;
+}
+
+.produtos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.produtos h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.produtos .description {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.filtro {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.filtro:hover {
+    background-color: #555;
+}
+
+.produtos-container {
+    position: relative;
+}
+
+.carrossel {
+    display: none;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.carrossel.active {
+    display: flex;
+}
+
+.produto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+.produto-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.produto-content {
+    text-align: center;
+}
+
+.produto-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.produto-content p {
+    margin: 0;
+    color: #555;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobil - Venda de Veículos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">AutMobil</div>
+            <nav class="nav-links">
+                <a href="#home">Início</a>
+                <a href="#veiculos">Veículos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <button class="btn">
+                <span class="btn-text-one">Entrar</span>
+                <span class="btn-text-two">Vamos Lá!</span>
+            </button>
+        </div>
+    </header>
+    <section class="hero">
+        <img src="imagens/Rectangle 1.png" alt="Imagem de Veículos" class="hero-image">
+    </section>
+    <section class="servicos">
+        <div class="servicos-header">
+            <h2>Serviços</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum, orci a vehicula malesuada, nunc ipsum sollicitudin est, eu tristique odio turpis vitae mi.</p>
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-image"><img src="imagens/Rectangle 9.png" alt="Serviço 1"></div>
+                <div class="card-content">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum psique color dolor afair their prete ghreat</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="imagens/Rectangle 9.png" alt="Serviço 2"></div>
+                <div class="card-content">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum psique color dolor afair their prete ghreat</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="imagens/Rectangle 9.png" alt="Serviço 3"></div>
+                <div class="card-content">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum psique color dolor afair their prete ghreat</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="imagens/Rectangle 9.png" alt="Serviço 4"></div>
+                <div class="card-content">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum psique color dolor afair their prete ghreat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="servicos">
+        <div class="produtos-header">
+            <h2>Produtos</h2>
+            <p class="description2">Lorem ipsum psique color dolor afair their prete ghreat</p>
+        </div>
+    </section>
+</body>
+</html>
+
+<div class="container">
+    <div class="card__container">
+       <article class="card__article">
+          <img src="imagens/Rectangle 11.png" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Vancouver Mountains, Canada</span>
+             <h2 class="card__title">The Great Path</h2>
+             <a href="#" class="card__button">Read More</a>
+          </div>
+       </article>
+
+       <article class="card__article">
+          <img src="imagens/Rectangle 11.png" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Poon Hill, Nepal</span>
+             <h2 class="card__title">Starry Night</h2>
+             <a href="#" class="card__button">Read More</a>
+          </div>
+       </article>
+
+       <article class="card__article">
+          <img src="imagens/Rectangle 11.png" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Bojcin Forest, Serbia</span>
+             <h2 class="card__title">Path Of Peace</h2>
+             <a href="#" class="card__button">Read More</a>
+          </div>
+       </article>
+    </div>
+ </div>

@@ -1,0 +1,95 @@
+/* Estilos da seção */
+#section3 {
+    font-family: Arial, sans-serif;
+
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Botões de filtro */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #000;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Estilo dos gráficos */
+.chart-container {
+    margin-top: 20px;
+}
+
+.chart-container h3 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.chart {
+    background-color: #2E4DA7;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Texto da análise */
+.analysis-text {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.analysis-text h3 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.analysis-text p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Estilo dos gráficos */
+.chart-container {
+    margin-top: 20px;
+    max-width: 600px;  /* Define a largura máxima do gráfico */
+    margin: 0 auto;
+}
+
+.chart {
+    background-color: #2E4DA7;
+    width: 100%;  /* O gráfico vai se ajustar ao contêiner */
+    height: 200px;  /* Ajuste a altura conforme necessário */
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 500px;  /* Limita a largura máxima do gráfico */
+}

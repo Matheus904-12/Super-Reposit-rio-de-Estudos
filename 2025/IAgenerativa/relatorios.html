@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios - RedaENEM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css" id="dark-mode">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="relatorios-page">
+    <!-- Sidebar incluído via JavaScript -->
+    <div id="sidebar-container"></div>
+    
+    <div class="main-content">
+        <!-- Header incluído via JavaScript -->
+        <header id="header-container" class="main-header"></header>
+        
+        <div class="relatorios-content">
+            <div class="relatorios-header">
+                <h1>Relatórios de Desempenho</h1>
+                <div class="header-actions">
+                    <div class="filter-group">
+                        <label for="filter-period">Período:</label>
+                        <select id="filter-period">
+                            <option value="week">Última semana</option>
+                            <option value="month">Último mês</option>
+                            <option value="quarter">Último trimestre</option>
+                            <option value="year">Último ano</option>
+                            <option value="all" selected>Todo o período</option>
+                        </select>
+                    </div>
+                    <button class="btn-export" id="export-report">
+                        <i class="fas fa-file-pdf"></i> Exportar PDF
+                    </button>
+                </div>
+            </div>
+            
+            <div class="report-stats">
+                <div class="stat-card">
+                    <div class="stat-icon blue">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Redações Analisadas</h3>
+                        <p id="report-total">0</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon orange">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Média Geral</h3>
+                        <p id="report-average">0</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>IA Detectada</h3>
+                        <p id="report-ia">0%</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="charts-container">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Distribuição de Notas</h3>
+                        <div class="chart-legend">
+                            <span><i class="fas fa-square" style="color: #4a6bff"></i> Quantidade</span>
+                        </div>
+                    </div>
+                    <canvas id="distributionChart"></canvas>
+                </div>
+                
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Desempenho por Competência</h3>
+                        <div class="chart-legend">
+                            <span><i class="fas fa-square" style="color: #ff6384"></i> C1</span>
+                            <span><i class="fas fa-square" style="color: #36a2eb"></i> C2</span>
+                            <span><i class="fas fa-square" style="color: #ffce56"></i> C3</span>
+                            <span><i class="fas fa-square" style="color: #4bc0c0"></i> C4</span>
+                            <span><i class="fas fa-square" style="color: #9966ff"></i> C5</span>
+                        </div>
+                    </div>
+                    <canvas id="competencesChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="detailed-stats">
+                <div class="stats-column">
+                    <div class="stats-card">
+                        <h3>Top 5 Melhores Redações</h3>
+                        <div class="top-list" id="top-redacoes">
+                            <!-- Preenchido via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="stats-card">
+                        <h3>Progresso Mensal</h3>
+                        <canvas id="monthlyProgressChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="stats-column">
+                    <div class="stats-card">
+                        <h3>Detecção de IA por Mês</h3>
+                        <canvas id="iaDetectionChart"></canvas>
+                    </div>
+                    
+                    <div class="stats-card">
+                        <h3>Competências por Turma</h3>
+                        <canvas id="classCompetenceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/relatorios.js"></script>
+    <script src="js/gsap-animations.js"></script>
+</body>
+</html>

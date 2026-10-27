@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetupPro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fd29053194.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">SetupPro<span>.</span></h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar Produto" oninput="buscarProdutos()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+                </div>
+                <span id="cont-carrinho"></span>
+            </div>
+            <div id="carrinho-itens" style="display: none;">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total: R$ 0,00</span>
+                <button onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>            
+        </div>
+    </header>
+    <br>
+    <main id="main">
+        <div class="container">
+            <div class="produtos" id="produtos-lista">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/10.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Logitech MX Keys S</h3>
+                            <p>R$ 745,00</p>
+                            <button onclick="addCarrinho('Logitech MX Keys S', 745.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Cadeira Ergonomic, Thunderx3, Yama1</h3>
+                            <p>R$ 1350,00</p>
+                            <button onclick="addCarrinho('Cadeira Ergonomic, Thunderx3, Yama1', 1350.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/3.jpeg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Beats Studio 3</h3>
+                            <p>R$ 780,00</p>
+                            <button onclick="addCarrinho('Beats Studio 3', 780.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/12.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Philips Monitor 49 SuperWide</h3>
+                            <p>R$ 7680,00</p>
+                            <button onclick="addCarrinho('Philips Monitor 49 SuperWide', 7680.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/15.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Logitech MX Master 2s</h3>
+                            <p>R$ 599,90</p>
+                            <button onclick="addCarrinho('Logitech MX Master 2s', 599.90)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/11.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Xiaomi Mi Computer Monitor Light Bar</h3>
+                            <p>R$ 350,00</p>
+                            <button onclick="addCarrinho('Xiaomi Mi Computer Monitor Light Bar', 350.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/14.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Baseus - Working Station</h3>
+                            <p>R$ 1998,90</p>
+                            <button onclick="addCarrinho('Baseus - Working Station', 1998.90)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/8.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Mouse-Pad Desk Logitech</h3>
+                            <p>R$ 154,00</p>
+                            <button onclick="addCarrinho('Mouse-Pad Desk Logitec', 154.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/9.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Stream-Deck Elgato XL</h3>
+                            <p>R$ 4690,00</p>
+                            <button onclick="addCarrinho('Stream-Deck Elgato XL', 4690.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

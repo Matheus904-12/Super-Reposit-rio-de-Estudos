@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmação de E-mail</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #ffffff;
+    }
+    .container {
+      text-align: center;
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      width: 90%;
+      max-width: 600px;
+    }
+    .titulo {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #bb86fc; /* Cor vibrante para o título */
+    }
+    .mensagem {
+      font-size: 16px;
+      color: #e0e0e0; /* Cor clara para a mensagem */
+      margin-bottom: 20px;
+    }
+    .link {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      color: #ffffff;
+      background-color: #6200ee; /* Cor vibrante para o botão */
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    .link:hover {
+      background-color: #3700b3; /* Cor de hover para o botão */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="titulo">Bem-Vindo ao nosso App</h2>
+    <p class="mensagem">Confirme seu e-mail para a ativação da conta:</p>
+    <a href="{{ .ConfirmationURL }}" class="link">Clique aqui e seja feliz.</a>
+  </div>
+</body>
+</html>
