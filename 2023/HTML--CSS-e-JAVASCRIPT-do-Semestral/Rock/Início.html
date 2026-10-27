@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Inicial - PRONA</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* CSS inline */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .background {
+      background: url('') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: -1;
+    }
+
+    .header {
+      background-color: #057d46
+
+;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Barra de navegação */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #172d7c;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px;
+      z-index: 9999;
+      width: 95vw;
+    }
+
+    .navbar__logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar__logo img {
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .navbar__logo h1 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar__menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .navbar__menu a {
+      color: #fff;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin: 0 20px;
+      padding: 10px 0;
+      position: relative;
+    }
+
+    .navbar__menu a:hover {
+      color: #f4d30c;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .navbar__menu a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar__menu a:hover::after {
+      transform: scaleX(1);
+    }
+
+    body {
+  color: rgb(255, 255, 255);
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <img src="Prona 2.0.png" alt="Logo">
+      <h1>PRONA</h1>
+    </div>
+    <div class="navbar__menu">
+      <a href="Início.html">Início</a>
+      <a href="Sobre.html">Sobre</a>
+      <a href="Blog.html">Blog</a>
+      <a href="Contato.html">Contato</a>
+      <a href="Cadastro.html">Cadastre-se</a>
+    </div>
+  </nav>
+  
+  <section class="hero">
+    <div class="hero__background"></div>
+    <div class="hero__content">
+      <div class="container">
+        <div class="image"></div>
+        <div class="text">
+          <h1>PRONA e seus apoiadores</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel sapien et massa bibendum malesuada eu ac mi. Nam laoreet velit eu bibendum pharetra. Nam vehicula, metus eu ullamcorper pretium, nisl turpis facilisis sapien, nec auctor nunc purus ut magna. Vivamus eu faucibus augue. Morbi mattis vitae nulla non aliquam. Suspendisse vestibulum turpis ac mauris pharetra, in fringilla justo venenatis. Morbi euismod libero sed odio auctor, vel ullamcorper quam pulvinar. Praesent id sapien orci. Praesent ultrices sed nunc id luctus.</p>
+          <p>Curabitur quis dapibus quam. Nam laoreet, purus in varius posuere, elit elit tincidunt lectus, eget volutpat metus enim eget orci. Donec tincidunt felis nunc, eget faucibus leo vestibulum ac. Vestibulum interdum justo quis metus placerat dignissim. Vestibulum volutpat fermentum felis vitae mattis. Integer eu neque nec nulla tincidunt faucibus in eget velit. Sed at dui tincidunt, molestie sapien nec, posuere velit. Quisque vel mauris ut lectus consequat sagittis id vel mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus fringilla leo eget diam vestibulum, vel malesuada turpis semper. Donec consectetur nunc non ultrices feugiat. Nam fringilla fermentum ex eu aliquet.</p>
+        </div>
+    </div>
+    <center><div class="barra-separacao"></div></center>
+    <div class="container">
+      <p>Conteúdo do primeiro elemento.</p>
+      <p>Conteúdo do segundo elemento.</p>
+    </div>    
+    <div class="elemento">
+      <p>Conteúdo do primeiro elemento.</p>
+    </div>
+    <div class="elemento">
+      <p>Conteúdo do segundo elemento.</p>
+    </div>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="carousel.css">
+    <link rel="stylesheet" type="text/css" href="floating-buttons.css">
+  
+    <div class="floating-buttons">
+      <div class="floating-buttons">
+        <a href="https://api.whatsapp.com/your-whatsapp-link" class="whatsapp-button" target="_blank"><i class="fab fa-whatsapp"></i> W</a>
+        <a href="https://www.facebook.com/your-facebook-page" class="facebook-button" target="_blank"><i class="fab fa-facebook"></i> F</a>
+      </div>
+      
+    </div>
+  
+    
+    <section>
+      <h2>Carrossel de Imagens</h2>
+      <div class="carousel">
+        <img src="imagem1.jpg" alt="Imagem 1">
+        <img src="imagem2.jpg" alt="Imagem 2">
+        <img src="imagem3.jpg" alt="Imagem 3">
+        <!-- Adicione mais imagens aqui -->
+      </div>
+    </section>
+  
+    <section>
+      <h2>Vários Momentos</h2>
+      <p>Aqui estão alguns dos momentos especiais que compartilhamos ao longo do tempo:</p>
+      <ul>
+        <li>Conquistas importantes</li>
+        <li>Eventos e conferências</li>
+        <li>Reuniões e encontros</li>
+        <li>Destaque na mídia</li>
+      </ul>
+    </section>
+  
+    <footer>
+      <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.carousel').slick({
+          arrows: true,
+          dots: true,
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1
+        });
+      });
+    </script>
+  </section>
+  <div></div>
+  <script src="script.js"></script
+
+  
+   
+      

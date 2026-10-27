@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="" id="mapa">Eu acho que sei onde você está!</a>
+    <p>Permita a localização</p>
+
+    <script>
+        navigator.geolocation.watchPosition(funciona, erro,{enableHighAccuracy:true});
+
+        function funciona(pos) {
+            var la = pos.coords.latitude;
+            var lo = pos.coords.longitude;
+            localiza = `https://www.openstreetmap.org/#map=17/${la}/${lo}`
+            document.getElementById('mapa').href = localiza;
+
+        }
+
+        function erro(falha) {
+            console.log(falha)
+        }
+
+
+
+    </script>
+</body>
+
+</html>

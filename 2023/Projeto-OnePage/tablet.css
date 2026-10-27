@@ -1,0 +1,96 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container,
+    .conteudo {
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    #nossaComida .container {
+        flex-direction: column;
+    }
+
+    #nossaEquipe .container {
+        flex-direction: column-reverse;
+    }
+
+    #contato .container {
+        flex-direction: column;
+    }
+
+    .cozinhando,
+    .panela {
+        width: 80vw;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .item {
+        font-size: 16px;
+    }
+
+    #nossaComida,
+    #nossaEquipe {
+        margin: 0 0 25px;
+    }
+
+    #header .container {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 100vw;
+    }
+
+    .nome,
+    .redes .endereço {
+        padding-bottom: 10px;
+    }
+
+    .amm {
+        font-size: 24px;
+    }
+
+    .cs {
+        font-size: 24px;
+    }
+
+    .rede-nome {
+        font-size: 20px;
+    }
+
+    .endereco-descricao {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+
+    .endereco-none {
+        font-size: 26px;
+    }
+
+    .endereco {
+        width: 80vw;
+    }
+
+    .prato {
+        margin: 15px;
+    }
+
+    .cardapio {
+        margin: 15px;
+    }
+
+    .conteudo {
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 15px;
+    }
+
+    #header .container img {
+        display: block;
+       
+    }
+}

@@ -1,0 +1,201 @@
+@media (max-width: 1200px) {
+
+    /* ----------------- header -------------- */
+    .nav-linksHeader {
+        display: none;
+    }
+
+    /* ---------------- menuBurger????? ---------------- */
+    .menu-toggle {
+        display: flex;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 1060px) {
+
+    /* ------------------ calendar --------------------- */
+    .calendarContainer {
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        justify-content: center;
+
+    }
+
+    .calendarBox {
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    .linhasSVG-vertical {
+        height: 1000px;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+
+    #location {
+        flex-direction: column-reverse;
+    }
+
+    #locationInfo {
+        width: 100%;
+
+    }
+
+    .video-wrapper {
+        width: 100%;
+        padding-bottom: 60%;
+    }
+
+    /* --------------------- professores --------------------------- */
+    .professor {
+        width: 40%;
+        margin-bottom: 50px;
+    }
+
+
+    /* ------------------------- footer ----------------------- */
+    .txtFooterMarginTop {
+        width: auto;
+    }
+}
+
+@media (max-width: 750px) {
+
+        /* --------------------- professores --------------------------- */
+        .professor {
+            width: 60%;
+            margin-bottom: 60px;
+        }
+
+        .professoresContainer-noPic {
+            flex-direction: column;
+        }
+        .infoBox-professor-noPic {
+            margin: 5% 0%;
+            width: 75%;
+        }
+}
+
+@media (max-width: 510px) {
+    .btnShare {
+        width: 50px;
+    }
+    #txtShare {
+        display: none;
+    }
+
+    #apresTitle {
+        margin-bottom: 260px;
+    }
+
+    #titleApresArea {
+        height: 0px;
+    }
+
+    .calendarBoxLeft {
+        margin-top: -120px;
+    }
+
+    /* -------------------------- professores ------------------------- */
+    .professor {
+        width: 75%;
+        margin-bottom: 60px;
+    }
+
+    /* ----------------------- footer -------------------- */
+    .nav-footer {
+        margin: 0px;
+    }
+
+    .footerSection {
+        flex-direction: column;
+    }
+
+    .underInfoFooter {
+        margin-top: 50px;
+    }
+
+    .data {
+        font-size: 5rem;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .calendarBox {
+        width: 15rem;
+    }
+
+    #apresTitle {
+        margin-bottom: 380px;
+    }
+
+    #titleApresArea {
+        height: 0px;
+    }
+
+    .calendarBoxLeft {
+        margin-top: -180px;
+    }
+
+    .btn {
+        border-radius: 15px;
+        padding: 0px 1%;
+        width: 12.5rem;
+        height: 3.75rem;
+        margin-top: 25px;
+    }
+
+    .txtBtn {
+        font-size: 1rem
+    }
+
+    .principal {
+        font-size: 3rem;
+    }
+    .subtitulo {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    #locationMap {
+        padding: 2em;
+        width: 100%;
+        height: 20rem;
+    }
+
+    .poppinsBold {
+        font-size: 2.15rem;
+    }
+    .tituloInfo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .tituloHeader {
+        font-size: 1.8em;
+    }
+
+    .poppinsBold {
+        font-size: 2rem;
+    }
+
+    #dayLabel {
+        font-size: 15px;
+    }
+
+    #apresTitle {
+        font-size: 30px;
+    }
+}
+
+

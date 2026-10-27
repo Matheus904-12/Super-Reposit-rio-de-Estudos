@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fontsImport.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estrelas.css">
+    <link rel="stylesheet" href="../css/indexResponsivo.css">
+
+    <link rel="stylesheet" href="../css/carrossel.css">
+    <link rel="stylesheet" href="../css/carrosselDouble.css">
+
+    <title>HappyEnd - Bem-Vindo</title>
+</head>
+
+<body>
+
+    <!-- ----- background ----- -->
+    <div class="background">
+        <canvas id="backgroundCanvas"></canvas>
+        <script src="../js/java.js"></script>
+        <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+    </div>
+
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1 class="tituloHeader">Happy<span class="red">End</span></h1>
+        <div class="nav-links nav-linksHeader">
+            <a href="#projetos">Projetos</a>
+            <a href="#dataEventos-section">Datas</a>
+            <a href="#professores-section">Professores</a>
+            <a href="#location">Localização</a>
+        </div>
+
+        <button class="btnShare" id="shareButton">
+            <img src="../images/icons/compartilhar.png" class="icon iconShare">
+            <p class="txtBtn" id="txtShare">Compartilhar</p>
+        </button>
+
+    </div>
+
+    <main class="marginPagina">
+        <!-- TITULO -->
+        <section class="landingTitle">
+            <p class="principal">O <span class="word"> ÚLTIMO</span> PROJETO</p>
+            <p class="subtitulo">Prepare-se para a apresentação final da primeira equipe SENAI - Ferraz de
+                Vasconcelos
+            </p>
+
+            <br><br>
+
+            <a href="#projetos" class="btn" id="btnSaibaMais">
+                <div class="iconSaibaMais"></div>
+                <p class="txtBtn" id="txtSaibaMais">Saiba Mais</p>
+            </a>
+        </section>
+
+        <!-- projetos -->
+        <section id="projetos">
+            <h1 class="projetosTitle poppinsBold">Projetos</h1>
+            <div class="carousel">
+
+                <!-- Botão de alternância -->
+                <label class="switch">
+                    <input type="checkbox" id="toggleImagesBtn">
+                    <span class="slider round"></span>
+                </label>
+
+                <span id="dayLabel">Dia1</span>
+
+                <div class="caroussel-container" id="carrousselIdBase">
+                    <input type="radio" name="slide" id="c1" checked>
+                    <label for="c1" class="card"></label>
+                    <input type="radio" name="slide" id="c2">
+                    <label for="c2" class="card"></label>
+                    <input type="radio" name="slide" id="c3">
+                    <label for="c3" class="card"></label>
+                    <input type="radio" name="slide" id="c4">
+                    <label for="c4" class="card"></label>
+                    <input type="radio" name="slide" id="c5">
+                    <label for="c5" class="card"></label>
+                    <input type="radio" name="slide" id="c6">
+                    <label for="c6" class="card"></label>
+                    <input type="radio" name="slide" id="c7">
+                    <label for="c7" class="card"></label>
+                    <input type="radio" name="slide" id="c8">
+                    <label for="c8" class="card"></label>
+                </div>
+            </div>
+
+            <div id="fullscreenOverlay" class="fullscreen-overlay">
+                <button id="closeFullscreen" class="close-fullscreen">×</button>
+                <img id="fullscreenImage" class="fullscreen-image" src="" alt="Imagem em tela cheia">
+            </div>
+        </section>
+
+        <!-- calendário datas eventos -->
+        <section id="dataEventos-section" class="calendarBase">
+
+            <div class="titleSection">
+                <div class="titleSVG-align">
+                    <p class="tituloInfo">Informações da</p>
+                </div>
+
+
+
+                <svg class="linhasSVG linhasSVG-horizontal" width="100%">
+                    <!-- SVGs funcionam através de coordenadas xy inicio - xy fim -->
+                    <line x1="0%" y1="0" x2="35%" y2="0" style="stroke:#fff;stroke-width:2" />
+                    <line x1="65%" y1="0" x2="100%" y2="0" style="stroke:#fff;stroke-width:2" />
+                </svg>
+            </div>
+
+
+
+
+            <div class="calendarDaysSVG-alignment">
+                <svg class="linhasSVG-vertical" width="50" height="550">
+                    <!-- Linha vertical no lado esquerdo -->
+                    <line x1="0%" y1="0" x2="0%" y2="75%" style="stroke:#fff;stroke-width:2" />
+                    <line x1="0%" y1="75%" x2="100%" y2="75%" style="stroke:#fff;stroke-width:2" />
+                </svg>
+
+
+                <div class="calendarMainContent">
+                    <div id="titleApresArea" class="titleSVG-align">
+                        <h1 id="apresTitle" class="poppinsBold">Apresentação</h1>
+                    </div>
+                    <div class="calendarContainer">
+                        <div class="calendarBox calendarBoxLeft">
+                            <div class="boxSalaCalendar">
+                                <h3 class="classe">Parte 1</h3>
+                            </div>
+
+                            <div class="dataContainer">
+                                <h1 class="data">03</h1>
+                                <div class="mes">
+                                    <h3 class="dezembro">De Dezembro</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calendarBox calendarBoxRight">
+                            <div class="boxSalaCalendar">
+                                <h3 class="classe">Parte 2</h3>
+                            </div>
+                            <div class="dataContainer">
+                                <h1 class="data">10</h1>
+                                <div class="mes">
+                                    <h3 class="dezembro">De Dezembro</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <svg class="linhasSVG linhasSVG-vertical" width="50" height="550">
+                    <!-- Linha vertical no lado direito -->
+                    <line x1="100%" y1="0" x2="100%" y2="75%" style="stroke:#fff;stroke-width:2" />
+                    <line x1="0%" y1="75%" x2="100%" y2="75%" style="stroke:#fff;stroke-width:2" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- professores homenagem -->
+        <section id="professores-section">
+            <h1 class="titleSVG-align poppinsBold">Professores</h1>
+
+            <div class="professoresContainer">
+
+                <div class="professor">
+                    <img class="imgProfessor" src="../images/marcelo.png">
+
+                    <div class="infoBox-professor">
+                        <div class="infos-professor">
+                            <p class="txtBtn">Marcelo Alves</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="professor">
+                    <img class="imgProfessor" src="../images/juliana2.png">
+
+                    <div class="infoBox-professor">
+                        <div class="infos-professor">
+                            <p class="txtBtn">Juliana Carvalho</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="professor">
+                    <img class="imgProfessor" src="../images/marcos.png">
+
+                    <div class="infoBox-professor">
+                        <div class="infos-professor">
+                            <p class="txtBtn">Marcos Vinicius</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- localização -->
+        <section id="location">
+            <div id="locationInfo">
+                <h2 id="ourLocationTitle">Dias 03 e 10 de Dezembro</h2>
+                <p class="text27">SESI CE-240<br>Ferraz de Vasconcelos
+                </p>
+                <button class="btn" id="copyAdress">
+                    <img src="../images/icons/iconLocal.png" class="iconInvert">
+                    <p class="txtBtn">Copiar Endereço</p>
+                </button>
+
+            </div>
+
+            <div id="locationMap">
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.711929526581!2d-46.35987492462665!3d-23.5428612788125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7aceb279709b%3A0x75f9237d480a9c89!2sSESI%20-%20Ferraz%20de%20Vasconcelos!5e0!3m2!1spt-BR!2sbr!4v1726498586023!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="marginPagina footerSection">
+            <div>
+                <h1>Happy<span class="red">End</span></h1>
+
+                <p class="txtFooterMarginTop">Transformando ideias em soluções digitais. Prepare-se para o Projeto
+                    final da primeira Turma de
+                    Desenvolvimento de Sistemas.</p>
+
+                <p class="poppinsLight">- Turma SENAI - Ferraz de Vasconcelos 2024</p>
+            </div>
+
+            <div class="nav-footer underInfoFooter">
+                <p class="poppinsLight">Seções</p>
+
+                <div class="nav-links footerLinks">
+                    <a href="#projetos">Projetos</a>
+                    <a href="#dataEventos-section">Datas</a>
+                    <a href="#professores-section">Professores</a>
+                    <a href="#location">Localização</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="marginPagina divisionLine"></div>
+
+        <div class="marginPagina footerSection">
+            <p>© SENAI Luis Eulalio de Bueno Vidigal Filho</p>
+
+            <div class="nav-links iconsSocials underInfoFooter">
+                <a class="socialIcon" href="https://www.facebook.com/senaisp.suzano/" target="_blank">
+                    <img src="../images/icons/facebook.png">
+                </a>
+
+
+                <a class="socialIcon" href="https://www.instagram.com/senaisuzano/" target="_blank">
+                    <img src="../images/icons/instagram.png">
+                </a>
+
+
+                <a class="socialIcon" href="https://www.linkedin.com/school/senaisp/posts/?feedView=all"
+                    target="_blank">
+                    <img src="../images/icons/linkedin.png">
+                </a>
+
+
+                <a class="socialIcon" href="https://sp.senai.br/unidade/suzano/" target="_blank">
+                    <img src="../images/icons/websiteOFC.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/carrossel.js"></script>
+    <script src="../js/carrossel2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+
+@font-face {
+    font-family: 'orbitron';
+    src: url(../fonts/orbitron/Orbitron-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'poppinsBold';
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'poppinsLight';
+    src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+h1, h2, h3, p, a {
+    color: var(--corBrancaTxt);
+}
+h1, h2, h3 {
+    font-family: 'orbitron';
+}
+p, a {
+    font-family: 'poppins';
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.poppinsBold {
+    font-family: 'poppinsBold';
+}
+
+.poppinsLight {
+    font-family: 'poppinsLight';
+}
+
+p{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}

@@ -1,0 +1,235 @@
+body {
+    background-image: url('png');
+    background-repeat: no-repeat;
+    background-size: 60%; /* Agora a imagem está com metade do tamanho original */
+    background-position: center;
+    background-color: #62020a; /* Adiciona um fundo vermelho semi-transparente */
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 800px; /* Adiciona espaço na parte superior para descer a imagem */
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(0, 0, 0)
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:#ebb017;
+    border-radius: 50px;
+    border: 2px solid rgb(0, 0, 0)
+
+  }
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0; /* Adicionando esta linha */
+    background-color:#000000;
+    
+  }
+  
+  .moedas {
+    position: absolute;
+    top: 50px;
+    left: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+  }
+  
+  
+  
+  
+  .overlay-text {
+      text-align: left;
+      padding: 20px; /* Reduzindo o padding para tornar o texto um pouco menor */
+      position: absolute;
+      top: 480px; /* Ajuste conforme necessário para evitar sobreposição com a navbar */
+      right: 1100px; /* Ajuste conforme necessário para posicionar à esquerda */
+      color: #FFFFFF;
+      font-size: 14px; /* Tornando o texto pequeno um pouco menor */
+  }
+  
+  
+  
+  
+  .overlay-text h3 {
+   font-size: 1.3em;
+   margin-bottom: 10px;
+   color: #FFFFFF;
+   padding: 20px;
+   margin: 0;
+   opacity: 0;
+   transform: translateY(20px);
+   transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  
+    .logo {
+      font-family: 'Inter', sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      color: #0e3742;
+      -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+      line-height: 0.50em;
+      outline: none;
+      animation: animate 20s linear infinite;
+    }
+    @keyframes animate
+    {
+      0%,18%,20%,50.1%,60.1%,65.1%,80%,90.1%,92%
+      {
+        color: #0e3748;
+        box-shadow: none;
+      }
+      18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+      {
+        color: #fff;
+        box-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4,
+      }
+    }
+  
+    nav {
+      display: flex;
+      align-items: center;
+    }
+  
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 0 40px;
+      font-size: 1.1em;
+      display: block;
+      transition: all 0.3s ease;
+    }
+
+    nav > a:hover {
+      color: #ffffff;
+      letter-spacing: 0.7px;
+    }
+  
+    nav > a:after {
+      content: "";
+      display: block;
+      width: 0%;
+      height: 2px;
+      border-radius: 200px;
+      background: #ebb017
+      
+    }
+    
+    nav > a:hover::after{
+      width: 80%;
+
+    }
+  
+    .hamburger-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      font-size: 24px;
+    }
+  
+    .hamburger-menu div {
+      width: 30px;
+      height: 3px;
+      background-color: #FFFFFF;
+      margin: 3px 0;
+      transition: background-color 0.3s;
+    }
+  
+    .mario {
+    width: 54%; /* Aumenta a largura em 50% */
+    position: relative; /* Adiciona posicionamento relativo */
+    top: -20px;
+    padding: 80px; /* Move a imagem para cima. Ajuste conforme necessário. */
+    transform: scale(0);
+    transition: transform 1s;;
+    left: 170px;
+    
+  }
+  
+  /* Quando a classe "loaded" é adicionada, a imagem vai surgir */
+.loaded .mario {
+    transform: scale(1); /* Define a escala final para 1 */
+  }
+
+    @media (max-width: 768px) {
+      .hamburger-menu {
+        display: flex;
+      }
+  
+      nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+  
+      nav.active {
+        display: flex;
+      }
+  
+      nav a {
+        margin: 10px 0;
+      }
+  
+      .hamburger-menu div {
+        width: 25px;
+      }
+    }
+
+    .scroll-indicator {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        animation: bounce 1.5s infinite;
+        padding-top: 250px;
+      }
+      
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+      }
+      
+      .cta-button {
+        position: absolute;
+        bottom: 270px; /* Ajuste conforme necessário para a posição desejada */
+        right: 94%; /* Coloca o botão no centro */
+        transform: translateX(50%); /* Move o botão para a direita */
+        padding: 10px 20px;
+        background-color: #FFFFFF;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        font-size: 1em;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      
+      .cta-button:hover {
+        background-color: #000000;
+        color: #FFFFFF;
+      }
+      

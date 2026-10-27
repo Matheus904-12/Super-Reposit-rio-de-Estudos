@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Autonômo</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+    <style>
+        #map {
+            top: 30px;
+            height: 480px;
+            border: 5px solid black;
+            border-radius: 15px;
+        }
+
+        h1 {
+            position: relative;
+            padding-left: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Google Maps BETA</h1>
+    <div id="map"></div>
+
+    <script>
+        // Inicializa o mapa
+        var map = L.map('map').setView([-23.544997, -46.314800], 13); // Centraliza no Senai Suzano
+
+        // Adiciona uma camada de mapa do OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        var marker = L.marker([-23.544997, -46.314800]).addTo(map);
+        marker.bindPopup("<b>SENAI-Suzano</b><br>Bem Vindo.").openPopup();
+
+        navigator.geolocation.getCurrentPosition(function (pos) {
+            var la = pos.coords.latitude;
+            var lo = pos.coords.longitude;
+
+            L.Routing.control({
+                waypoints: [
+                    L.latLng(la, lo),
+                    L.latLng(-23.544997, -46.314800) // Exemplo: Senai Suzano
+                ]
+            }).addTo(map);
+        });
+    </script>
+</body>
+
+</html>

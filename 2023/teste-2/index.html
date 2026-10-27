@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eggman</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Eggman</h1>
+            <div class="mode-toggle">
+                <label for="mode-switch">Modo Claro</label>
+                <input type="checkbox" id="mode-switch">
+            </div>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#inicio">Início</a></li>
+                    <li class="nav-item"><a href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a href="#login">Login</a></li>
+                    <li class="nav-item"><a href="#carrinho">Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section id="inicio" class="section">
+            <div class="container">
+                <h2>Bem-vindo ao Eggman</h2>
+                <p>Aqui você encontra os melhores produtos para você.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida ipsum eu augue gravida, vel vulputate libero semper.</p>
+                <!-- Adicione mais conteúdo aqui -->
+            </div>
+        </section>
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma empresa que oferece os melhores produtos.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida ipsum eu augue gravida, vel vulputate libero semper.</p>
+                <!-- Adicione mais conteúdo aqui -->
+            </div>
+        </section>
+        <section id="produtos" class="section">
+            <div class="container">
+                <h2>Produtos</h2>
+                <div class="produtos-carousel">
+                    <!-- Adicione os produtos aqui -->
+                    <div class="produto">Produto 1</div>
+                    <div class="produto">Produto 2</div>
+                    <div class="produto">Produto 3</div>
+                    <!-- Adicione mais produtos aqui -->
+                </div>
+            </div>
+        </section>
+        <section id="login" class="section">
+            <div class="container">
+                <h2>Login</h2>
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </section>
+        <section id="carrinho" class="section">
+            <div class="container">
+                <h2>Carrinho de Compras</h2>
+                <div class="carrinho">
+                    <!-- Adicione os produtos no carrinho aqui -->
+                    <div class="item">Produto A</div>
+                    <div class="item">Produto B</div>
+                    <div class="item">Produto C</div>
+                    <!-- Adicione mais itens aqui -->
+                </div>
+            </div>
+        </section>
+        <section id="flip-cards" class="section">
+            <div class="container">
+                <h2>Flip Cards</h2>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>Card 1</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Detalhes do Card 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>Card 2</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Detalhes do Card 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Eggman &copy; 2023. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

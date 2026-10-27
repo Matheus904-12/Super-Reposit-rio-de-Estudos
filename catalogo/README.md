@@ -45,3 +45,7 @@ Importados também os demais públicos de 2023–2025 (incluindo `dowcode`, `Dem
 **Segurança adicional:** removidas chaves OpenAI (`OpenAI---1`, `SmartKitchen`), Google/Firebase (`Notifire`, `LuizNoti`, `Youtube-API`) e a **senha/host do Supabase em `EcommerceMontink/config/config.php`**. Revogue as chaves OpenAI e Google e **troque a senha do banco Supabase**; todas continuam no histórico dos repositórios de origem. Arquivos `.zip` foram omitidos.
 
 **Discord:** token de bot removido de `2023/Bot/old/bot.js`; regenere o token no Discord Developer Portal.
+
+### Etapa 4 — repositórios privados de estudo
+
+Importados 34 repositórios que eram privados (exercícios de HTML/CSS/JS, PHP, C# e Copilot de 2023–2025). Como este repositório é público, esse conteúdo agora está público (decisão do autor). `Rock`, `Testes`, `Verificador-de-Senhas` e `WarHammer` estão vazios na origem. Um `.pptx` de 18 MB de terceiros foi omitido de `GitHub-Copilot-Global-Bootcamp`.
