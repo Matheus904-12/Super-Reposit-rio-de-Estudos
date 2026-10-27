@@ -19,3 +19,21 @@ Este catálogo registra projetos de 2023, 2024 e 2025 avaliados para organizaç�
 ## Estado atual
 
 A pasta de 2023 e a pasta de 2024 já têm listas iniciais de candidatos. Os projetos listados nelas ainda precisam de triagem e cópia real. A importação de `AccelerateDevGHCopilot` (2025) está parcial. `DHCP-LAN` depende da possibilidade de preservar os arquivos binários Packet Tracer.
+
+## Importação por clone completo (etapa 2)
+
+Os repositórios públicos de 2023–2025 foram clonados por inteiro (incluindo imagens, fontes e áudios que faltavam na cópia arquivo a arquivo) e mesclados nas pastas por ano, sem sobrescrever os arquivos já existentes. Ficaram de fora: `node_modules`, `vendor`, `.history`, `.env`, chaves e builds.
+
+**Segurança:** chaves de API do Google/Firebase encontradas em `CadFirestore`, `Firestore-SQL`, `IAgenerativa` e `Projects-Part` foram substituídas por `REMOVIDA_CHAVE_API`. **Revogue/restrinja essas chaves no console do Google**, pois continuam no histórico dos repositórios de origem.
+
+**Não importados, aguardando decisão:**
+
+| Projeto | Motivo |
+|---|---|
+| Template-PHP | Contém senha de banco e host de produção de um site real; rotacionar a senha antes de qualquer cópia. |
+| PositiveSenseWeb, EcommerceWeb, Suburban | Projetos ativos/recentes; provavelmente devem continuar soltos. |
+| Repositórios privados (≈30) | Fora do escopo de acesso da sessão; precisam ser anexados e triados. |
+| Repositórios de 2026 | Fora do período histórico. |
+| ProjetoFerias | Imagem de 22 MB (`colorful-wallpaper...jpg`) omitida. |
+
+**Exclusão dos repositórios de origem:** não realizada. A integração disponível não tem ação de apagar repositórios, e a exclusão é irreversível.
