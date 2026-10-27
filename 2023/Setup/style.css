@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+/* Estilos para o cabeçalho */  
+#header {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 20px ;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.logo-nome {
+    font-size: 36px;
+    margin: 0;
+    display: inline;
+}
+
+.logo-nome span {
+    color: #FF6347;
+}
+
+#buscar {
+    display: flex;
+    align-items: center;
+}
+
+#buscar-input {
+    padding: 10px 110px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 470px;
+}
+
+button {
+    padding: 10px 80px;
+    font-size: 16px;
+    background-color: #FF6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Estilos para os produtos */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto {
+    flex-basis: calc(33.33% - 20px);
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    box-sizing: border-box; /* Adicionado para corrigir o tamanho total do produto */
+}
+
+/* Adicionado para organizar os produtos em uma coluna com três por linha */
+.produto-linha {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px; /* Compensa o margin individual dos produtos */
+}
+
+.produto-linha .produto {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px; /* Espaçamento entre os produtos */
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto .infos h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.produto .infos p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #FF6347;
+}
+
+.produto button {
+    background-color: #333;
+}
+
+.produto button:hover {
+    background-color: #FF6347;
+}
+
+
+/* Estilos para o carrinho */
+
+
+#carrinho-itens {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 40px;
+    text-align: left;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+#itens-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+#itens-lista li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#preco-total {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    color:#2a2a2a;
+}
+
+#preco-total span {
+    color: #FF6347;
+}
+
+#carrinho-itens button {
+    background-color: #333;
+    margin-top: 80px;
+}
+
+#carrinho-itens button:hover {
+    background-color: #FF6347;
+}
+
+/* IMAGEM */
+
+.produto .imagem img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Defina a altura máxima desejada para as imagens */
+    margin-bottom: 10px; /* Adicionado espaço entre a imagem e as informações */
+}
+
+#itens-lista li {
+    color: black; /* Ou a cor desejada */
+}
+
+/* Adicione estilos para o dropdown do carrinho */
+#carrinho-dropdown {
+    position: absolute;
+    top: 60px; /* Ajuste conforme necessário para o posicionamento desejado */
+    right: 10px; /* Ajuste conforme necessário para o posicionamento desejado */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Certifique-se de que o dropdown esteja sobre outros elementos */
+}
+
+#carrinho-dropdown ul {
+    list-style: none;
+    padding: 0;
+}
+
+#carrinho-dropdown img {
+    max-width: 50px; /* Defina a largura máxima desejada para as imagens */
+    margin-right: 10px;
+}
+#carrinho-dropdown li {
+    margin-bottom: 10px;
+}
+
+#carrinho-dropdown button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#carrinho-dropdown button:hover {
+    background-color: #205522;
+}
+
+#cont-carrinho {
+    margin-left: 60px;
+}

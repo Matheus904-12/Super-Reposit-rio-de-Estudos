@@ -37,3 +37,11 @@ Os repositórios públicos de 2023–2025 foram clonados por inteiro (incluindo 
 | ProjetoFerias | Imagem de 22 MB (`colorful-wallpaper...jpg`) omitida. |
 
 **Exclusão dos repositórios de origem:** não realizada. A integração disponível não tem ação de apagar repositórios, e a exclusão é irreversível.
+
+### Etapa 3
+
+Importados também os demais públicos de 2023–2025 (incluindo `dowcode`, `Demais.com`, `Setup`, `Projeto-Semestral-Oficial`, `EcommerceMontink`, apps React Native e exercícios Node/PHP). Itens ainda fora: `Projeto-Semestral` e `nota-mil` (ativos), `engineering-playground` e demais de 2026.
+
+**Segurança adicional:** removidas chaves OpenAI (`OpenAI---1`, `SmartKitchen`), Google/Firebase (`Notifire`, `LuizNoti`, `Youtube-API`) e a **senha/host do Supabase em `EcommerceMontink/config/config.php`**. Revogue as chaves OpenAI e Google e **troque a senha do banco Supabase**; todas continuam no histórico dos repositórios de origem. Arquivos `.zip` foram omitidos.
+
+**Discord:** token de bot removido de `2023/Bot/old/bot.js`; regenere o token no Discord Developer Portal.
