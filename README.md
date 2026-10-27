@@ -10,7 +10,7 @@ Este repositório é o destino central dos projetos migrados: os arquivos devem 
 |---|---|
 | [2023](2023/README.md) | Primeiros exercícios e projetos pessoais (66 projetos) |
 | [2024](2024/README.md) | Projetos técnicos e aplicações de 2024 (72 projetos) |
-| [2025](2025/README.md) | Estudos e projetos de 2025 (39 projetos); 2026 fica fora |
+| [2025](2025/README.md) | Estudos e projetos de 2025 (33 projetos); 2026 fica fora |
 | [GitHub Copilot](github-copilot/README.md) | Guia de uso, prompts, exercícios e boas práticas |
 | [Microsoft Learn](microsoft-learn/README.md) | Trilhas oficiais e acompanhamento dos estudos |
 | [Catálogo de migração](catalogo/README.md) | Controle do que foi copiado, está pendente ou deve continuar fora |
@@ -29,7 +29,7 @@ Este repositório é o destino central dos projetos migrados: os arquivos devem 
 
 ## Estado atual
 
-- [x] Importação dos repositórios de 2023, 2024 e 2025 concluída: **66 projetos em 2023, 72 em 2024 e 39 em 2025**, cada um na sua pasta.
+- [x] Importação dos repositórios de 2023, 2024 e 2025 concluída: **66 projetos em 2023, 72 em 2024 e 33 em 2025**, cada um na sua pasta.
 - [x] Repositórios de 2026 ficam de fora, de propósito.
 - [x] Dependências geradas, históricos de editor, credenciais e arquivos acima de 10 MB foram omitidos; chaves removidas aparecem como `REMOVIDA_*`/`REMOVIDO_*`.
 - [ ] Validar build/testes de cada projeto (as importações não foram executadas).

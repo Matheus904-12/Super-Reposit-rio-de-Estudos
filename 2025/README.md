@@ -2,7 +2,7 @@
 
 Estudos e projetos de 2025: C#/.NET com Copilot, redes, Python, React/Vue, e-commerce e sistemas completos. Projetos criados em 2026 não fazem parte desta seleção.
 
-Todos os projetos abaixo estão **dentro deste repositório** (pasta local). **39 projetos.** Cada pasta tem um README próprio; as importações não foram testadas/buildadas, então rode cada projeto conforme o README da pasta.
+Todos os projetos abaixo estão **dentro deste repositório** (pasta local). **33 projetos.** Cada pasta tem um README próprio; as importações não foram testadas/buildadas, então rode cada projeto conforme o README da pasta.
 
 | Projeto | Descrição | Tecnologias |
 |---|---|---|
@@ -14,7 +14,6 @@ Todos os projetos abaixo estão **dentro deste repositório** (pasta local). **3
 | [DesafioFrontEnd](DesafioFrontEnd/README.md) | Desafio de HTML, CSS e JavaScript | HTML/CSS/JS |
 | [DHCP-LAN](DHCP-LAN/README.md) | Topologia, LAN e DHCP | Packet Tracer |
 | [DNS---DHCP](DNS---DHCP/README.md) | DNS e DHCP | Packet Tracer |
-| [EcommerceMontink](EcommerceMontink/README.md) | Mini ERP de pedidos, produtos, cupons e estoque | PHP |
 | [EcommerceWeb](EcommerceWeb/README.md) | Plataforma de e-commerce completa | Node.js, PHP, HTML/CSS/JS |
 | [estudos-github-copilot](estudos-github-copilot/README.md) | Estudos e exercícios de GitHub Copilot | Python, HTML/CSS/JS |
 | [GatewayCielo](GatewayCielo/README.md) | Gateway Cielo para WordPress | — |
@@ -32,16 +31,11 @@ Todos os projetos abaixo estão **dentro deste repositório** (pasta local). **3
 | [melhorenvio-proxy](melhorenvio-proxy/README.md) | Proxy para API do Melhor Envio | Node.js |
 | [melhorenvio-proxy-vercel](melhorenvio-proxy-vercel/README.md) | Proxy Melhor Envio na Vercel | Node.js |
 | [nota-mil](nota-mil/README.md) | Correção automática de redações no padrão ENEM | Node.js, Python, React/RN, HTML/CSS/JS |
-| [Painel-de-Gastos](Painel-de-Gastos/README.md) | Painel de controle de gastos | PHP, HTML/CSS/JS |
 | [PortfolioReact](PortfolioReact/README.md) | Portfólio em React.js | Node.js, React/RN, HTML/CSS/JS |
-| [PortLucindo](PortLucindo/README.md) | Portfólio Matheus Lucindo | Node.js, React/RN, HTML/CSS/JS |
-| [PositiveSensePage](PositiveSensePage/README.md) | Página de escolhas do PositiveSense | HTML/CSS/JS |
-| [PositiveSenseWeb](PositiveSenseWeb/README.md) | Site do PositiveSense | PHP, HTML/CSS/JS |
 | [Projects-Part](Projects-Part/README.md) | Projetos particulares (Vue) | Node.js, Vue |
 | [Python-s](Python-s/README.md) | Exercícios de Python | Python |
 | [RenderCodeBar](RenderCodeBar/README.md) | Módulos JS de códigos de barras/boletos | Node.js |
 | [skills-getting-started-with-github-copilot](skills-getting-started-with-github-copilot/README.md) | Exercício: começando com o GitHub Copilot | Python, HTML/CSS/JS |
-| [Suburban](Suburban/README.md) | Rastreio de trens da CPTM | Python, HTML/CSS/JS |
 | [TCC-Helo-Ana](TCC-Helo-Ana/README.md) | Plataforma de auxílio a crianças autistas (TCC) | PHP |
 | [Template-PHP](Template-PHP/README.md) | Template PHP (site à venda) | PHP |
 | [ViaCEPapi](ViaCEPapi/README.md) | Consulta de CEP (ViaCEP) | HTML/CSS/JS |

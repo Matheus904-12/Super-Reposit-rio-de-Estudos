@@ -67,3 +67,7 @@ Vazios na origem (sem pasta): `Versions-ZIP`, `Meu-PenDrive`.
 - Chave OMDb em `gms-test`
 
 **Atenção:** `GoldLar`, `EcommerceWeb` e `Template-PHP` são trabalho de cliente (Cristais Gold Lar) e agora estão públicos; confirme que você pode publicá-los. O link do `Template-PHP` fica apenas como código.
+
+### Retirados do super repositório (voltam a ser repositórios independentes)
+
+Por decisão do autor, ficam como repositórios próprios no GitHub, sem cópia aqui: `Suburban`, `PositiveSenseWeb`, `PositiveSensePage`, `PortLucindo` (portfólio), `Painel-de-Gastos` e `EcommerceMontink`. Os repositórios de origem nunca foram apagados e não devem ser. Eles continuam existindo e não entram na lista de exclusão.
